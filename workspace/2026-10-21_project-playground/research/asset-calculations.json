@@ -1,0 +1,489 @@
+{
+  "horror": {
+    "full_asset_content_hours_low_base_high": [
+      798.0,
+      1893.0,
+      4546.0
+    ],
+    "fixed_base_quantities_hours_low_base_high": [
+      941.5,
+      1893.0,
+      3778.0
+    ],
+    "base_hours_creation_integration_polish": [
+      902.0,
+      391.0,
+      600.0
+    ],
+    "first_paid_subset_base_hours": 1167.4,
+    "first_paid_with_asset_overhead_base_hours": 1207.4,
+    "later_remaining_with_asset_overhead_base_hours": 773.6,
+    "staged_total_asset_base_hours": 1981.0,
+    "accepted_tripo_seeds_low_base_high": [
+      29,
+      39,
+      51
+    ],
+    "hd_route_credits_low_base_high": [
+      1305,
+      2925,
+      6120
+    ],
+    "p2_route_credits_low_base_high": [
+      3480,
+      12480,
+      31620
+    ],
+    "groups_base_hours": {
+      "Direction/setup": 40,
+      "Character/weapon models": 212,
+      "Rigs/motion/contacts": 572.0,
+      "World kits/props/materials": 236.0,
+      "Spaces/puzzles/encounters/story": 488,
+      "VFX/audio": 153.0,
+      "UI/icons": 96.0,
+      "Media/content finish": 96
+    },
+    "row_totals": {
+      "H01": [
+        20,
+        40,
+        72
+      ],
+      "H02": [
+        15,
+        30,
+        60
+      ],
+      "H03": [
+        36,
+        78,
+        156
+      ],
+      "H04": [
+        30,
+        64,
+        128
+      ],
+      "H05": [
+        36,
+        72,
+        144
+      ],
+      "H06": [
+        60.0,
+        160.0,
+        416
+      ],
+      "H07": [
+        48.0,
+        128.0,
+        352
+      ],
+      "H08": [
+        49.0,
+        140,
+        392
+      ],
+      "H09": [
+        36,
+        72,
+        144
+      ],
+      "H10": [
+        20,
+        40,
+        80
+      ],
+      "H11": [
+        24.0,
+        64.0,
+        176
+      ],
+      "H12": [
+        32.5,
+        100.0,
+        300
+      ],
+      "H13": [
+        8.0,
+        24.0,
+        72
+      ],
+      "H14": [
+        112.0,
+        256,
+        576
+      ],
+      "H15": [
+        12.0,
+        24,
+        48
+      ],
+      "H16": [
+        16.0,
+        48,
+        128
+      ],
+      "H17": [
+        30,
+        60,
+        120
+      ],
+      "H18": [
+        60.0,
+        120,
+        240
+      ],
+      "H19": [
+        14,
+        28,
+        56
+      ],
+      "H20": [
+        15.0,
+        45.0,
+        130
+      ],
+      "H21": [
+        22.5,
+        60.0,
+        180.0
+      ],
+      "H22": [
+        18.0,
+        48,
+        144
+      ],
+      "H23": [
+        24,
+        60,
+        144
+      ],
+      "H24": [
+        12.0,
+        36.0,
+        96.0
+      ],
+      "H25": [
+        20,
+        40,
+        80
+      ],
+      "H26": [
+        28,
+        56,
+        112
+      ]
+    }
+  },
+  "mech": {
+    "full_asset_content_hours_low_base_high": [
+      871.0,
+      1985.0,
+      4568.0
+    ],
+    "fixed_base_quantities_hours_low_base_high": [
+      992.5,
+      1985.0,
+      3970.0
+    ],
+    "base_hours_creation_integration_polish": [
+      886.0,
+      478.5,
+      620.5
+    ],
+    "first_paid_subset_base_hours": 1475.2,
+    "first_paid_with_asset_overhead_base_hours": 1491.2,
+    "later_remaining_with_asset_overhead_base_hours": 541.8,
+    "staged_total_asset_base_hours": 2033.0,
+    "accepted_tripo_seeds_low_base_high": [
+      47,
+      53,
+      61
+    ],
+    "hd_route_credits_low_base_high": [
+      2115,
+      3975,
+      7320
+    ],
+    "p2_route_credits_low_base_high": [
+      5640,
+      16960,
+      37820
+    ],
+    "groups_base_hours": {
+      "Direction/attachment setup": 64,
+      "Equipment/enemy models": 332,
+      "Rigs/motion/compatibility": 519.0,
+      "World kits/props/materials": 171.0,
+      "Arenas/encounters/content data": 463.0,
+      "VFX/audio": 214.0,
+      "UI/icons": 126.0,
+      "Media/content finish": 96
+    },
+    "row_totals": {
+      "M01": [
+        32,
+        64,
+        128
+      ],
+      "M02": [
+        54.0,
+        108,
+        216
+      ],
+      "M03": [
+        36.0,
+        72,
+        144
+      ],
+      "M04": [
+        30,
+        60,
+        120
+      ],
+      "M05": [
+        10.0,
+        20,
+        40
+      ],
+      "M06": [
+        36,
+        72,
+        144
+      ],
+      "M07": [
+        40,
+        80,
+        160
+      ],
+      "M08": [
+        30.0,
+        80.0,
+        220
+      ],
+      "M09": [
+        25.0,
+        75.0,
+        225
+      ],
+      "M10": [
+        36.0,
+        108,
+        288
+      ],
+      "M11": [
+        52,
+        104,
+        208
+      ],
+      "M12": [
+        36,
+        72,
+        144
+      ],
+      "M13": [
+        24.0,
+        72.0,
+        192
+      ],
+      "M14": [
+        22.5,
+        75.0,
+        225
+      ],
+      "M15": [
+        8.0,
+        24.0,
+        72
+      ],
+      "M16": [
+        84,
+        168,
+        336
+      ],
+      "M17": [
+        67.5,
+        135,
+        270
+      ],
+      "M18": [
+        36.0,
+        72.0,
+        144
+      ],
+      "M19": [
+        36.0,
+        72.0,
+        144
+      ],
+      "M20": [
+        30.0,
+        90,
+        252
+      ],
+      "M21": [
+        22.5,
+        70.0,
+        200.0
+      ],
+      "M22": [
+        18.0,
+        54,
+        144
+      ],
+      "M23": [
+        27,
+        66,
+        168
+      ],
+      "M24": [
+        22.5,
+        60.0,
+        160.0
+      ],
+      "M25": [
+        8,
+        16,
+        32
+      ],
+      "M26": [
+        20,
+        40,
+        80
+      ],
+      "M27": [
+        28,
+        56,
+        112
+      ]
+    }
+  },
+  "incremental": {
+    "full_asset_content_hours_low_base_high": [
+      184.5,
+      414.0,
+      961.0
+    ],
+    "fixed_base_quantities_hours_low_base_high": [
+      207.0,
+      414.0,
+      828.0
+    ],
+    "base_hours_creation_integration_polish": [
+      154.0,
+      108.5,
+      151.5
+    ],
+    "first_paid_subset_base_hours": 414.0,
+    "first_paid_with_asset_overhead_base_hours": 414.0,
+    "later_remaining_with_asset_overhead_base_hours": 0.0,
+    "staged_total_asset_base_hours": 414.0,
+    "accepted_tripo_seeds_low_base_high": [
+      0,
+      0,
+      0
+    ],
+    "hd_route_credits_low_base_high": [
+      0,
+      0,
+      0
+    ],
+    "p2_route_credits_low_base_high": [
+      0,
+      0,
+      0
+    ],
+    "groups_base_hours": {
+      "Direction/setup": 16,
+      "Visuals/layouts": 93.0,
+      "VFX/audio": 78.0,
+      "UI/icons": 76.0,
+      "Upgrade/tier/text content": 107.0,
+      "Media/content finish": 44
+    },
+    "row_totals": {
+      "I01": [
+        8,
+        16,
+        32
+      ],
+      "I02": [
+        8.0,
+        16,
+        32
+      ],
+      "I03": [
+        6.0,
+        12.0,
+        24
+      ],
+      "I04": [
+        24.0,
+        48,
+        96
+      ],
+      "I05": [
+        3.0,
+        9.0,
+        27
+      ],
+      "I06": [
+        4.0,
+        8.0,
+        16
+      ],
+      "I07": [
+        12.0,
+        36,
+        108
+      ],
+      "I08": [
+        18,
+        48,
+        120
+      ],
+      "I09": [
+        11.0,
+        28.0,
+        72.0
+      ],
+      "I10": [
+        36.0,
+        72.0,
+        144
+      ],
+      "I11": [
+        13.5,
+        27.0,
+        54
+      ],
+      "I12": [
+        9.0,
+        24.0,
+        72.0
+      ],
+      "I13": [
+        6.0,
+        18,
+        60
+      ],
+      "I14": [
+        4,
+        8,
+        16
+      ],
+      "I15": [
+        12,
+        24,
+        48
+      ],
+      "I16": [
+        10,
+        20,
+        40
+      ]
+    }
+  }
+}

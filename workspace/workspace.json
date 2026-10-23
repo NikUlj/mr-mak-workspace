@@ -1,13 +1,104 @@
 {
   "entities": [
     {
+      "id": "project-playground",
+      "title": "Project Playground",
+      "description": "Assessing earning potential, choosing a first prototype, and calibrating production effort before committing to a game.",
+      "type": "group",
+      "category": "research",
+      "created": "2026-10-21",
+      "updated": "2026-10-23",
+      "folder": "2026-10-21_project-playground",
+      "steps": [
+        {
+          "name": "Project brief",
+          "path": "brief.md"
+        },
+        {
+          "name": "Research plan",
+          "path": "research-plan.md"
+        },
+        {
+          "name": "Initial evidence",
+          "path": "initial-evidence.md"
+        },
+        {
+          "name": "Prototype audit",
+          "path": "prototype-audit.md"
+        },
+        {
+          "name": "Constraints and reuse",
+          "path": "constraints-and-reuse.md"
+        },
+        {
+          "name": "Game scopes",
+          "path": "game-scopes.md"
+        },
+        {
+          "name": "Market findings",
+          "path": "market-findings.md"
+        },
+        {
+          "name": "Market comparison",
+          "path": "market-comparison.md"
+        },
+        {
+          "name": "Player reviews",
+          "path": "market-reviews.md"
+        },
+        {
+          "name": "Release strategies",
+          "path": "release-strategies.md"
+        },
+        {
+          "name": "Asset findings",
+          "path": "asset-findings.md"
+        },
+        {
+          "name": "Asset inventory",
+          "path": "asset-inventory.md"
+        },
+        {
+          "name": "Production pipeline",
+          "path": "production-pipeline.md"
+        },
+        {
+          "name": "Production estimates",
+          "path": "production-estimates.md"
+        },
+        {
+          "name": "Commercial findings",
+          "path": "commercial-findings.md"
+        },
+        {
+          "name": "Scenario model",
+          "path": "scenario-model.html"
+        },
+        {
+          "name": "Financial method",
+          "path": "financial-method.md"
+        },
+        {
+          "name": "Estimate review",
+          "path": "estimate-review.md"
+        },
+        {
+          "name": "Prototype decision",
+          "path": "prototype-decision.md"
+        }
+      ],
+      "status": "active",
+      "pinned": true,
+      "defaultStep": 0
+    },
+    {
       "id": "my-dream-game",
       "title": "My Dream Game",
       "description": "Mr. Mak 64: a small Sky Islands adventure, with character studies, world layouts and a development board.",
       "type": "group",
       "category": "project",
       "created": "2026-09-15",
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "folder": "2026-09-15_my-dream-game",
       "steps": [
         {
@@ -20,7 +111,7 @@
           "viewer": "card"
         }
       ],
-      "status": "active",
+      "status": "archived",
       "pinned": true,
       "sample": true,
       "defaultStep": 0
@@ -93,39 +184,39 @@
       "folder": "2026-09-15_arachne-character",
       "steps": [
         {
-          "name": "Version 1 \u00b7 Creature concepts",
+          "name": "Version 1 · Creature concepts",
           "path": "report.html"
         },
         {
-          "name": "Version 2 \u00b7 A stronger premise",
+          "name": "Version 2 · A stronger premise",
           "path": "report_v2.html"
         },
         {
-          "name": "Version 3 \u00b7 Four directions",
+          "name": "Version 3 · Four directions",
           "path": "report_v3.html"
         },
         {
-          "name": "Version 4 \u00b7 Targeted refinement",
+          "name": "Version 4 · Targeted refinement",
           "path": "report_v4.html"
         },
         {
-          "name": "Version 5 \u00b7 Arachne exploration",
+          "name": "Version 5 · Arachne exploration",
           "path": "report_v5.html"
         },
         {
-          "name": "Version 6 \u00b7 Style refinement",
+          "name": "Version 6 · Style refinement",
           "path": "report_v6.html"
         },
         {
-          "name": "Version 7 \u00b7 The mixed direction",
+          "name": "Version 7 · The mixed direction",
           "path": "report_v7.html"
         },
         {
-          "name": "Version 8 \u00b7 A coherent queen",
+          "name": "Version 8 · A coherent queen",
           "path": "report_v8.html"
         },
         {
-          "name": "Version 9 \u00b7 Palette studies",
+          "name": "Version 9 · Palette studies",
           "path": "report_v9.html"
         },
         {

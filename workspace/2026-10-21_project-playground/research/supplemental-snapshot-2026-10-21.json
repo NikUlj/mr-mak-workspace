@@ -1,0 +1,405 @@
+{
+  "games": [
+    {
+      "group": "watchlist",
+      "appid": 2235430,
+      "name": "Holstin",
+      "observed_utc": "2026-10-21T21:46:03.479852+00:00",
+      "store_url": "https://store.steampowered.com/app/2235430/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=2235430&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/2235430?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": true,
+        "date": "To be announced"
+      },
+      "developers": [
+        "Sonka"
+      ],
+      "publishers": [
+        "Team17"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "25",
+          "description": "Adventure"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "Custom Volume Controls",
+        "Adjustable Difficulty",
+        "Playable without Timed Input",
+        "DualShock Controller Support",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "DualSense Controller Support",
+        "Steam Input API Support",
+        "Stereo Sound",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": null,
+      "review_summary": {
+        "num_reviews": 0,
+        "review_score": 0,
+        "review_score_desc": "No user reviews",
+        "total_positive": 0,
+        "total_negative": 0,
+        "total_reviews": 0
+      },
+      "positive_percent": null
+    },
+    {
+      "group": "watchlist",
+      "appid": 2340130,
+      "name": "Ground Zero",
+      "observed_utc": "2026-10-21T21:46:03.473921+00:00",
+      "store_url": "https://store.steampowered.com/app/2340130/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=2340130&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/2340130?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Apr 16, 2026"
+      },
+      "developers": [
+        "Malformation Games"
+      ],
+      "publishers": [
+        "Kwalee"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Partial Controller Support",
+        "Steam Cloud",
+        "Stats",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 673,
+        "total_negative": 85,
+        "total_reviews": 758
+      },
+      "positive_percent": 88.8
+    },
+    {
+      "group": "watchlist",
+      "appid": 2547890,
+      "name": "Mecha Mayhem",
+      "observed_utc": "2026-10-21T21:46:03.481734+00:00",
+      "store_url": "https://store.steampowered.com/app/2547890/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=2547890&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/2547890?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": true,
+        "date": "To be announced"
+      },
+      "developers": [
+        "Duck it Games"
+      ],
+      "publishers": [
+        "Duck it Games"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "PvP",
+        "Online PvP",
+        "Co-op",
+        "Online Co-op",
+        "Steam Achievements",
+        "Steam Workshop",
+        "DualShock Controller Support",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "DualSense Controller Support",
+        "Partial Controller Support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": null,
+      "review_summary": {
+        "num_reviews": 0,
+        "review_score": 0,
+        "review_score_desc": "No user reviews",
+        "total_positive": 0,
+        "total_negative": 0,
+        "total_reviews": 0
+      },
+      "positive_percent": null
+    },
+    {
+      "group": "watchlist",
+      "appid": 4992770,
+      "name": "Infinite Loop: Incremental",
+      "observed_utc": "2026-10-21T21:46:03.990724+00:00",
+      "store_url": "https://store.steampowered.com/app/4992770/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=4992770&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/4992770?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": true,
+        "date": "Nov 26, 2026"
+      },
+      "developers": [
+        "Vegecat Games"
+      ],
+      "publishers": [
+        "Vegecat Games"
+      ],
+      "genres": [
+        {
+          "id": "25",
+          "description": "Adventure"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        },
+        {
+          "id": "3",
+          "description": "RPG"
+        },
+        {
+          "id": "2",
+          "description": "Strategy"
+        },
+        {
+          "id": "70",
+          "description": "Early Access"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Mouse Only Option",
+        "#category_playable_at_your_own_pace",
+        "Playable without Timed Input",
+        "Save Anytime",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": null,
+      "review_summary": {
+        "num_reviews": 0,
+        "review_score": 0,
+        "review_score_desc": "No user reviews",
+        "total_positive": 0,
+        "total_negative": 0,
+        "total_reviews": 0
+      },
+      "positive_percent": null
+    },
+    {
+      "group": "watchlist",
+      "appid": 4545940,
+      "name": "Beencremental",
+      "observed_utc": "2026-10-21T21:46:03.954665+00:00",
+      "store_url": "https://store.steampowered.com/app/4545940/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=4545940&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/4545940?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": true,
+        "date": "Q1 2027"
+      },
+      "developers": [
+        "DamianArtClub"
+      ],
+      "publishers": [
+        "Level Up Gaming",
+        "Gamersky Games"
+      ],
+      "genres": [
+        {
+          "id": "4",
+          "description": "Casual"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Family Sharing"
+      ],
+      "price_us": null,
+      "review_summary": {
+        "num_reviews": 0,
+        "review_score": 0,
+        "review_score_desc": "No user reviews",
+        "total_positive": 0,
+        "total_negative": 0,
+        "total_reviews": 0
+      },
+      "positive_percent": null
+    },
+    {
+      "group": "release-route",
+      "appid": 1096570,
+      "name": "SONG OF HORROR COMPLETE EDITION",
+      "observed_utc": "2026-10-21T21:46:03.949959+00:00",
+      "store_url": "https://store.steampowered.com/app/1096570/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=1096570&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/1096570?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Oct 31, 2019"
+      },
+      "developers": [
+        "Protocol Games"
+      ],
+      "publishers": [
+        "Protocol Games"
+      ],
+      "genres": [
+        {
+          "id": "25",
+          "description": "Adventure"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        },
+        {
+          "id": "37",
+          "description": "Free To Play"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 1559,
+        "total_negative": 381,
+        "total_reviews": 1940
+      },
+      "positive_percent": 80.4
+    },
+    {
+      "group": "release-route",
+      "appid": 3668270,
+      "name": "Granvir: Zero Front",
+      "observed_utc": "2026-10-21T21:46:04.437370+00:00",
+      "store_url": "https://store.steampowered.com/app/3668270/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=3668270&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/3668270?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": true,
+      "release_date": {
+        "coming_soon": false,
+        "date": "May 12, 2025"
+      },
+      "developers": [
+        "Airborne Games"
+      ],
+      "publishers": [
+        "GIGATANK 3000"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        },
+        {
+          "id": "28",
+          "description": "Simulation"
+        },
+        {
+          "id": "37",
+          "description": "Free To Play"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "Co-op",
+        "Online Co-op",
+        "Steam Achievements",
+        "DualShock Controller Support",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "DualSense Controller Support",
+        "Partial Controller Support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": null,
+      "review_summary": {
+        "num_reviews": 0,
+        "review_score": 0,
+        "review_score_desc": "No user reviews",
+        "total_positive": 0,
+        "total_negative": 0,
+        "total_reviews": 0
+      },
+      "positive_percent": null
+    }
+  ]
+}

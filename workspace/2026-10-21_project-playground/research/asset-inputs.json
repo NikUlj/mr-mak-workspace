@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "date": "2026-10-22",
+  "basis": "Analyst planning assumptions for scope v2.1. No timed production measurements. Hours are owner attention, not agent elapsed time. Not full project estimates.",
+  "columns": ["id", "family", "unit", "quantity_low_base_high", "creation_hours_per_unit_low_base_high", "integration_hours_per_unit_low_base_high", "polish_hours_per_unit_low_base_high", "first_paid_base_quantity", "tripo_accepted_seeds_low_base_high", "source_and_reuse", "boundary_and_uncertainty"],
+  "games": {
+    "horror": {
+      "title": "Last Circuit: horror",
+      "first_paid_case": "Illustrative first of two finished chapters, approximately 2 hours: 2 sectors, 12 rooms + 4 passages, 2 guns, 3 regular enemies, 1 boss, 8 encounters including boss, 2 puzzles. Final target remains 4-6 hours; duration untested.",
+      "rows": [
+        ["H01", "Art direction and pipeline", "setup", [1,1,1], [12,24,40], [4,8,16], [4,8,16], 1, [0,0,0], "Manual reference/style sheet and import presets", "Palette, scale, naming, shader/LOD conventions; first round-trip setup. No paid concept-image allowance specified."],
+        ["H02", "Covered-face player", "body model", [1,1,1], [10,20,40], [2,4,8], [3,6,12], 1, [1,1,1], "Tripo seed plus manual cleanup; prototype YBot is a reference", "Model includes topology, UV/material and collision; rig/animation separate. No final-art reuse credit."],
+        ["H03", "Regular creature bodies", "body model", [6,6,6], [4,8,16], [1,2,4], [1,3,6], 3, [6,6,6], "AI-assisted/manual; shared materials and anatomy within 3 families", "Six distinct silhouettes; repeated skeleton does not eliminate model cleanup. Behavior code belongs in Step 5."],
+        ["H04", "Boss bodies", "body model", [2,2,2], [10,20,40], [2,4,8], [3,8,16], 1, [2,2,2], "AI-assisted/manual", "Two additional bodies; weak-point separation and readable silhouette. No dismemberment."],
+        ["H05", "Rigs and skin binding", "rig family", [6,6,6], [3,6,12], [1,2,4], [2,4,8], 4, [0,0,0], "Manual or auto-rig followed by weight fixes", "1 player + 3 regular + 2 boss skeletons; weights on all 9 bodies included. First chapter assumes 2 regular families."],
+        ["H06", "Player motion library", "authored clip/pose", [30,40,52], [1,2,4], [0.25,0.5,1], [0.75,1.5,3], 32, [0,0,0], "Reference -> Blender agent -> owner fixes; existing clips conditional", "Base 9 locomotion + 7 starts/stops/turns + 16 weapon handling + 8 hit/death/interactions. No proven reuse subtraction."],
+        ["H07", "Regular creature motion", "authored clip", [24,32,44], [1,2,4], [0.25,0.5,1], [0.75,1.5,3], 20, [0,0,0], "Shared family motion plus attack variants; manual correction", "Base 18 shared movement/reaction clips + 14 archetype actions. Pose retargeting still needs contacts/timing checks."],
+        ["H08", "Boss motion", "authored clip", [14,20,28], [2,4,8], [0.5,1,2], [1,2,4], 10, [0,0,0], "Reference-guided/manual bespoke motion", "Base 10 clips per boss. Telegraph, attack, recovery, hit and death; complexity not captured by polygon count."],
+        ["H09", "Connected motion and weapon contacts", "integration package", [1,1,1], [12,24,48], [12,24,48], [12,24,48], 1, [0,0,0], "Animator/IK authoring and tuning", "Cross-clip blending, weapon-hand alignment and interruption checks; excludes gameplay controller/health implementation."],
+        ["H10", "Firearms", "weapon assembly", [4,4,4], [3,6,12], [1,2,4], [1,2,4], 2, [4,4,4], "AI-assisted/manual with shared materials", "Four guns; magazines/moving parts included, animations in H06 and effects in H20."],
+        ["H11", "Structural kit", "reusable mesh module", [24,32,44], [0.5,1,2], [0.25,0.5,1], [0.25,0.5,1], 28, [0,0,0], "Manual/code-assisted modular geometry", "Walls/floors/frames/stairs/ceiling pieces; repeated placements costed in rooms, not new meshes."],
+        ["H12", "Sector dressing and landmarks", "unique prop assembly", [26,40,60], [0.75,1.5,3], [0.25,0.5,1], [0.25,0.5,1], 24, [12,20,30], "Mixed manual and Tripo seeds; four sector sets", "Base 12 shared + 7 per sector. AI seeds are subset of props; remaining props derived/manual. No exact placement count yet."],
+        ["H13", "Shared surfaces and decals", "material family", [8,12,18], [0.5,1,2], [0.25,0.5,1], [0.25,0.5,1], 8, [0,0,0], "Manual palette/atlas and reusable masks", "Shared master surfaces only; individual asset UV assignment is in model rows. No full PBR scan workflow assumed."],
+        ["H14", "Room layout, dressing and light", "authored room", [28,32,36], [1.5,3,6], [1,2,4], [1.5,3,6], 12, [0,0,0], "Reuse structural kit/props; manual scene authoring", "32 includes 3 safe rooms and 2 boss rooms. Navigation, sightlines, light readability; encounter tuning in H18."],
+        ["H15", "Connecting passages", "authored passage", [8,8,8], [0.5,1,2], [0.5,1,2], [0.5,1,2], 4, [0,0,0], "Reuse kit; manual placement", "Eight connecting spaces, not eight new environment kits."],
+        ["H16", "Interactive and pickup props", "prop family", [8,12,16], [1,2,4], [0.5,1,2], [0.5,1,2], 8, [4,6,8], "AI-assisted/manual with shared interaction shapes", "Base 4 ammo + 1 heal + 2 key families + door + breaker + shutter + terminal + container; behavior systems Step 5."],
+        ["H17", "Puzzles and route changes", "authored puzzle", [6,6,6], [2,4,8], [1,2,4], [2,4,8], 2, [0,0,0], "Manual content in shared power/interaction systems", "Puzzle logic configuration and softlock testing; generic switch/save system implementation Step 5."],
+        ["H18", "Threat/combat arrangements", "authored encounter", [24,24,24], [1,2,4], [0.5,1,2], [1,2,4], 8, [0,0,0], "Manual enemy/resource placement and pacing", "24 includes 2 bosses, not 24 plus bosses. Revisit states and resource tuning included; reusable AI systems excluded."],
+        ["H19", "Narrative and ending", "text package", [1,1,1], [8,16,32], [2,4,8], [4,8,16], 0.6, [0,0,0], "Owner-authored/editable English text", "Up to 4000 narrative words and 30 notes/signs, sector beats and one text/gameplay ending. No voice/cinematics."],
+        ["H20", "Visual feedback", "effect family", [12,18,26], [0.5,1,2], [0.25,0.5,1], [0.5,1,2], 12, [0,0,0], "Manual/procedural particle and shader work", "Reusable muzzle/impact/hit/power/dust/creature cues; variants use shared systems. Effects are not free code output."],
+        ["H21", "Sound effects", "event bank", [45,60,90], [0.25,0.5,1], [0.1,0.25,0.5], [0.15,0.25,0.5], 40, [0,0,0], "Owner recording/synthesis/editing; generation optional", "Base 60 events with usually 2-3 takes (120-180 files), not 60 takes. Event wiring/mix included; playback framework Step 5."],
+        ["H22", "Ambience and music", "loop/stem", [6,8,12], [2,4,8], [0.5,1,2], [0.5,1,2], 5, [0,0,0], "Owner synthesis/composition; sparse score", "Base 4 sector ambience + 4 sparse musical stems. Music expertise unknown; no paid audio provider chosen."],
+        ["H23", "HUD and menus", "screen/state layout", [8,10,12], [1,2,4], [1,2,4], [1,2,4], 10, [0,0,0], "Manual UI plus reusable widgets", "10: title, save/load, HUD, inventory, map, notes, pause, settings, death, ending. Visual/data binding only; underlying save/settings logic Step 5."],
+        ["H24", "UI symbols", "unique icon", [24,36,48], [0.25,0.5,1], [0.1,0.25,0.5], [0.15,0.25,0.5], 26, [0,0,0], "Manual/vector family with tint/state reuse", "Equipment, pickups, navigation, status and prompts. Font ownership checked later; no custom font creation."],
+        ["H25", "Store and trailer assets", "launch media package", [1,1,1], [12,24,48], [4,8,16], [4,8,16], 1, [0,0,0], "Self-created from finished game and edited key art", "One capsule composition with required crops, 6-8 captures, 45-75s gameplay trailer and short clips. Outreach/store operation Step 5."],
+        ["H26", "Cross-content finish", "final review pass", [1,1,1], [0,0,0], [12,24,48], [16,32,64], 0.6, [0,0,0], "Manual in-engine consistency/performance review", "Content LOD/collider/material fixes across scenes; full release regression, optimization architecture and playtesting Step 5."]
+      ]
+    },
+    "mech": {
+      "title": "Redline: mech",
+      "first_paid_case": "Illustrative EA: both leg families; 12 body/booster entries + 6 weapons (4 main, 2 shoulder) + 4 internals; 2 themes, 8 arenas, 6 regular enemies, 2 bosses, 16 regular encounter templates plus bosses, 20 upgrades, 2 challenge tiers. A complete two-stage run endpoint, not the final three-stage scope.",
+      "rows": [
+        ["M01", "Style and attachment standards", "setup", [1,1,1], [16,32,64], [8,16,32], [8,16,32], 1, [0,0,0], "Manual reference/style sheet, socket rules and tools", "Scale, pivots, joint envelopes, mount axes and palette; generic garage/stat implementation Step 5."],
+        ["M02", "Body and booster equipment", "equipment assembly", [18,18,18], [2,4,8], [0.5,1,2], [0.5,1,2], 12, [18,18,18], "Tripo seeds plus manual separated mechanical parts", "4 legs + 4 torsos + 4 arm-pairs + 3 heads + 3 boosters. Base about 61 rigid pieces, not 18 meshes; each assembly includes segmentation/UV/pivots."],
+        ["M03", "Visible weapons", "equipment assembly", [12,12,12], [2,4,8], [0.5,1,2], [0.5,1,2], 6, [12,12,12], "AI-assisted/manual mechanical modeling", "8 main + 4 shoulder; base about 24 pieces. Does not include projectile behavior code."],
+        ["M04", "Regular enemy base bodies", "body/rig family model", [5,5,5], [4,8,16], [1,2,4], [1,2,4], 4, [5,5,5], "AI-assisted/manual; share player materials/parts selectively", "5 base models; 5 further silhouettes in M05 make 10 archetypes. Rigs separate."],
+        ["M05", "Regular enemy derivatives", "body variant", [5,5,5], [1,2,4], [0.5,1,2], [0.5,1,2], 2, [0,0,0], "Manual kit derivatives with role-readable additions", "New silhouette/loadout on a shared body; distinct behavior costed in Step 5, not a recolor counted as a new role."],
+        ["M06", "Boss body kits", "boss assembly", [3,3,3], [8,16,32], [2,4,8], [2,4,8], 2, [3,3,3], "AI-assisted/manual, reuse fittings/materials", "Three additional body kits, movable weapons/weak points; no dynamic destruction."],
+        ["M07", "Mechanical rigs", "rig family", [10,10,10], [2,4,8], [1,2,4], [1,2,4], 8, [0,0,0], "Manual rigid parenting/weights; shared joint conventions", "2 player + 5 enemy + 3 boss rigs. Binding all derivatives included. Nonhuman legs do not assume Unity Humanoid retargeting."],
+        ["M08", "Player authored motion/poses", "clip/pose", [24,32,44], [0.5,1,2], [0.25,0.5,1], [0.5,1,2], 32, [0,0,0], "Reference-guided Blender with manual correction", "Base 16 per leg family: idle, directional gaits, jump/land, boost, reactions. Procedural overlays in M11; not duplicate full gaits."],
+        ["M09", "Regular enemy motion", "clip/pose", [20,30,45], [0.5,1,2], [0.25,0.5,1], [0.5,1,2], 22, [0,0,0], "Shared family clips and parameterized motion", "Base 6 per family including attacks/reactions. Turret rotation and drone movement can be coded, still authored/tuned."],
+        ["M10", "Boss telegraphs and motion", "clip/pose", [18,27,36], [1,2,4], [0.5,1,2], [0.5,1,2], 18, [0,0,0], "Bespoke/manual plus mechanical motion", "Base 9 actions per boss; contact/telegraph timing included, boss AI logic Step 5."],
+        ["M11", "Procedural motion overlays", "player family", [2,2,2], [12,24,48], [6,12,24], [8,16,32], 2, [0,0,0], "Code-assisted foot placement/lean/aim and owner tuning", "Overlay authoring/integration included here; core movement physics Step 5. Two distinct leg families remain in all cases."],
+        ["M12", "Loadout clearance review", "compatibility package", [1,1,1], [8,16,32], [12,24,48], [16,32,64], 0.75, [0,0,0], "Manual and scripted pose/attachment checks", "Boundary builds and pair coverage, not every combinatorial build. Functional equipment/stat test framework Step 5."],
+        ["M13", "Shared structural modules", "mesh module", [24,36,48], [0.5,1,2], [0.25,0.5,1], [0.25,0.5,1], 30, [0,0,0], "Manual/code-assisted modular geometry", "Floors, cover, ramps, towers, walls; arenas reuse these meshes."],
+        ["M14", "Theme dressing and landmarks", "prop assembly", [18,30,45], [0.75,1.5,3], [0.25,0.5,1], [0.25,0.5,1], 22, [9,15,23], "Manual/Tripo; repeated pieces and palettes", "Base 12 common + 6 per theme; 3 themes. Placement counted in M16."],
+        ["M15", "Shared surfaces and decals", "material family", [8,12,18], [0.5,1,2], [0.25,0.5,1], [0.25,0.5,1], 9, [0,0,0], "Manual palette/atlas", "Master surfaces only; per-model materials and UVs in model rows."],
+        ["M16", "Arena layout/dressing/light", "arena", [12,12,12], [2,4,8], [2,4,8], [3,6,12], 8, [0,0,0], "Manual reusable-kit assembly", "3 themes x (3 regular + 1 boss). Includes traversal/cover/LOS, not encounter wave tuning."],
+        ["M17", "Encounter configurations", "template", [27,27,27], [1,2,4], [0.5,1,2], [1,2,4], 18, [0,0,0], "Manual combinations/objective timing", "24 regular templates across 4 objective families + 3 bosses. Core objectives/AI implementations Step 5."],
+        ["M18", "Run-upgrade content", "entry", [36,36,36], [0.25,0.5,1], [0.25,0.5,1], [0.5,1,2], 20, [0,0,0], "Manual data/text/tuning; family reuse", "12 behavior-changing effects + 24 stat entries; effect-system code Step 5, local data balancing here."],
+        ["M19", "Equipment content and unlocks", "entry", [36,36,36], [0.25,0.5,1], [0.25,0.5,1], [0.5,1,2], 22, [0,0,0], "Manual data/configuration", "30 visible items + 6 internals; distinct from their geometry. Whole progression economy/playtests Step 5."],
+        ["M20", "Combat visual feedback", "effect family", [20,30,42], [0.5,1,2], [0.5,1,2], [0.5,1,2], 22, [0,0,0], "Manual/procedural particles, trails and shaders", "Boost, four weapon families, impacts, explosions, shields/telegraphs, heat and status. Multi-actor clarity requires testing."],
+        ["M21", "Sound effects", "event bank", [45,70,100], [0.25,0.5,1], [0.1,0.25,0.5], [0.15,0.25,0.5], 50, [0,0,0], "Owner synthesis/recording/editing; AI optional", "Base 70 events, usually 2-3 takes each. Local variation/mix and binding included; audio manager Step 5."],
+        ["M22", "Ambience/music", "loop/stem", [6,9,12], [2,4,8], [0.5,1,2], [0.5,1,2], 6, [0,0,0], "Owner composition/synthesis, reused layers", "Base 3 ambience + 6 combat/menu stems; provider/skill unknown."],
+        ["M23", "HUD/garage/menus", "screen/state layout", [9,11,14], [1,2,4], [1,2,4], [1,2,4], 11, [0,0,0], "Manual layout/widget/data binding", "Title, profiles, garage, loadout compare, HUD, route, upgrades, results, pause, settings, ending; functionality systems Step 5."],
+        ["M24", "Equipment/status symbols", "unique icon", [45,60,80], [0.25,0.5,1], [0.1,0.25,0.5], [0.15,0.25,0.5], 42, [0,0,0], "Manual/vector or cleaned model renders", "Base 36 equipment + 12 effect families + 12 utility/status. Ranks/recolors not new icons."],
+        ["M25", "Onboarding and ending text", "text package", [1,1,1], [4,8,16], [2,4,8], [2,4,8], 0.75, [0,0,0], "Owner writing/editing", "Short descriptions/tutorials/endpoints; no voiced campaign or cinematic story."],
+        ["M26", "Store and trailer assets", "launch media package", [1,1,1], [12,24,48], [4,8,16], [4,8,16], 1, [0,0,0], "Owner art/captures/edit", "Capsule/crops, 6-8 screenshots, 45-75s gameplay trailer, clips; no marketing outreach hours here."],
+        ["M27", "Cross-content finish", "review pass", [1,1,1], [0,0,0], [12,24,48], [16,32,64], 0.7, [0,0,0], "Manual Unity consistency/performance corrections", "Asset-facing final sweep, not total release QA or systemic optimization."]
+      ]
+    },
+    "incremental": {
+      "title": "Scrapline: provisional incremental",
+      "first_paid_case": "Full release; no separate reduced first-paid inventory.",
+      "rows": [
+        ["I01", "Visual grammar and pipeline", "setup", [1,1,1], [4,8,16], [2,4,8], [2,4,8], 1, [0,0,0], "Manual/vector/code-assisted", "Palette, tile scale, export/render rules; no 3D generation needed."],
+        ["I02", "Workbench and station states", "scene-state visual", [4,4,4], [1,2,4], [0.5,1,2], [0.5,1,2], 4, [0,0,0], "Manual schematic/vector", "1 bench + 3 restoration states; same scene/layout reused."],
+        ["I03", "Wreck silhouettes", "unique outline", [6,6,6], [0.5,1,2], [0.25,0.5,1], [0.25,0.5,1], 6, [0,0,0], "Manual/vector; shared tile grammar", "Six recognizably different outlines, not generated 3D wrecks."],
+        ["I04", "Wreck internal layouts", "authored layout", [12,12,12], [0.5,1,2], [0.5,1,2], [1,2,4], 12, [0,0,0], "Manual seam/core/material placement", "Two layouts per wreck; local route testing. Cut simulation code Step 5."],
+        ["I05", "Tile/material symbols", "visual family", [4,6,9], [0.25,0.5,1], [0.25,0.5,1], [0.25,0.5,1], 6, [0,0,0], "Manual/code-assisted atlas", "Reused across thousands of tiles; repetition not unique art. Large counts still need performance engineering."],
+        ["I06", "Tools and drone", "visual assembly", [4,4,4], [0.5,1,2], [0.25,0.5,1], [0.25,0.5,1], 4, [0,0,0], "Manual vector shapes", "3 tools + 1 drone; 3 drone functions share the shape, code Step 5."],
+        ["I07", "Feedback and transitions", "effect family", [8,12,18], [0.5,1,2], [0.5,1,2], [0.5,1,2], 12, [0,0,0], "Manual/procedural shaders/tweens/particles", "3 tool effects + drone + collection/core/upgrade/tier/ending cues. No fracture physics."],
+        ["I08", "Interface layouts", "screen/state layout", [6,8,10], [1,2,4], [1,2,4], [1,2,4], 8, [0,0,0], "Manual reusable widgets", "HUD, tree, contracts/restoration, title, pause, settings, save/reset confirmation, ending. Save/settings code Step 5."],
+        ["I09", "Icons", "unique symbol", [22,28,36], [0.25,0.5,1], [0.1,0.25,0.5], [0.15,0.25,0.5], 28, [0,0,0], "Manual/vector family", "18 scope icons (12 effects + 3 tools + 3 resources) plus base 10 utility icons. Rank/tint reuse."],
+        ["I10", "Upgrade content", "node", [36,36,36], [0.25,0.5,1], [0.25,0.5,1], [0.5,1,2], 36, [0,0,0], "Manual data/text/local tuning", "12 effect families; repeated ranks part of 36. Effect implementation and full economy playtests Step 5."],
+        ["I11", "Tier/restoration configurations", "milestone", [9,9,9], [0.5,1,2], [0.25,0.5,1], [0.75,1.5,3], 9, [0,0,0], "Manual content thresholds", "6 tier gates + 3 restoration beats. Local pacing included, whole-game balancing Step 5."],
+        ["I12", "Sound effects", "event bank", [18,24,36], [0.25,0.5,1], [0.1,0.25,0.5], [0.15,0.25,0.5], 24, [0,0,0], "Owner synthesis/recording/editing", "24 events, usually 2-3 takes; deliberate repetition control. AI generation optional, unpriced."],
+        ["I13", "Music/ambience", "loop/stem", [2,3,5], [2,4,8], [0.5,1,2], [0.5,1,2], 3, [0,0,0], "Owner composition/synthesis", "Sparse machine ambience/music; no chosen paid generator."],
+        ["I14", "Tutorial and ending text", "text package", [1,1,1], [2,4,8], [1,2,4], [1,2,4], 1, [0,0,0], "Owner writing/editing", "Instructions, tool descriptions and a finite payoff; no large narrative script."],
+        ["I15", "Store/trailer presentation", "media package", [1,1,1], [8,16,32], [2,4,8], [2,4,8], 1, [0,0,0], "Owner key art/game capture/editing", "Capsule variants, 6 captures, 30-60s trailer and clips. Small graphics still need an attractive store page."],
+        ["I16", "Cross-content readability finish", "review pass", [1,1,1], [0,0,0], [4,8,16], [6,12,24], 1, [0,0,0], "Manual Unity review at low/high progression", "Color/size/overlap, effect caps and local fixes. Global save/performance/regression and appeal validation Step 5."]
+      ]
+    }
+  },
+  "staged_overheads": {
+    "horror": {"first_paid_extra_owner_hours": [20,40,80], "later_content_extra_owner_hours": [24,48,96], "description": "Episode break/recap/end presentation and continuity adjustments, plus second media refresh. Excludes staged release engineering, public support, save migration and release regression reserved for Step 5."},
+    "mech": {"first_paid_extra_owner_hours": [8,16,32], "later_content_extra_owner_hours": [16,32,64], "description": "EA/current-content onboarding and endpoint presentation, later content/1.0 media refresh. Excludes live support, save migration, patch QA and update communication reserved for Step 5."},
+    "incremental": {"first_paid_extra_owner_hours": [0,0,0], "later_content_extra_owner_hours": [0,0,0], "description": "Full launch baseline."}
+  },
+  "tripo_credit_cases": {
+    "billable_generation_attempts_per_retained_seed": [1,3,6],
+    "hd_generation_credits": 15,
+    "normal_retopology_credits_per_retained_seed": 10,
+    "uv_credits_per_retained_seed": 20,
+    "p2_generation_credits": 100,
+    "optional_rig_credits_per_job": 20,
+    "optional_segmentation_credits_per_job": 30,
+    "small_topup_usd_per_1000": 10,
+    "notes": "Illustrative Studio operation rates, not API quotes. HD route uses one retopo and one UV operation per retained seed; P2 route one UV. Excludes textures, reference images, repeat postprocessing and optional rig/segmentation. Paid licensing subscription separate; never charge included credits twice. Rates/pages conflict in places; confirm live job/checkout before spending."
+  }
+}

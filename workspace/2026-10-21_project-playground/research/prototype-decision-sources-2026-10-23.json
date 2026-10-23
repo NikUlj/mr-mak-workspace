@@ -1,0 +1,23 @@
+{
+  "checked": "2026-10-23",
+  "purpose": "Limited primary-source refresh for the provisional first-prototype recommendation; not a new market census or sales forecast.",
+  "base_evidence": ["../market-comparison.md", "../market-reviews.md", "../release-strategies.md", "../commercial-findings.md"],
+  "method": "Opened official Steam product pages, a developer's own Lyca account and Valve's wishlist guidance. Did not refresh normalized prices or the historical review-count dataset. Search-result estimates were excluded from financial conclusions.",
+  "sources": [
+    {"url": "https://store.steampowered.com/app/3180340/", "supports": "Third-person mech roguelike, run modifications, permanent parts; Sage Boatman listed as developer and publisher; positive overall reception. Does not disclose profit."},
+    {"url": "https://store.steampowered.com/app/2743460/", "supports": "Mech-builder action roguelite; co-op and external publisher limit comparability to the intended single-player project."},
+    {"url": "https://store.steampowered.com/app/1379120/", "supports": "Related mech shooter/roguelike with low public review volume; not a quantified sales or loss observation."},
+    {"url": "https://store.steampowered.com/app/1257030/", "supports": "Retro horror, camera-based combat and mixed perspectives; publisher and positive reception. Different combat from our concept."},
+    {"url": "https://store.steampowered.com/app/2340130/", "supports": "Retro survival horror with combat, puzzles and upgrades; publisher and positive reception. Not a profit disclosure."},
+    {"url": "https://www.syphono4.com/p/blog-1-lyca-development-log", "published": "2025-09-02", "supports": "Developer self-report: over 30000 copies, roughly four months of part-time development, 11999 launch wishlists and creator coverage. One selected success; not a transferable production rate or net-profit result."},
+    {"url": "https://store.steampowered.com/app/2934520/", "supports": "Contrasting low-review-volume incremental; source for breadth of outcomes, not a specific sales estimate."},
+    {"url": "https://partner.steamgames.com/doc/marketing/wishlist?l=english", "supports": "Wishlists indicate interest; Valve says no formula accurately predicts sales from wishlists."}
+  ],
+  "disclosure_searches": [
+    "\"RIG Riot\" developer sales copies sold revenue",
+    "Granvir developer copies sold sales revenue Airborne Games",
+    "Hollowbody developer copies sold revenue Headware Games Heartworm sales"
+  ],
+  "disclosure_search_result": "No comparable verified sales, project cash costs and labor disclosures for the closest mech/horror references were established in this bounded pass. This does not assert that none exist. Third-party modeled revenue and unrelated anecdotes were excluded.",
+  "limits": ["Purposeful sample; no genre success rates", "No candidate-specific sales forecast", "No games played or prototypes run", "No player recruitment or contact", "No paid generation", "Historical source dates and non-equivalent release windows remain explicit"]
+}

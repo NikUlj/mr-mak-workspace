@@ -1,0 +1,22 @@
+{
+  "status": "empty template; no measurement performed",
+  "candidate": null,
+  "asset_family_and_unit": null,
+  "first_item_or_repeat": null,
+  "model_rig_clip_or_layout_version": null,
+  "owner_hours": {"reference_prompt_setup": null, "review_rejections": null, "manual_cleanup_correction": null, "integration": null, "polish_acceptance": null},
+  "unattended_agent_elapsed_hours": null,
+  "provider_queue_compute_hours": null,
+  "overlap_and_dependency_wait_notes": null,
+  "generation_counts": {"billable_attempts": null, "failed_jobs": null, "rejected_successes": null, "retained_seeds": null},
+  "credits_and_optional_operations": null,
+  "marginal_cash_and_currency": null,
+  "blender_acceptance": null,
+  "clean_export_reimport_acceptance": null,
+  "unity_build_and_test_hardware": null,
+  "normal_speed_game_camera_evidence": null,
+  "transitions_contacts_events_interruptions_checked": null,
+  "owner_acceptance": null,
+  "remaining_defects_and_extrapolation_limits": null,
+  "editable_source_location": null
+}

@@ -1,0 +1,1064 @@
+{
+  "observed": "2026-10-21",
+  "method": "First 5 newest-created Steam-purchase reviews per sentiment, language=english; no replacement of jokes or generic entries; fewer where unavailable. Store language field is not a guarantee of English prose.",
+  "samples": [
+    {
+      "appid": 1257030,
+      "polarity": "negative",
+      "query_url": "https://store.steampowered.com/appreviews/1257030?json=1&language=english&purchase_type=steam&filter=recent&review_type=negative&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "237734124",
+          "voted_up": false,
+          "timestamp_created": 1792016907,
+          "timestamp_updated": 1792357001,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198015144145/recommended/1257030/"
+        },
+        {
+          "recommendationid": "232744857",
+          "voted_up": false,
+          "timestamp_created": 1786642427,
+          "timestamp_updated": 1786642427,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198999637953/recommended/1257030/"
+        },
+        {
+          "recommendationid": "231865923",
+          "voted_up": false,
+          "timestamp_created": 1785641382,
+          "timestamp_updated": 1785641382,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198172087829/recommended/1257030/"
+        },
+        {
+          "recommendationid": "230619682",
+          "voted_up": false,
+          "timestamp_created": 1784221817,
+          "timestamp_updated": 1784221817,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198353815031/recommended/1257030/"
+        },
+        {
+          "recommendationid": "224582250",
+          "voted_up": false,
+          "timestamp_created": 1777718249,
+          "timestamp_updated": 1777718249,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198089374518/recommended/1257030/"
+        }
+      ]
+    },
+    {
+      "appid": 1257030,
+      "polarity": "positive",
+      "query_url": "https://store.steampowered.com/appreviews/1257030?json=1&language=english&purchase_type=steam&filter=recent&review_type=positive&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "237138991",
+          "voted_up": true,
+          "timestamp_created": 1791388166,
+          "timestamp_updated": 1791388166,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198070339633/recommended/1257030/"
+        },
+        {
+          "recommendationid": "235506757",
+          "voted_up": true,
+          "timestamp_created": 1789698155,
+          "timestamp_updated": 1789698155,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198085706951/recommended/1257030/"
+        },
+        {
+          "recommendationid": "234249995",
+          "voted_up": true,
+          "timestamp_created": 1788285135,
+          "timestamp_updated": 1788285793,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198005775479/recommended/1257030/"
+        },
+        {
+          "recommendationid": "234103652",
+          "voted_up": true,
+          "timestamp_created": 1788115634,
+          "timestamp_updated": 1788115634,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198250986802/recommended/1257030/"
+        },
+        {
+          "recommendationid": "233865458",
+          "voted_up": true,
+          "timestamp_created": 1787877524,
+          "timestamp_updated": 1787877524,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198451828747/recommended/1257030/"
+        }
+      ]
+    },
+    {
+      "appid": 1379120,
+      "polarity": "negative",
+      "query_url": "https://store.steampowered.com/appreviews/1379120?json=1&language=english&purchase_type=steam&filter=recent&review_type=negative&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "140982274",
+          "voted_up": false,
+          "timestamp_created": 1688140254,
+          "timestamp_updated": 1688140254,
+          "written_during_early_access": true,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198111070551/recommended/1379120/"
+        }
+      ]
+    },
+    {
+      "appid": 1379120,
+      "polarity": "positive",
+      "query_url": "https://store.steampowered.com/appreviews/1379120?json=1&language=english&purchase_type=steam&filter=recent&review_type=positive&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "118255991",
+          "voted_up": true,
+          "timestamp_created": 1657023995,
+          "timestamp_updated": 1657023995,
+          "written_during_early_access": true,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198027223596/recommended/1379120/"
+        },
+        {
+          "recommendationid": "101546431",
+          "voted_up": true,
+          "timestamp_created": 1635073038,
+          "timestamp_updated": 1635073038,
+          "written_during_early_access": true,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198126804777/recommended/1379120/"
+        }
+      ]
+    },
+    {
+      "appid": 1750030,
+      "polarity": "negative",
+      "query_url": "https://store.steampowered.com/appreviews/1750030?json=1&language=english&purchase_type=steam&filter=recent&review_type=negative&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "238137990",
+          "voted_up": false,
+          "timestamp_created": 1792468730,
+          "timestamp_updated": 1792468730,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198343953007/recommended/1750030/"
+        },
+        {
+          "recommendationid": "238084477",
+          "voted_up": false,
+          "timestamp_created": 1792406280,
+          "timestamp_updated": 1792406280,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199698549561/recommended/1750030/"
+        },
+        {
+          "recommendationid": "233830467",
+          "voted_up": false,
+          "timestamp_created": 1787845513,
+          "timestamp_updated": 1787845513,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199478370395/recommended/1750030/"
+        },
+        {
+          "recommendationid": "233618533",
+          "voted_up": false,
+          "timestamp_created": 1787602437,
+          "timestamp_updated": 1787602437,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199569780137/recommended/1750030/"
+        },
+        {
+          "recommendationid": "230000518",
+          "voted_up": false,
+          "timestamp_created": 1783573626,
+          "timestamp_updated": 1783573626,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198004037146/recommended/1750030/"
+        }
+      ]
+    },
+    {
+      "appid": 1750030,
+      "polarity": "positive",
+      "query_url": "https://store.steampowered.com/appreviews/1750030?json=1&language=english&purchase_type=steam&filter=recent&review_type=positive&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "236314073",
+          "voted_up": true,
+          "timestamp_created": 1790506636,
+          "timestamp_updated": 1790506636,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199007067622/recommended/1750030/"
+        },
+        {
+          "recommendationid": "235705308",
+          "voted_up": true,
+          "timestamp_created": 1789924042,
+          "timestamp_updated": 1789924042,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561197966599889/recommended/1750030/"
+        },
+        {
+          "recommendationid": "235590731",
+          "voted_up": true,
+          "timestamp_created": 1789802929,
+          "timestamp_updated": 1789802929,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561197988255505/recommended/1750030/"
+        },
+        {
+          "recommendationid": "234809727",
+          "voted_up": true,
+          "timestamp_created": 1788914762,
+          "timestamp_updated": 1788914762,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199865853164/recommended/1750030/"
+        },
+        {
+          "recommendationid": "234490843",
+          "voted_up": true,
+          "timestamp_created": 1788567652,
+          "timestamp_updated": 1788866069,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198054585753/recommended/1750030/"
+        }
+      ]
+    },
+    {
+      "appid": 2123640,
+      "polarity": "negative",
+      "query_url": "https://store.steampowered.com/appreviews/2123640?json=1&language=english&purchase_type=steam&filter=recent&review_type=negative&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "237910441",
+          "voted_up": false,
+          "timestamp_created": 1792220670,
+          "timestamp_updated": 1792220670,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198131167441/recommended/2123640/"
+        },
+        {
+          "recommendationid": "237033511",
+          "voted_up": false,
+          "timestamp_created": 1791275445,
+          "timestamp_updated": 1791275445,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198029751366/recommended/2123640/"
+        },
+        {
+          "recommendationid": "236785354",
+          "voted_up": false,
+          "timestamp_created": 1791034972,
+          "timestamp_updated": 1791034972,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198088288410/recommended/2123640/"
+        },
+        {
+          "recommendationid": "236605415",
+          "voted_up": false,
+          "timestamp_created": 1790843272,
+          "timestamp_updated": 1790843272,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198385895338/recommended/2123640/"
+        },
+        {
+          "recommendationid": "235874400",
+          "voted_up": false,
+          "timestamp_created": 1790128322,
+          "timestamp_updated": 1790128496,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198068885017/recommended/2123640/"
+        }
+      ]
+    },
+    {
+      "appid": 2123640,
+      "polarity": "positive",
+      "query_url": "https://store.steampowered.com/appreviews/2123640?json=1&language=english&purchase_type=steam&filter=recent&review_type=positive&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "238175281",
+          "voted_up": true,
+          "timestamp_created": 1792516969,
+          "timestamp_updated": 1792517273,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198102309077/recommended/2123640/"
+        },
+        {
+          "recommendationid": "236747400",
+          "voted_up": true,
+          "timestamp_created": 1790995095,
+          "timestamp_updated": 1790995182,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561197993591684/recommended/2123640/"
+        },
+        {
+          "recommendationid": "236605230",
+          "voted_up": true,
+          "timestamp_created": 1790843005,
+          "timestamp_updated": 1790843005,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199661322503/recommended/2123640/"
+        },
+        {
+          "recommendationid": "235247741",
+          "voted_up": true,
+          "timestamp_created": 1789371000,
+          "timestamp_updated": 1789371000,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198031254500/recommended/2123640/"
+        },
+        {
+          "recommendationid": "235243519",
+          "voted_up": true,
+          "timestamp_created": 1789362916,
+          "timestamp_updated": 1789362916,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198329086316/recommended/2123640/"
+        }
+      ]
+    },
+    {
+      "appid": 2743460,
+      "polarity": "negative",
+      "query_url": "https://store.steampowered.com/appreviews/2743460?json=1&language=english&purchase_type=steam&filter=recent&review_type=negative&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "238203383",
+          "voted_up": false,
+          "timestamp_created": 1792536289,
+          "timestamp_updated": 1792536289,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199830504617/recommended/2743460/"
+        },
+        {
+          "recommendationid": "237611636",
+          "voted_up": false,
+          "timestamp_created": 1791878274,
+          "timestamp_updated": 1791878274,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198009126016/recommended/2743460/"
+        },
+        {
+          "recommendationid": "237030683",
+          "voted_up": false,
+          "timestamp_created": 1791271419,
+          "timestamp_updated": 1791271419,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198092620322/recommended/2743460/"
+        },
+        {
+          "recommendationid": "236770598",
+          "voted_up": false,
+          "timestamp_created": 1791021864,
+          "timestamp_updated": 1791021864,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198006485908/recommended/2743460/"
+        },
+        {
+          "recommendationid": "234826535",
+          "voted_up": false,
+          "timestamp_created": 1788942121,
+          "timestamp_updated": 1788942121,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199008428348/recommended/2743460/"
+        }
+      ]
+    },
+    {
+      "appid": 2743460,
+      "polarity": "positive",
+      "query_url": "https://store.steampowered.com/appreviews/2743460?json=1&language=english&purchase_type=steam&filter=recent&review_type=positive&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "238050115",
+          "voted_up": true,
+          "timestamp_created": 1792355446,
+          "timestamp_updated": 1792355446,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198091432546/recommended/2743460/"
+        },
+        {
+          "recommendationid": "237989490",
+          "voted_up": true,
+          "timestamp_created": 1792298031,
+          "timestamp_updated": 1792298031,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198070372371/recommended/2743460/"
+        },
+        {
+          "recommendationid": "237893339",
+          "voted_up": true,
+          "timestamp_created": 1792198481,
+          "timestamp_updated": 1792198481,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198140097912/recommended/2743460/"
+        },
+        {
+          "recommendationid": "237885727",
+          "voted_up": true,
+          "timestamp_created": 1792189249,
+          "timestamp_updated": 1792189249,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198000055495/recommended/2743460/"
+        },
+        {
+          "recommendationid": "237882535",
+          "voted_up": true,
+          "timestamp_created": 1792185962,
+          "timestamp_updated": 1792185962,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199269220331/recommended/2743460/"
+        }
+      ]
+    },
+    {
+      "appid": 2934520,
+      "polarity": "negative",
+      "query_url": "https://store.steampowered.com/appreviews/2934520?json=1&language=english&purchase_type=steam&filter=recent&review_type=negative&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "234440722",
+          "voted_up": false,
+          "timestamp_created": 1788521031,
+          "timestamp_updated": 1788521031,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198064953565/recommended/2934520/"
+        }
+      ]
+    },
+    {
+      "appid": 2934520,
+      "polarity": "positive",
+      "query_url": "https://store.steampowered.com/appreviews/2934520?json=1&language=english&purchase_type=steam&filter=recent&review_type=positive&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "206090747",
+          "voted_up": true,
+          "timestamp_created": 1759809428,
+          "timestamp_updated": 1759809428,
+          "written_during_early_access": true,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198082460280/recommended/2934520/"
+        },
+        {
+          "recommendationid": "200043866",
+          "voted_up": true,
+          "timestamp_created": 1752792194,
+          "timestamp_updated": 1752792194,
+          "written_during_early_access": true,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198022130020/recommended/2934520/"
+        },
+        {
+          "recommendationid": "199895542",
+          "voted_up": true,
+          "timestamp_created": 1752620492,
+          "timestamp_updated": 1752620492,
+          "written_during_early_access": true,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198070023872/recommended/2934520/"
+        }
+      ]
+    },
+    {
+      "appid": 3107330,
+      "polarity": "negative",
+      "query_url": "https://store.steampowered.com/appreviews/3107330?json=1&language=english&purchase_type=steam&filter=recent&review_type=negative&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "237491949",
+          "voted_up": false,
+          "timestamp_created": 1791745977,
+          "timestamp_updated": 1791745977,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561197969908751/recommended/3107330/"
+        },
+        {
+          "recommendationid": "237352298",
+          "voted_up": false,
+          "timestamp_created": 1791621189,
+          "timestamp_updated": 1791621189,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561197975126621/recommended/3107330/"
+        },
+        {
+          "recommendationid": "237178742",
+          "voted_up": false,
+          "timestamp_created": 1791430691,
+          "timestamp_updated": 1791430691,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198014115758/recommended/3107330/"
+        },
+        {
+          "recommendationid": "237073267",
+          "voted_up": false,
+          "timestamp_created": 1791312641,
+          "timestamp_updated": 1791312641,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198018854173/recommended/3107330/"
+        },
+        {
+          "recommendationid": "236287217",
+          "voted_up": false,
+          "timestamp_created": 1790474276,
+          "timestamp_updated": 1790474276,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199591843215/recommended/3107330/"
+        }
+      ]
+    },
+    {
+      "appid": 3107330,
+      "polarity": "positive",
+      "query_url": "https://store.steampowered.com/appreviews/3107330?json=1&language=english&purchase_type=steam&filter=recent&review_type=positive&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "238077015",
+          "voted_up": true,
+          "timestamp_created": 1792393090,
+          "timestamp_updated": 1792393090,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198017526014/recommended/3107330/"
+        },
+        {
+          "recommendationid": "237959260",
+          "voted_up": true,
+          "timestamp_created": 1792265440,
+          "timestamp_updated": 1792265440,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199120229162/recommended/3107330/"
+        },
+        {
+          "recommendationid": "237888612",
+          "voted_up": true,
+          "timestamp_created": 1792192573,
+          "timestamp_updated": 1792192573,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561197971235915/recommended/3107330/"
+        },
+        {
+          "recommendationid": "237676054",
+          "voted_up": true,
+          "timestamp_created": 1791951771,
+          "timestamp_updated": 1791951771,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198151297488/recommended/3107330/"
+        },
+        {
+          "recommendationid": "237660119",
+          "voted_up": true,
+          "timestamp_created": 1791930132,
+          "timestamp_updated": 1791930132,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199517195762/recommended/3107330/"
+        }
+      ]
+    },
+    {
+      "appid": 3180340,
+      "polarity": "negative",
+      "query_url": "https://store.steampowered.com/appreviews/3180340?json=1&language=english&purchase_type=steam&filter=recent&review_type=negative&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "238128065",
+          "voted_up": false,
+          "timestamp_created": 1792454573,
+          "timestamp_updated": 1792454573,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198818411186/recommended/3180340/"
+        },
+        {
+          "recommendationid": "237607192",
+          "voted_up": false,
+          "timestamp_created": 1791870126,
+          "timestamp_updated": 1791870126,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198155425704/recommended/3180340/"
+        },
+        {
+          "recommendationid": "236711331",
+          "voted_up": false,
+          "timestamp_created": 1790959751,
+          "timestamp_updated": 1790959751,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198056571252/recommended/3180340/"
+        },
+        {
+          "recommendationid": "236565401",
+          "voted_up": false,
+          "timestamp_created": 1790793066,
+          "timestamp_updated": 1790793251,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198056333091/recommended/3180340/"
+        },
+        {
+          "recommendationid": "236219566",
+          "voted_up": false,
+          "timestamp_created": 1790412472,
+          "timestamp_updated": 1790412472,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561197970501796/recommended/3180340/"
+        }
+      ]
+    },
+    {
+      "appid": 3180340,
+      "polarity": "positive",
+      "query_url": "https://store.steampowered.com/appreviews/3180340?json=1&language=english&purchase_type=steam&filter=recent&review_type=positive&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "238129600",
+          "voted_up": true,
+          "timestamp_created": 1792456793,
+          "timestamp_updated": 1792456793,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199227221751/recommended/3180340/"
+        },
+        {
+          "recommendationid": "238117706",
+          "voted_up": true,
+          "timestamp_created": 1792441899,
+          "timestamp_updated": 1792441899,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198042728743/recommended/3180340/"
+        },
+        {
+          "recommendationid": "238087391",
+          "voted_up": true,
+          "timestamp_created": 1792410582,
+          "timestamp_updated": 1792410582,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198088481381/recommended/3180340/"
+        },
+        {
+          "recommendationid": "238078511",
+          "voted_up": true,
+          "timestamp_created": 1792396051,
+          "timestamp_updated": 1792396051,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198289777256/recommended/3180340/"
+        },
+        {
+          "recommendationid": "238024307",
+          "voted_up": true,
+          "timestamp_created": 1792334426,
+          "timestamp_updated": 1792334557,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198364231988/recommended/3180340/"
+        }
+      ]
+    },
+    {
+      "appid": 3361470,
+      "polarity": "negative",
+      "query_url": "https://store.steampowered.com/appreviews/3361470?json=1&language=english&purchase_type=steam&filter=recent&review_type=negative&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "237662966",
+          "voted_up": false,
+          "timestamp_created": 1791933516,
+          "timestamp_updated": 1791933516,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198040978288/recommended/3361470/"
+        },
+        {
+          "recommendationid": "237447958",
+          "voted_up": false,
+          "timestamp_created": 1791710994,
+          "timestamp_updated": 1791711367,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198126727520/recommended/3361470/"
+        },
+        {
+          "recommendationid": "237161719",
+          "voted_up": false,
+          "timestamp_created": 1791408400,
+          "timestamp_updated": 1791408400,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198043550082/recommended/3361470/"
+        },
+        {
+          "recommendationid": "236176022",
+          "voted_up": false,
+          "timestamp_created": 1790363559,
+          "timestamp_updated": 1790363559,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561197977957631/recommended/3361470/"
+        },
+        {
+          "recommendationid": "234980114",
+          "voted_up": false,
+          "timestamp_created": 1789096473,
+          "timestamp_updated": 1789096473,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198011129598/recommended/3361470/"
+        }
+      ]
+    },
+    {
+      "appid": 3361470,
+      "polarity": "positive",
+      "query_url": "https://store.steampowered.com/appreviews/3361470?json=1&language=english&purchase_type=steam&filter=recent&review_type=positive&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "238154756",
+          "voted_up": true,
+          "timestamp_created": 1792496902,
+          "timestamp_updated": 1792496902,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199438781077/recommended/3361470/"
+        },
+        {
+          "recommendationid": "238095220",
+          "voted_up": true,
+          "timestamp_created": 1792419766,
+          "timestamp_updated": 1792419766,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198175795983/recommended/3361470/"
+        },
+        {
+          "recommendationid": "238068318",
+          "voted_up": true,
+          "timestamp_created": 1792377884,
+          "timestamp_updated": 1792377884,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198078572221/recommended/3361470/"
+        },
+        {
+          "recommendationid": "238059807",
+          "voted_up": true,
+          "timestamp_created": 1792365981,
+          "timestamp_updated": 1792366441,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198392929778/recommended/3361470/"
+        },
+        {
+          "recommendationid": "237932659",
+          "voted_up": true,
+          "timestamp_created": 1792244551,
+          "timestamp_updated": 1792260688,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198033923544/recommended/3361470/"
+        }
+      ]
+    },
+    {
+      "appid": 3463020,
+      "polarity": "negative",
+      "query_url": "https://store.steampowered.com/appreviews/3463020?json=1&language=english&purchase_type=steam&filter=recent&review_type=negative&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "203427125",
+          "voted_up": false,
+          "timestamp_created": 1756876023,
+          "timestamp_updated": 1756876023,
+          "written_during_early_access": true,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198068455202/recommended/3463020/"
+        },
+        {
+          "recommendationid": "203351327",
+          "voted_up": false,
+          "timestamp_created": 1756764026,
+          "timestamp_updated": 1756764026,
+          "written_during_early_access": true,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198088388166/recommended/3463020/"
+        }
+      ]
+    },
+    {
+      "appid": 3463020,
+      "polarity": "positive",
+      "query_url": "https://store.steampowered.com/appreviews/3463020?json=1&language=english&purchase_type=steam&filter=recent&review_type=positive&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": []
+    },
+    {
+      "appid": 4594150,
+      "polarity": "negative",
+      "query_url": "https://store.steampowered.com/appreviews/4594150?json=1&language=english&purchase_type=steam&filter=recent&review_type=negative&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "238263490",
+          "voted_up": false,
+          "timestamp_created": 1792616934,
+          "timestamp_updated": 1792616934,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198039980130/recommended/4594150/"
+        },
+        {
+          "recommendationid": "238223701",
+          "voted_up": false,
+          "timestamp_created": 1792570021,
+          "timestamp_updated": 1792570021,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199059610847/recommended/4594150/"
+        },
+        {
+          "recommendationid": "238121379",
+          "voted_up": false,
+          "timestamp_created": 1792445970,
+          "timestamp_updated": 1792445970,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198756026387/recommended/4594150/"
+        },
+        {
+          "recommendationid": "238109359",
+          "voted_up": false,
+          "timestamp_created": 1792433396,
+          "timestamp_updated": 1792433396,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198065578754/recommended/4594150/"
+        },
+        {
+          "recommendationid": "238071600",
+          "voted_up": false,
+          "timestamp_created": 1792382966,
+          "timestamp_updated": 1792382966,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561197994099265/recommended/4594150/"
+        }
+      ]
+    },
+    {
+      "appid": 4594150,
+      "polarity": "positive",
+      "query_url": "https://store.steampowered.com/appreviews/4594150?json=1&language=english&purchase_type=steam&filter=recent&review_type=positive&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "238253582",
+          "voted_up": true,
+          "timestamp_created": 1792606500,
+          "timestamp_updated": 1792606500,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199182028269/recommended/4594150/"
+        },
+        {
+          "recommendationid": "238219194",
+          "voted_up": true,
+          "timestamp_created": 1792561362,
+          "timestamp_updated": 1792561362,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561197993580630/recommended/4594150/"
+        },
+        {
+          "recommendationid": "238201966",
+          "voted_up": true,
+          "timestamp_created": 1792534510,
+          "timestamp_updated": 1792534510,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198066202722/recommended/4594150/"
+        },
+        {
+          "recommendationid": "238181999",
+          "voted_up": true,
+          "timestamp_created": 1792523514,
+          "timestamp_updated": 1792523514,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198213007823/recommended/4594150/"
+        },
+        {
+          "recommendationid": "238137348",
+          "voted_up": true,
+          "timestamp_created": 1792467787,
+          "timestamp_updated": 1792467787,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198040370723/recommended/4594150/"
+        }
+      ]
+    },
+    {
+      "appid": 956680,
+      "polarity": "negative",
+      "query_url": "https://store.steampowered.com/appreviews/956680?json=1&language=english&purchase_type=steam&filter=recent&review_type=negative&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "236840716",
+          "voted_up": false,
+          "timestamp_created": 1791081364,
+          "timestamp_updated": 1791081364,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198005824810/recommended/956680/"
+        },
+        {
+          "recommendationid": "235649950",
+          "voted_up": false,
+          "timestamp_created": 1789861654,
+          "timestamp_updated": 1789923034,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198074375760/recommended/956680/"
+        },
+        {
+          "recommendationid": "233645003",
+          "voted_up": false,
+          "timestamp_created": 1787635646,
+          "timestamp_updated": 1787635646,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561197977781021/recommended/956680/"
+        },
+        {
+          "recommendationid": "233572514",
+          "voted_up": false,
+          "timestamp_created": 1787553121,
+          "timestamp_updated": 1787553121,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198336761459/recommended/956680/"
+        },
+        {
+          "recommendationid": "233311110",
+          "voted_up": false,
+          "timestamp_created": 1787278034,
+          "timestamp_updated": 1787278034,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199446688040/recommended/956680/"
+        }
+      ]
+    },
+    {
+      "appid": 956680,
+      "polarity": "positive",
+      "query_url": "https://store.steampowered.com/appreviews/956680?json=1&language=english&purchase_type=steam&filter=recent&review_type=positive&filter_offtopic_activity=1&num_per_page=5",
+      "reviews": [
+        {
+          "recommendationid": "237503090",
+          "voted_up": true,
+          "timestamp_created": 1791755383,
+          "timestamp_updated": 1791755383,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198095034504/recommended/956680/"
+        },
+        {
+          "recommendationid": "237423120",
+          "voted_up": true,
+          "timestamp_created": 1791681860,
+          "timestamp_updated": 1791681860,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198062378141/recommended/956680/"
+        },
+        {
+          "recommendationid": "235806041",
+          "voted_up": true,
+          "timestamp_created": 1790046156,
+          "timestamp_updated": 1790046156,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198957360196/recommended/956680/"
+        },
+        {
+          "recommendationid": "235326359",
+          "voted_up": true,
+          "timestamp_created": 1789475422,
+          "timestamp_updated": 1789475422,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561198111446856/recommended/956680/"
+        },
+        {
+          "recommendationid": "234726454",
+          "voted_up": true,
+          "timestamp_created": 1788814222,
+          "timestamp_updated": 1788814222,
+          "written_during_early_access": false,
+          "received_for_free": false,
+          "url": "https://steamcommunity.com/profiles/76561199518585112/recommended/956680/"
+        }
+      ]
+    }
+  ]
+}

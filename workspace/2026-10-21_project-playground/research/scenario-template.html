@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" data-mak-report="document">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Project Playground — scenario model</title>
+<link rel="stylesheet" href="../_shared/report.css"><script defer src="../_shared/report.js"></script>
+<style>
+*{box-sizing:border-box} .inputs{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}label{display:flex;flex-direction:column;gap:5px;font-size:14px}input,select,button{font:inherit;color:var(--mak-text);background:var(--mak-surface);border:1px solid var(--mak-border);border-radius:6px;padding:9px;min-height:44px;width:100%}button{width:auto;cursor:pointer}input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--mak-accent);outline-offset:2px}section{padding:22px;margin:24px 0;border:1px solid var(--mak-border)}section>h2:first-child{margin-top:0}summary{cursor:pointer;padding:12px 0;font-weight:600}small,.hint{color:var(--mak-muted)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:12px}.metric{border:1px solid var(--mak-border);padding:15px;border-radius:8px}.metric strong{display:block;font-size:24px}.bar-row{margin:15px 0}.bar-track{height:18px;display:flex;max-width:100%;background:var(--mak-border);border-radius:4px;overflow:hidden}.bar-first{background:var(--mak-accent)}.bar-later{background:var(--mak-muted)}.bar-support{background:var(--mak-text);opacity:.4}.legend{display:flex;gap:20px;flex-wrap:wrap;font-size:13px}.legend span::before{content:' ';display:inline-block;width:12px;height:12px;background:var(--mak-accent);margin-right:6px}.legend span:nth-child(2)::before{background:var(--mak-muted)}.legend span:nth-child(3)::before{background:var(--mak-text);opacity:.4}td,th{white-space:nowrap}td:first-child{white-space:normal;min-width:130px}.error{border-left:4px solid var(--mak-accent);padding:12px}#status{min-height:1.8em} @media(max-width:500px){section{padding:14px}.inputs{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.metric{padding:10px}.metric strong{font-size:21px}}
+</style></head><body><main class="container">
+<h1>Project Playground: what changes the decision?</h1>
+<p class="meta">Step 5 · 22 October 2026 · EUR · Editable planning assumptions, not a sales forecast</p>
+<p class="error"><strong>Estimate review open.</strong> These are the original uncalibrated scenarios, retained for comparison. The owner challenges the controller estimate even for a fresh implementation; the whole hour model needs review before it supports a game choice. <a href="estimate-review.md">Read the correction.</a></p>
+<p>The larger horror and mech scopes remain the main cases. Change production effort, availability and sales to see the effect on delivery, cash and compensation for your time. <strong>Hours have not been calibrated with timed production.</strong> The default 3,000 buyers is an equal-volume comparison, not the expected outcome of any game.</p>
+<p><a href="commercial-findings.md">Read the findings</a> · <a href="production-estimates.md">Inspect every work package</a> · <a href="financial-method.md">Sources, formulas and limits</a></p>
+<section><h2>Choose a scenario</h2><div class="inputs">
+<label>Effort case<select id="effort"><option value="0">Low — optimistic assumptions</option><option value="1" selected>Middle — working assumptions</option><option value="2">High — difficult production</option></select></label>
+<label>Hours per week now<input id="weekly" type="number" min="7" max="80" step="1" value="21"></label>
+<label>Switch to 31 hours after months<input id="switchMonth" type="number" min="0" max="120" step="1" value="0"><small>0 = keep current hours throughout.</small></label>
+<label>Sales stress preset<select id="sales"><option value="0">Downside: 100 buyers</option><option value="1" selected>Middle: 3,000 buyers</option><option value="2">Upside: 20,000 buyers</option></select></label>
+<label>First paid-year new buyers<input id="units" type="number" min="0" max="100000" step="1" value="3000"><small>Same buyer count for each game; before refunds.</small></label>
+<label>Your time value, EUR/hour<input id="hourly" type="number" min="0" max="200" step="1" value="20"><small>€20 is an example, not your stated income target.</small></label>
+</div>
+<details><summary>Production and tool assumptions</summary><div class="inputs">
+<label>Asset/content effort multiplier<input id="artScale" type="number" min="0.25" max="4" step="0.05" value="1"></label>
+<label>Other work effort multiplier<input id="systemScale" type="number" min="0.25" max="4" step="0.05" value="1"></label>
+<label>Available share of weekly hours<input id="availability" type="number" min="0.5" max="1" step="0.05" value="1"><small>1 means the stated hours are actually available.</small></label>
+<label>Additional pre-release pause, months<input id="delayMonths" type="number" min="0" max="36" step="1" value="0"></label>
+<label>Support workload multiplier<input id="supportScale" type="number" min="0" max="3" step="0.25" value="1"></label>
+<label>Other development tools, EUR/month<input id="monthly" type="number" min="0" max="1000" step="10" value="50"><small>Unquoted allowance for agents, audio, images and storage.</small></label>
+<label>Cascadeur, EUR/active month<input id="cascadeur" type="number" min="0" max="200" step="1" value="19"><small>0 = Blender correction. No assumed speed benefit.</small></label>
+<label>Fraction of months with paid Tripo<input id="tripoFraction" type="number" min="0.1" max="1" step="0.1" value="0.5"></label>
+<label>Other launch/admin reserve, EUR<input id="fixedOther" type="number" min="0" max="100000" step="50" value="250"></label>
+<label>Paid marketing, EUR<input id="paidMarketing" type="number" min="0" max="100000" step="100" value="0"><small>Organic marketing labor is already included.</small></label>
+</div></details>
+<details><summary>Price, deductions and staged sales</summary><div class="inputs">
+<label>All list prices multiplier<input id="priceScale" type="number" min="0" max="3" step="0.05" value="1"></label>
+<label>Regional price factor<input id="region" type="number" min="0" max="1" step="0.01" value="0.8"></label>
+<label>Discount factor<input id="discount" type="number" min="0" max="1" step="0.01" value="0.85"></label>
+<label>Consumption-tax exclusion factor<input id="taxExclusion" type="number" min="0" max="1" step="0.01" value="0.9"><small>Weighted mix adjustment, not your local VAT rate.</small></label>
+<label>Refund / chargeback fraction<input id="refund" type="number" min="0" max="1" step="0.01" value="0.08"></label>
+<label>Developer share after store<input id="developerShare" type="number" min="0" max="1" step="0.01" value="0.7"><small>Assumed 70%; signed agreement not inspected.</small></label>
+<label>USD per EUR<input id="fx" type="number" min="0.1" max="10" step="0.0001" value="1.1205"><small>Fixed ECB reference, 22 October 2026; no live feed.</small></label>
+<label>Retained chapter-one owners buying chapter two<input id="conversion" type="number" min="0" max="1" step="0.05" value="0.5"></label>
+<label>Later new entrants choosing chapter bundle<input id="bundleShare" type="number" min="0" max="1" step="0.05" value="0.6"></label>
+<label>Bundle discount<input id="bundleDiscount" type="number" min="0" max="1" step="0.05" value="0.1"></label>
+<label>Year-two new buyers / year-one buyers<input id="secondYear" type="number" min="0" max="2" step="0.1" value="0"><small>0 gives no credit for an unproven sales tail.</small></label>
+<label>Effective withholding on payouts<input id="withholding" type="number" min="0" max="0.3" step="0.01" value="0"><small>Unknown. Changes cash received; earnings stay pre-income-tax.</small></label>
+</div></details>
+<div class="actions"><button id="reset" type="button">Reset assumptions</button><button id="download" type="button">Download this scenario</button></div>
+<p id="status" role="status" aria-live="polite">Loading calculations…</p></section>
+<section><h2>Time to first sale and completion</h2><p>Calendar months from starting, using all project work within the stated hours. Final support ends 12 months after completion. No automatic earnings from a later game.</p>
+<div class="legend"><span>Before first paid release</span><span>Finish staged content, including live support</span><span>Support after completion</span></div><div id="bars"></div><div id="schedule"></div></section>
+<section><h2>The first 12 months after each first paid release</h2><p>Each route gets the same length of sales window, though those windows start on different dates. Surplus is earned developer receipts minus project cash costs incurred by that point, before income tax. For unfinished staged games, completion obligations remain.</p><div id="financial"></div></section>
+<section><h2>At the same dates from your decision</h2><p>These 12- and 24-month views prevent a later launch being mistaken for early income. “Paid” includes a simplified next-month payout schedule and the USD 100 payment threshold. Bank charges and actual tax status remain unknown.</p><div id="horizons"></div></section>
+<section><h2>Can the first paid year fund the whole commitment?</h2><p>Buyer thresholds cover all work through completion plus one year of support afterward. They include money and labor still owed after the first paid year. Existing EA owners never buy the base game again. A chapter sale counts separately only if chapter two is ready within the measured year.</p><div id="breakEven"></div></section>
+<section><h2>Assumptions that matter</h2><p>All prices, volumes, refund rates, regional mixes, development hours and upgrade uptake are hypotheses. The low/middle/high cases are not probabilities. Income tax, unrecoverable purchase VAT, bank/FX charges, hardware purchases and business-specific overheads are outside the default amounts. There is no publisher or contractor share in the self-published baseline. Strong sales may create more support work than the default hours.</p><p>The model reserves for current Unity/Cascadeur eligibility thresholds using this title’s adjusted gross as a conservative proxy; actual eligibility also depends on the owner’s other finances. Prices may change during a multi-year project. Tripo plan descriptions conflict, so its monthly subscription treatment is provisional. <a href="financial-method.md">Read the complete method before treating any output as a budget.</a></p><p>Changes remain in this page only. Download preserves a scenario without changing your project. Editable inputs: <a href="research/production-inputs.json" download>production inputs</a>, <a href="research/asset-inputs.json" download>asset inputs</a>. No network services or paid generations are called.</p></section>
+</main><script>
+/*__ENGINE__*/
+const DATA=/*__DATA__*/;
+const inputKeys=Object.keys(defaults(DATA.production)).filter(k=>document.getElementById(k));
+const nf=new Intl.NumberFormat('en-IE',{maximumFractionDigits:0});
+const money=x=>x===null?'—':new Intl.NumberFormat('en-IE',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(x);
+const num=x=>x===null?'No finite threshold':nf.format(x);
+const months=w=>w===null?'Not reached':(w/WPM).toFixed(1);
+const table=(heads,rows)=>'<table><thead><tr>'+heads.map(x=>'<th scope="col">'+x+'</th>').join('')+'</tr></thead><tbody>'+rows.map(row=>'<tr>'+row.map((x,i)=>(i===0?'<th scope="row">':'<td>')+x+(i===0?'</th>':'</td>')).join('')+'</tr>').join('')+'</tbody></table>';
+let current;
+function inputs(){const o=defaults(DATA.production);for(const k of inputKeys)o[k]=Number(document.getElementById(k).value);return o;}
+function setInputs(o){for(const k of inputKeys)document.getElementById(k).value=o[k];}
+function render(){
+ try{
+  for(const k of inputKeys)if(!document.getElementById(k).checkValidity())throw new Error('Check the value for '+document.getElementById(k).closest('label').firstChild.textContent.trim()+'.');
+  const o=inputs(), rows=DATA.production.routes.map(r=>({r,x:outcome(DATA.assets,DATA.production,r,o)}));current={assumptions:o,results:rows};
+  const max=Math.max(...rows.map(({x})=>x.endWeek));
+  document.getElementById('bars').innerHTML=rows.map(({r,x})=>'<div class="bar-row"><strong>'+r.name+'</strong> · first sale '+months(x.firstWeek)+' mo · complete '+months(x.completeWeek)+' mo<div class="bar-track" role="img" aria-label="'+r.name+': '+months(x.firstWeek)+' months to first sale, '+months(x.completeWeek)+' to completion, '+months(x.endWeek)+' including support"><span class="bar-first" style="width:'+x.firstWeek/max*100+'%"></span><span class="bar-later" style="width:'+(x.completeWeek-x.firstWeek)/max*100+'%"></span><span class="bar-support" style="width:'+52/max*100+'%"></span></div></div>').join('');
+  document.getElementById('schedule').innerHTML=table(['Route','Hours before sale','First sale, months','Complete, months','First payout, months','Full obligation, hours'],rows.map(({r,x})=>[r.name,num(x.first),months(x.firstWeek),months(x.completeWeek),months(x.firstPayoutWeek),num(x.lifetimeHours)]));
+  document.getElementById('financial').innerHTML=table(['Route','Earned receipts¹','Cash spent','Surplus','Surplus / hour','After time value','Hours still owed'],rows.map(({r,x})=>[r.name,money(x.year.earned),money(x.year.cost),money(x.year.surplus),money(x.year.earningsPerHour),money(x.year.laborAdjusted),num(x.remainingHoursAfterPaidYear)]))+'<p class="hint">¹ After store and refunds; includes Steam fee recovery when eligible. “After time value” charges hours worked by this date; the next table also exposes the cost of finishing.</p>';
+  document.getElementById('horizons').innerHTML=table(['Route','12 mo: paid / spent','12 mo: cash balance','24 mo: paid / spent','24 mo: cash balance'],rows.map(({r,x})=>[r.name,money(x.month12.received)+' / '+money(x.month12.cost),money(x.month12.bankBalance),money(x.month24.received)+' / '+money(x.month24.cost),money(x.month24.bankBalance)]));
+  document.getElementById('breakEven').innerHTML=table(['Route','Cash before first sale','All committed cash','Buyers: cash only','Buyers: your time value','Remaining cash after paid year'],rows.map(({r,x})=>[r.name,money(x.firstCost),money(x.commitmentCost.total),num(x.cashBreakEven),num(x.laborBreakEven),money(x.remainingCostsAfterPaidYear)]));
+  document.getElementById('status').textContent='Updated. '+nf.format(o.units)+' new buyers per route; '+['low','middle','high'][o.effort]+' effort; EUR. Assumptions remain unvalidated.';
+  document.getElementById('status').className='';
+ }catch(error){current=null;for(const id of ['bars','schedule','financial','horizons','breakEven'])document.getElementById(id).innerHTML='';document.getElementById('status').textContent=error.message;document.getElementById('status').className='error';}
+}
+let pending;
+document.addEventListener('input',event=>{if(inputKeys.includes(event.target.id)){clearTimeout(pending);pending=setTimeout(render,100);}});
+document.getElementById('sales').addEventListener('change',()=>{const o={...inputs(),...salesCase(DATA.production,Number(document.getElementById('sales').value))};setInputs(o);render();});
+document.getElementById('reset').addEventListener('click',()=>{setInputs(defaults(DATA.production));render();});
+document.getElementById('download').addEventListener('click',()=>{if(!current)return;const blob=new Blob([JSON.stringify({date:DATA.production.date,basis:DATA.production.basis,...current},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download='project-playground-scenario.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+setInputs(defaults(DATA.production));render();
+</script></body></html>

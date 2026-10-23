@@ -1,0 +1,470 @@
+{
+  "observed": "2026-10-21",
+  "searches": [
+    {
+      "url": "https://store.steampowered.com/search/results/?term=incremental&sort_by=Released_DESC&category1=998&hidef2p=1&start=0&count=30&infinite=1&cc=us&l=english",
+      "rows": [
+        {
+          "appid": "5360850",
+          "name": "Grind Grid",
+          "date": null
+        },
+        {
+          "appid": "4303660",
+          "name": "Wartide",
+          "date": null
+        },
+        {
+          "appid": "5368910",
+          "name": "BOOMSWEEPER",
+          "date": null
+        },
+        {
+          "appid": "5281130",
+          "name": "PunchMonkey",
+          "date": null
+        },
+        {
+          "appid": "5316020",
+          "name": "Apples Everywhere! Let's Tidy Up",
+          "date": null
+        },
+        {
+          "appid": "4859550",
+          "name": "BioSphere: Genesis",
+          "date": null
+        },
+        {
+          "appid": "4935870",
+          "name": "SIX",
+          "date": null
+        },
+        {
+          "appid": "4673080",
+          "name": "Sloperator Inc.",
+          "date": null
+        },
+        {
+          "appid": "5294080",
+          "name": "Clean your Garden",
+          "date": null
+        },
+        {
+          "appid": "5218590",
+          "name": "Hustle",
+          "date": null
+        },
+        {
+          "appid": "5241840",
+          "name": "Armament Inc",
+          "date": null
+        },
+        {
+          "appid": "5296420",
+          "name": "GemLoop",
+          "date": null
+        },
+        {
+          "appid": "4381180",
+          "name": "Coin Harvest",
+          "date": null
+        },
+        {
+          "appid": "5208900",
+          "name": "Homegrown: Sports Agent Empire",
+          "date": null
+        },
+        {
+          "appid": "5309060",
+          "name": "Afternoon Paws",
+          "date": null
+        },
+        {
+          "appid": "5332060",
+          "name": "It'll Hold",
+          "date": null
+        },
+        {
+          "appid": "4304900",
+          "name": "Big Dig",
+          "date": null
+        },
+        {
+          "appid": "4621970",
+          "name": "Loop Dungeon - Incremental",
+          "date": null
+        },
+        {
+          "appid": "5326820",
+          "name": "Number Go Up",
+          "date": null
+        },
+        {
+          "appid": "5340080",
+          "name": "CHAMBER: ATOM BREAKER INC",
+          "date": null
+        },
+        {
+          "appid": "4206250",
+          "name": "SummitJourney",
+          "date": null
+        },
+        {
+          "appid": "5067390",
+          "name": "GRIDMINE",
+          "date": null
+        },
+        {
+          "appid": "3145070",
+          "name": "Gangster Clicker",
+          "date": null
+        },
+        {
+          "appid": "4295900",
+          "name": "The Grounds-Keeper",
+          "date": null
+        },
+        {
+          "appid": "5139990",
+          "name": "Demolition Empire",
+          "date": null
+        },
+        {
+          "appid": "4088850",
+          "name": "A Game About Opening A Chest",
+          "date": null
+        },
+        {
+          "appid": "5343830",
+          "name": "Take Good Care of Your Cassava",
+          "date": null
+        },
+        {
+          "appid": "5357150",
+          "name": "The Debt We Sow",
+          "date": null
+        },
+        {
+          "appid": "5259430",
+          "name": "Tiny Cities",
+          "date": null
+        },
+        {
+          "appid": "4846620",
+          "name": "House Music Incremental",
+          "date": null
+        }
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/search/results/?term=mech&sort_by=Released_DESC&category1=998&hidef2p=1&start=0&count=30&infinite=1&cc=us&l=english",
+      "rows": [
+        {
+          "appid": "5330530",
+          "name": "CRUSH LOAD",
+          "date": null
+        },
+        {
+          "appid": "5183710",
+          "name": "Neon Apocalypsis",
+          "date": null
+        },
+        {
+          "appid": "5202090",
+          "name": "Mercenaries Of Vector",
+          "date": null
+        },
+        {
+          "appid": "5319290",
+          "name": "SCRAPWAVE",
+          "date": null
+        },
+        {
+          "appid": "5216620",
+          "name": "Ferrite Runner",
+          "date": null
+        },
+        {
+          "appid": "5273280",
+          "name": "Dino Island-Jurassic Land",
+          "date": null
+        },
+        {
+          "appid": "5297720",
+          "name": "G.D.F. PHALANX: Missile Defense Protocol",
+          "date": null
+        },
+        {
+          "appid": "5099110",
+          "name": "STEEL VANGUARD:Project ARES",
+          "date": null
+        },
+        {
+          "appid": "4763960",
+          "name": "Werfast",
+          "date": null
+        },
+        {
+          "appid": "1944880",
+          "name": "Drop Command",
+          "date": null
+        },
+        {
+          "appid": "4885500",
+          "name": "CYBERSPIDER VS. HUMANITY",
+          "date": null
+        },
+        {
+          "appid": "5167200",
+          "name": "ALGO ARMS",
+          "date": null
+        },
+        {
+          "appid": "4265740",
+          "name": "Gunclone Arena",
+          "date": null
+        },
+        {
+          "appid": "5139650",
+          "name": "Meridian Strike",
+          "date": null
+        },
+        {
+          "appid": "4982690",
+          "name": "Rustborn",
+          "date": null
+        },
+        {
+          "appid": "3943420",
+          "name": "Robots Arena Fight",
+          "date": null
+        },
+        {
+          "appid": "3180340",
+          "name": "RIG Riot",
+          "date": null
+        },
+        {
+          "appid": "5112240",
+          "name": "Moonwrought Bastion",
+          "date": null
+        },
+        {
+          "appid": "4917480",
+          "name": "MECH DISTRICT",
+          "date": null
+        },
+        {
+          "appid": "3065200",
+          "name": "Tide Terminal",
+          "date": null
+        },
+        {
+          "appid": "5056860",
+          "name": "Mech Brawl",
+          "date": null
+        },
+        {
+          "appid": "4983800",
+          "name": "The Windzen Legend",
+          "date": null
+        },
+        {
+          "appid": "4819940",
+          "name": "Blackfall: Cyborgs Down",
+          "date": null
+        },
+        {
+          "appid": "4991540",
+          "name": "NEON FORTRESS",
+          "date": null
+        },
+        {
+          "appid": "4388150",
+          "name": "Blowing Off Steam",
+          "date": null
+        },
+        {
+          "appid": "903930",
+          "name": "Brigador Killers",
+          "date": null
+        },
+        {
+          "appid": "4824900",
+          "name": "Fantasy Air-Sea Battles Showdown",
+          "date": null
+        },
+        {
+          "appid": "2507500",
+          "name": "Bounty Hunters",
+          "date": null
+        },
+        {
+          "appid": "4974140",
+          "name": "IntraVene",
+          "date": null
+        },
+        {
+          "appid": "1067360",
+          "name": "Pax Autocratica",
+          "date": null
+        }
+      ]
+    },
+    {
+      "url": "https://store.steampowered.com/search/results/?term=survival+horror&sort_by=Released_DESC&category1=998&hidef2p=1&start=0&count=30&infinite=1&cc=us&l=english",
+      "rows": [
+        {
+          "appid": "5297330",
+          "name": "Rescuing My Wife",
+          "date": null
+        },
+        {
+          "appid": "3472070",
+          "name": "Project Corruption",
+          "date": null
+        },
+        {
+          "appid": "4094350",
+          "name": "Online: 404",
+          "date": null
+        },
+        {
+          "appid": "2279440",
+          "name": "Soul Mates",
+          "date": null
+        },
+        {
+          "appid": "2087540",
+          "name": "Escape from Playtime",
+          "date": null
+        },
+        {
+          "appid": "5134560",
+          "name": "DON'T SWITCH",
+          "date": null
+        },
+        {
+          "appid": "5364370",
+          "name": "Dungeon Prisoner Simulator",
+          "date": null
+        },
+        {
+          "appid": "5081300",
+          "name": "MECCHA LIAR",
+          "date": null
+        },
+        {
+          "appid": "4500460",
+          "name": "What The Dog Remembers",
+          "date": null
+        },
+        {
+          "appid": "3670730",
+          "name": "Horror Tales Eats The World",
+          "date": null
+        },
+        {
+          "appid": "5206610",
+          "name": "Revenant Dawn",
+          "date": null
+        },
+        {
+          "appid": "5342930",
+          "name": "Dementium II",
+          "date": null
+        },
+        {
+          "appid": "3670210",
+          "name": "Julio's Adventure 3",
+          "date": null
+        },
+        {
+          "appid": "4554330",
+          "name": "Escape from Vlogger: Runaway",
+          "date": null
+        },
+        {
+          "appid": "4673080",
+          "name": "Sloperator Inc.",
+          "date": null
+        },
+        {
+          "appid": "3255840",
+          "name": "Insanitorium - Don’t Be Afraid",
+          "date": null
+        },
+        {
+          "appid": "5222620",
+          "name": "EchoNet",
+          "date": null
+        },
+        {
+          "appid": "4864360",
+          "name": "Crowns & Chaos",
+          "date": null
+        },
+        {
+          "appid": "5355820",
+          "name": "Beatrice",
+          "date": null
+        },
+        {
+          "appid": "3645890",
+          "name": "GONE Fishing",
+          "date": null
+        },
+        {
+          "appid": "1761910",
+          "name": "Athanasia",
+          "date": null
+        },
+        {
+          "appid": "4841390",
+          "name": "Curse of Baghdad",
+          "date": null
+        },
+        {
+          "appid": "5047760",
+          "name": "Conjurariun",
+          "date": null
+        },
+        {
+          "appid": "4952170",
+          "name": "Her Revenge",
+          "date": null
+        },
+        {
+          "appid": "4012780",
+          "name": "PALE ANIMUS",
+          "date": null
+        },
+        {
+          "appid": "4633060",
+          "name": "Pareidolia",
+          "date": null
+        },
+        {
+          "appid": "1813170",
+          "name": "Surrounded",
+          "date": null
+        },
+        {
+          "appid": "3576670",
+          "name": "PATIENT ZERO",
+          "date": null
+        },
+        {
+          "appid": "5080810",
+          "name": "Yatai 8",
+          "date": null
+        },
+        {
+          "appid": "4771580",
+          "name": "Five Nights with Maids",
+          "date": null
+        }
+      ]
+    }
+  ]
+}

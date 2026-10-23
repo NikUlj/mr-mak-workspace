@@ -1,0 +1,1832 @@
+{
+  "method": "US appdetails; all-language Steam-purchase review summaries; off-topic filter enabled. No sales estimates.",
+  "games": [
+    {
+      "group": "horror",
+      "appid": 2123640,
+      "name": "Hollowbody",
+      "observed_utc": "2026-10-21T21:42:40.960905+00:00",
+      "store_url": "https://store.steampowered.com/app/2123640/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=2123640&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/2123640?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Sep 12, 2024"
+      },
+      "developers": [
+        "Headware Games"
+      ],
+      "publishers": [
+        "Headware Games"
+      ],
+      "genres": [
+        {
+          "id": "25",
+          "description": "Adventure"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "Gamepad Recommended",
+        "DualShock Controller Support",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "DualSense Controller Support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 1699,
+        "final": 1699,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$16.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 1244,
+        "total_negative": 231,
+        "total_reviews": 1475
+      },
+      "positive_percent": 84.3
+    },
+    {
+      "group": "horror",
+      "appid": 1996010,
+      "name": "Crow Country",
+      "observed_utc": "2026-10-21T21:42:40.942494+00:00",
+      "store_url": "https://store.steampowered.com/app/1996010/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=1996010&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/1996010?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "May 9, 2024"
+      },
+      "developers": [
+        "SFB Games"
+      ],
+      "publishers": [
+        "SFB Games"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "Steam Trading Cards",
+        "Color Alternatives",
+        "Custom Volume Controls",
+        "Adjustable Difficulty",
+        "Gamepad Recommended",
+        "Keyboard Only Option",
+        "Playable without Timed Input",
+        "DualShock Controller Support",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "DualSense Controller Support",
+        "Stereo Sound",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 9,
+        "review_score_desc": "Overwhelmingly Positive",
+        "total_positive": 7738,
+        "total_negative": 166,
+        "total_reviews": 7904
+      },
+      "positive_percent": 97.9
+    },
+    {
+      "group": "horror",
+      "appid": 1257030,
+      "name": "Heartworm",
+      "observed_utc": "2026-10-21T21:42:40.942957+00:00",
+      "store_url": "https://store.steampowered.com/app/1257030/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=1257030&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/1257030?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Jul 31, 2025"
+      },
+      "developers": [
+        "Vincent Adinolfi"
+      ],
+      "publishers": [
+        "DreadXP"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "25",
+          "description": "Adventure"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "Custom Volume Controls",
+        "Gamepad Recommended",
+        "Playable without Timed Input",
+        "DualShock Controller Support",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "DualSense Controller Support",
+        "Stereo Sound",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 1499,
+        "final": 1499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$14.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 393,
+        "total_negative": 59,
+        "total_reviews": 452
+      },
+      "positive_percent": 86.9
+    },
+    {
+      "group": "horror",
+      "appid": 1796580,
+      "name": "Sorry We're Closed",
+      "observed_utc": "2026-10-21T21:42:41.468334+00:00",
+      "store_url": "https://store.steampowered.com/app/1796580/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=1796580&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/1796580?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Nov 14, 2024"
+      },
+      "developers": [
+        "à la mode games"
+      ],
+      "publishers": [
+        "Akupara Games"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "25",
+          "description": "Adventure"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "Steam Trading Cards",
+        "Camera Comfort",
+        "Custom Volume Controls",
+        "Adjustable Difficulty",
+        "Playable without Timed Input",
+        "DualShock Controller Support",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "DualSense Controller Support",
+        "Stereo Sound",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 2499,
+        "final": 1749,
+        "discount_percent": 30,
+        "initial_formatted": "$24.99",
+        "final_formatted": "$17.49"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 9,
+        "review_score_desc": "Overwhelmingly Positive",
+        "total_positive": 1644,
+        "total_negative": 31,
+        "total_reviews": 1675
+      },
+      "positive_percent": 98.1
+    },
+    {
+      "group": "horror",
+      "appid": 1750030,
+      "name": "Post Trauma",
+      "observed_utc": "2026-10-21T21:42:41.402183+00:00",
+      "store_url": "https://store.steampowered.com/app/1750030/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=1750030&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/1750030?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Apr 22, 2025"
+      },
+      "developers": [
+        "RED SOUL GAMES"
+      ],
+      "publishers": [
+        "Raw Fury"
+      ],
+      "genres": [
+        {
+          "id": "25",
+          "description": "Adventure"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "DualSense Controller Support",
+        "DualSense Controller Support",
+        "Partial Controller Support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 1499,
+        "final": 674,
+        "discount_percent": 55,
+        "initial_formatted": "$14.99",
+        "final_formatted": "$6.74"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 6,
+        "review_score_desc": "Mostly Positive",
+        "total_positive": 425,
+        "total_negative": 157,
+        "total_reviews": 582
+      },
+      "positive_percent": 73.0
+    },
+    {
+      "group": "horror",
+      "appid": 2855770,
+      "name": "The Fear Business",
+      "observed_utc": "2026-10-21T21:42:41.456515+00:00",
+      "store_url": "https://store.steampowered.com/app/2855770/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=2855770&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/2855770?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Oct 28, 2024"
+      },
+      "developers": [
+        "Tomás Esconjaureguy"
+      ],
+      "publishers": [
+        "selewi"
+      ],
+      "genres": [
+        {
+          "id": "25",
+          "description": "Adventure"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "DualShock Controller Support",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "DualSense Controller Support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 999,
+        "final": 999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$9.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 99,
+        "total_negative": 7,
+        "total_reviews": 106
+      },
+      "positive_percent": 93.4
+    },
+    {
+      "group": "horror",
+      "appid": 1530470,
+      "name": "Daymare: 1994 Sandcastle",
+      "observed_utc": "2026-10-21T21:42:41.851826+00:00",
+      "store_url": "https://store.steampowered.com/app/1530470/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=1530470&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/1530470?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Aug 30, 2023"
+      },
+      "developers": [
+        "Invader Studios"
+      ],
+      "publishers": [
+        "Leonardo Interactive",
+        "4Divinity"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 2999,
+        "final": 2999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$29.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 6,
+        "review_score_desc": "Mostly Positive",
+        "total_positive": 586,
+        "total_negative": 209,
+        "total_reviews": 795
+      },
+      "positive_percent": 73.7
+    },
+    {
+      "group": "horror",
+      "appid": 2173460,
+      "name": "Echoes of the Living",
+      "observed_utc": "2026-10-21T21:42:41.956861+00:00",
+      "store_url": "https://store.steampowered.com/app/2173460/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=2173460&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/2173460?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Oct 31, 2025"
+      },
+      "developers": [
+        "MoonGlint Studio"
+      ],
+      "publishers": [
+        "MoonGlint Studio"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "25",
+          "description": "Adventure"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        },
+        {
+          "id": "70",
+          "description": "Early Access"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "Steam Trading Cards",
+        "HDR available",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 2499,
+        "final": 2499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$24.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 846,
+        "total_negative": 171,
+        "total_reviews": 1017
+      },
+      "positive_percent": 83.2
+    },
+    {
+      "group": "horror",
+      "appid": 3463020,
+      "name": "Phantom House",
+      "observed_utc": "2026-10-21T21:42:41.973355+00:00",
+      "store_url": "https://store.steampowered.com/app/3463020/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=3463020&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/3463020?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Sep 1, 2025"
+      },
+      "developers": [
+        "Hard Shark Games"
+      ],
+      "publishers": [
+        "Hard Shark Games"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "25",
+          "description": "Adventure"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        },
+        {
+          "id": "70",
+          "description": "Early Access"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Partial Controller Support",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 699,
+        "final": 699,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$6.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 0,
+        "review_score_desc": "6 user reviews",
+        "total_positive": 1,
+        "total_negative": 5,
+        "total_reviews": 6
+      },
+      "positive_percent": 16.7
+    },
+    {
+      "group": "horror",
+      "appid": 3452040,
+      "name": "AFFRAID",
+      "observed_utc": "2026-10-21T21:42:42.425931+00:00",
+      "store_url": "https://store.steampowered.com/app/3452040/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=3452040&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/3452040?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Feb 20, 2025"
+      },
+      "developers": [
+        "Oedipe Games",
+        "Oedipe Games"
+      ],
+      "publishers": [
+        "Oedipes Games",
+        "Oedipe Games"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "25",
+          "description": "Adventure"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        },
+        {
+          "id": "3",
+          "description": "RPG"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 899,
+        "final": 899,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$8.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 3,
+        "review_score_desc": "Negative",
+        "total_positive": 2,
+        "total_negative": 11,
+        "total_reviews": 13
+      },
+      "positive_percent": 15.4
+    },
+    {
+      "group": "mech",
+      "appid": 3180340,
+      "name": "RIG Riot",
+      "observed_utc": "2026-10-21T21:42:42.558924+00:00",
+      "store_url": "https://store.steampowered.com/app/3180340/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=3180340&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/3180340?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Sep 14, 2026"
+      },
+      "developers": [
+        "Sage Boatman"
+      ],
+      "publishers": [
+        "Sage Boatman"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "Camera Comfort",
+        "Custom Volume Controls",
+        "Adjustable Difficulty",
+        "Playable without Timed Input",
+        "Stereo Sound",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 407,
+        "total_negative": 25,
+        "total_reviews": 432
+      },
+      "positive_percent": 94.2
+    },
+    {
+      "group": "mech",
+      "appid": 2743460,
+      "name": "Granvir",
+      "observed_utc": "2026-10-21T21:42:42.557865+00:00",
+      "store_url": "https://store.steampowered.com/app/2743460/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=2743460&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/2743460?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Sep 23, 2025"
+      },
+      "developers": [
+        "Airborne Games"
+      ],
+      "publishers": [
+        "GIGATANK 3000"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        },
+        {
+          "id": "28",
+          "description": "Simulation"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "Co-op",
+        "Online Co-op",
+        "Steam Achievements",
+        "Camera Comfort",
+        "Adjustable Difficulty",
+        "Playable without Timed Input",
+        "DualShock Controller Support",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "DualSense Controller Support",
+        "Stereo Sound",
+        "Partial Controller Support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 1499,
+        "final": 1199,
+        "discount_percent": 20,
+        "initial_formatted": "$14.99",
+        "final_formatted": "$11.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 836,
+        "total_negative": 80,
+        "total_reviews": 916
+      },
+      "positive_percent": 91.3
+    },
+    {
+      "group": "mech",
+      "appid": 1379120,
+      "name": "MechNest",
+      "observed_utc": "2026-10-21T21:42:43.000857+00:00",
+      "store_url": "https://store.steampowered.com/app/1379120/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=1379120&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/1379120?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Apr 13, 2024"
+      },
+      "developers": [
+        "PoisonGames"
+      ],
+      "publishers": [
+        "PoisonGames"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Partial Controller Support",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 1599,
+        "final": 1599,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$15.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 6,
+        "review_score_desc": "Mostly Positive",
+        "total_positive": 10,
+        "total_negative": 4,
+        "total_reviews": 14
+      },
+      "positive_percent": 71.4
+    },
+    {
+      "group": "mech",
+      "appid": 956680,
+      "name": "M.A.S.S. Builder",
+      "observed_utc": "2026-10-21T21:42:43.033878+00:00",
+      "store_url": "https://store.steampowered.com/app/956680/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=956680&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/956680?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Sep 14, 2025"
+      },
+      "developers": [
+        "Vermillion Digital"
+      ],
+      "publishers": [
+        "Sekai Project"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        },
+        {
+          "id": "3",
+          "description": "RPG"
+        },
+        {
+          "id": "2",
+          "description": "Strategy"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "Co-op",
+        "Online Co-op",
+        "Full controller support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 2499,
+        "final": 2499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$24.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 3192,
+        "total_negative": 540,
+        "total_reviews": 3732
+      },
+      "positive_percent": 85.5
+    },
+    {
+      "group": "mech",
+      "appid": 3392040,
+      "name": "OMEGA PHENEX COMMENCED PROJECT SIX",
+      "observed_utc": "2026-10-21T21:42:43.016650+00:00",
+      "store_url": "https://store.steampowered.com/app/3392040/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=3392040&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/3392040?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": true,
+        "date": "2027"
+      },
+      "developers": [
+        "するめ工房"
+      ],
+      "publishers": [
+        "Astrolabe Games"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "Partial Controller Support",
+        "Family Sharing"
+      ],
+      "price_us": null,
+      "review_summary": {
+        "num_reviews": 0,
+        "review_score": 0,
+        "review_score_desc": "No user reviews",
+        "total_positive": 0,
+        "total_negative": 0,
+        "total_reviews": 0
+      },
+      "positive_percent": null
+    },
+    {
+      "group": "mech",
+      "appid": 2506580,
+      "name": "Gearbits",
+      "observed_utc": "2026-10-21T21:42:43.560142+00:00",
+      "store_url": "https://store.steampowered.com/app/2506580/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=2506580&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/2506580?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Oct 9, 2023"
+      },
+      "developers": [
+        "Quackpond Games"
+      ],
+      "publishers": [
+        "Quackpond Games"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 999,
+        "final": 999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$9.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 430,
+        "total_negative": 15,
+        "total_reviews": 445
+      },
+      "positive_percent": 96.6
+    },
+    {
+      "group": "mech",
+      "appid": 2334170,
+      "name": "Metal Bringer",
+      "observed_utc": "2026-10-21T21:42:43.471607+00:00",
+      "store_url": "https://store.steampowered.com/app/2334170/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=2334170&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/2334170?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Mar 11, 2025"
+      },
+      "developers": [
+        "ALPHAWING Inc."
+      ],
+      "publishers": [
+        "PLAYISM"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "Camera Comfort",
+        "Custom Volume Controls",
+        "Playable without Timed Input",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "Save Anytime",
+        "Stereo Sound",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 1999,
+        "final": 1999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$19.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 988,
+        "total_negative": 139,
+        "total_reviews": 1127
+      },
+      "positive_percent": 87.7
+    },
+    {
+      "group": "mech",
+      "appid": 3237920,
+      "name": "Mech Havoc",
+      "observed_utc": "2026-10-21T21:42:43.549282+00:00",
+      "store_url": "https://store.steampowered.com/app/3237920/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=3237920&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/3237920?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Oct 27, 2025"
+      },
+      "developers": [
+        "Mid Development"
+      ],
+      "publishers": [
+        "Pretty Soon"
+      ],
+      "genres": [
+        {
+          "id": "1",
+          "description": "Action"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        },
+        {
+          "id": "28",
+          "description": "Simulation"
+        },
+        {
+          "id": "2",
+          "description": "Strategy"
+        },
+        {
+          "id": "70",
+          "description": "Early Access"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Full controller support",
+        "Steam Workshop",
+        "Steam Cloud",
+        "Stats",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 999,
+        "final": 649,
+        "discount_percent": 35,
+        "initial_formatted": "$9.99",
+        "final_formatted": "$6.49"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 9,
+        "review_score_desc": "Overwhelmingly Positive",
+        "total_positive": 817,
+        "total_negative": 28,
+        "total_reviews": 845
+      },
+      "positive_percent": 96.7
+    },
+    {
+      "group": "incremental",
+      "appid": 3107330,
+      "name": "Nodebuster",
+      "observed_utc": "2026-10-21T21:42:43.941642+00:00",
+      "store_url": "https://store.steampowered.com/app/3107330/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=3107330&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/3107330?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Aug 13, 2024"
+      },
+      "developers": [
+        "Goblobin"
+      ],
+      "publishers": [
+        "Goblobin"
+      ],
+      "genres": [
+        {
+          "id": "4",
+          "description": "Casual"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        },
+        {
+          "id": "28",
+          "description": "Simulation"
+        },
+        {
+          "id": "2",
+          "description": "Strategy"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 299,
+        "final": 299,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$2.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 9,
+        "review_score_desc": "Overwhelmingly Positive",
+        "total_positive": 13527,
+        "total_negative": 366,
+        "total_reviews": 13893
+      },
+      "positive_percent": 97.4
+    },
+    {
+      "group": "incremental",
+      "appid": 4594150,
+      "name": "Sir, We Have an Orc Problem",
+      "observed_utc": "2026-10-21T21:42:44.021455+00:00",
+      "store_url": "https://store.steampowered.com/app/4594150/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=4594150&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/4594150?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Jul 28, 2026"
+      },
+      "developers": [
+        "Mumpitz Games"
+      ],
+      "publishers": [
+        "Mumpitz Games"
+      ],
+      "genres": [
+        {
+          "id": "23",
+          "description": "Indie"
+        },
+        {
+          "id": "28",
+          "description": "Simulation"
+        },
+        {
+          "id": "2",
+          "description": "Strategy"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Camera Comfort",
+        "Custom Volume Controls",
+        "Mouse Only Option",
+        "#category_playable_at_your_own_pace",
+        "Playable without Timed Input",
+        "Save Anytime",
+        "Stereo Sound",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 999,
+        "final": 999,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$9.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 4015,
+        "total_negative": 632,
+        "total_reviews": 4647
+      },
+      "positive_percent": 86.4
+    },
+    {
+      "group": "incremental",
+      "appid": 3361470,
+      "name": "Digseum",
+      "observed_utc": "2026-10-21T21:42:44.131734+00:00",
+      "store_url": "https://store.steampowered.com/app/3361470/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=3361470&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/3361470?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Dec 9, 2024"
+      },
+      "developers": [
+        "Rat Monthly"
+      ],
+      "publishers": [
+        "Rat Monthly"
+      ],
+      "genres": [
+        {
+          "id": "4",
+          "description": "Casual"
+        },
+        {
+          "id": "28",
+          "description": "Simulation"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 299,
+        "final": 299,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$2.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 9,
+        "review_score_desc": "Overwhelmingly Positive",
+        "total_positive": 7898,
+        "total_negative": 192,
+        "total_reviews": 8090
+      },
+      "positive_percent": 97.6
+    },
+    {
+      "group": "incremental",
+      "appid": 3769130,
+      "name": "Keep on Mining!",
+      "observed_utc": "2026-10-21T21:42:44.386465+00:00",
+      "store_url": "https://store.steampowered.com/app/3769130/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=3769130&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/3769130?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Jul 30, 2025"
+      },
+      "developers": [
+        "EagleEye Games"
+      ],
+      "publishers": [
+        "EagleEye Games"
+      ],
+      "genres": [
+        {
+          "id": "4",
+          "description": "Casual"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Custom Volume Controls",
+        "Mouse Only Option",
+        "Playable without Timed Input",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 499,
+        "final": 299,
+        "discount_percent": 40,
+        "initial_formatted": "$4.99",
+        "final_formatted": "$2.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 7790,
+        "total_negative": 554,
+        "total_reviews": 8344
+      },
+      "positive_percent": 93.4
+    },
+    {
+      "group": "incremental",
+      "appid": 2916770,
+      "name": "DigDigDrill",
+      "observed_utc": "2026-10-21T21:42:44.527214+00:00",
+      "store_url": "https://store.steampowered.com/app/2916770/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=2916770&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/2916770?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Dec 9, 2024"
+      },
+      "developers": [
+        "Toorai"
+      ],
+      "publishers": [
+        "Toorai"
+      ],
+      "genres": [
+        {
+          "id": "25",
+          "description": "Adventure"
+        },
+        {
+          "id": "4",
+          "description": "Casual"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "DualShock Controller Support",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "DualSense Controller Support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 399,
+        "final": 399,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$3.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 583,
+        "total_negative": 31,
+        "total_reviews": 614
+      },
+      "positive_percent": 95.0
+    },
+    {
+      "group": "incremental",
+      "appid": 3421300,
+      "name": "Lyca",
+      "observed_utc": "2026-10-21T21:42:44.652068+00:00",
+      "store_url": "https://store.steampowered.com/app/3421300/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=3421300&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/3421300?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Apr 7, 2025"
+      },
+      "developers": [
+        "Syphono4"
+      ],
+      "publishers": [
+        "Syphono4",
+        "Pretty Soon"
+      ],
+      "genres": [
+        {
+          "id": "4",
+          "description": "Casual"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        },
+        {
+          "id": "28",
+          "description": "Simulation"
+        },
+        {
+          "id": "2",
+          "description": "Strategy"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "DualShock Controller Support",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "DualSense Controller Support",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 499,
+        "final": 249,
+        "discount_percent": 50,
+        "initial_formatted": "$4.99",
+        "final_formatted": "$2.49"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 1075,
+        "total_negative": 241,
+        "total_reviews": 1316
+      },
+      "positive_percent": 81.7
+    },
+    {
+      "group": "incremental",
+      "appid": 2934520,
+      "name": "Go Up",
+      "observed_utc": "2026-10-21T21:42:44.865634+00:00",
+      "store_url": "https://store.steampowered.com/app/2934520/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=2934520&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/2934520?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Aug 31, 2026"
+      },
+      "developers": [
+        "Noble Whale Studios"
+      ],
+      "publishers": [
+        "Noble Whale Studios"
+      ],
+      "genres": [
+        {
+          "id": "4",
+          "description": "Casual"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Custom Volume Controls",
+        "Mouse Only Option",
+        "Playable without Timed Input",
+        "DualShock Controller Support",
+        "DualShock Controller Support",
+        "Partial Controller Support",
+        "Steam Cloud",
+        "Stats",
+        "Steam Leaderboards",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 499,
+        "final": 499,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$4.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 0,
+        "review_score_desc": "4 user reviews",
+        "total_positive": 3,
+        "total_negative": 1,
+        "total_reviews": 4
+      },
+      "positive_percent": 75.0
+    },
+    {
+      "group": "incremental",
+      "appid": 4953130,
+      "name": "go Up",
+      "observed_utc": "2026-10-21T21:42:45.035787+00:00",
+      "store_url": "https://store.steampowered.com/app/4953130/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=4953130&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/4953130?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Sep 30, 2026"
+      },
+      "developers": [
+        "yee"
+      ],
+      "publishers": [
+        "yee"
+      ],
+      "genres": [
+        {
+          "id": "25",
+          "description": "Adventure"
+        },
+        {
+          "id": "4",
+          "description": "Casual"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Multi-player",
+        "Co-op",
+        "Online Co-op",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 99,
+        "final": 99,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$0.99"
+      },
+      "review_summary": {
+        "num_reviews": 0,
+        "review_score": 0,
+        "review_score_desc": "No user reviews",
+        "total_positive": 0,
+        "total_negative": 0,
+        "total_reviews": 0
+      },
+      "positive_percent": null
+    },
+    {
+      "group": "incremental",
+      "appid": 4448490,
+      "name": "Planet Harvester: Incremental Odyssey",
+      "observed_utc": "2026-10-21T21:42:45.147238+00:00",
+      "store_url": "https://store.steampowered.com/app/4448490/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=4448490&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/4448490?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Aug 17, 2026"
+      },
+      "developers": [
+        "Galysh Company"
+      ],
+      "publishers": [
+        "Galysh Company"
+      ],
+      "genres": [
+        {
+          "id": "4",
+          "description": "Casual"
+        },
+        {
+          "id": "28",
+          "description": "Simulation"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "Camera Comfort",
+        "Custom Volume Controls",
+        "Playable without Timed Input",
+        "DualShock Controller Support",
+        "DualShock Controller Support",
+        "DualSense Controller Support",
+        "DualSense Controller Support",
+        "Save Anytime",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 599,
+        "final": 479,
+        "discount_percent": 20,
+        "initial_formatted": "$5.99",
+        "final_formatted": "$4.79"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 8,
+        "review_score_desc": "Very Positive",
+        "total_positive": 78,
+        "total_negative": 8,
+        "total_reviews": 86
+      },
+      "positive_percent": 90.7
+    },
+    {
+      "group": "incremental",
+      "appid": 4219060,
+      "name": "Idle Ways",
+      "observed_utc": "2026-10-21T21:42:45.432145+00:00",
+      "store_url": "https://store.steampowered.com/app/4219060/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=4219060&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/4219060?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Apr 27, 2026"
+      },
+      "developers": [
+        "MPR Games"
+      ],
+      "publishers": [
+        "MPR Games"
+      ],
+      "genres": [
+        {
+          "id": "4",
+          "description": "Casual"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Camera Comfort",
+        "Color Alternatives",
+        "Custom Volume Controls",
+        "Mouse Only Option",
+        "Playable without Timed Input",
+        "Save Anytime",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 249,
+        "final": 249,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$2.49"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 5,
+        "review_score_desc": "Mixed",
+        "total_positive": 4,
+        "total_negative": 6,
+        "total_reviews": 10
+      },
+      "positive_percent": 40.0
+    },
+    {
+      "group": "incremental",
+      "appid": 4433730,
+      "name": "DEBRISVERSE",
+      "observed_utc": "2026-10-21T21:42:45.528966+00:00",
+      "store_url": "https://store.steampowered.com/app/4433730/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=4433730&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/4433730?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Jul 29, 2026"
+      },
+      "developers": [
+        "Studio RELIER"
+      ],
+      "publishers": [
+        "Studio RELIER"
+      ],
+      "genres": [
+        {
+          "id": "4",
+          "description": "Casual"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        },
+        {
+          "id": "28",
+          "description": "Simulation"
+        },
+        {
+          "id": "2",
+          "description": "Strategy"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Camera Comfort",
+        "Color Alternatives",
+        "Custom Volume Controls",
+        "Playable without Timed Input",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 399,
+        "final": 399,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$3.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 7,
+        "review_score_desc": "Positive",
+        "total_positive": 32,
+        "total_negative": 2,
+        "total_reviews": 34
+      },
+      "positive_percent": 94.1
+    },
+    {
+      "group": "incremental",
+      "appid": 4900980,
+      "name": "Blob of Ink",
+      "observed_utc": "2026-10-21T21:42:45.611516+00:00",
+      "store_url": "https://store.steampowered.com/app/4900980/",
+      "metadata_url": "https://store.steampowered.com/api/appdetails?appids=4900980&cc=us&l=english",
+      "review_summary_url": "https://store.steampowered.com/appreviews/4900980?json=1&language=all&purchase_type=steam&filter_offtopic_activity=1&num_per_page=1",
+      "type": "game",
+      "free": false,
+      "release_date": {
+        "coming_soon": false,
+        "date": "Aug 25, 2026"
+      },
+      "developers": [
+        "DGDev"
+      ],
+      "publishers": [
+        "DGDev"
+      ],
+      "genres": [
+        {
+          "id": "4",
+          "description": "Casual"
+        },
+        {
+          "id": "23",
+          "description": "Indie"
+        }
+      ],
+      "categories": [
+        "Single-player",
+        "Steam Achievements",
+        "Full controller support",
+        "Custom Volume Controls",
+        "#category_playable_at_your_own_pace",
+        "Playable without Timed Input",
+        "Save Anytime",
+        "Steam Cloud",
+        "Family Sharing"
+      ],
+      "price_us": {
+        "currency": "USD",
+        "initial": 399,
+        "final": 399,
+        "discount_percent": 0,
+        "initial_formatted": "",
+        "final_formatted": "$3.99"
+      },
+      "review_summary": {
+        "num_reviews": 1,
+        "review_score": 7,
+        "review_score_desc": "Positive",
+        "total_positive": 11,
+        "total_negative": 0,
+        "total_reviews": 11
+      },
+      "positive_percent": 100.0
+    }
+  ]
+}
