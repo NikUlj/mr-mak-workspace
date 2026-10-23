@@ -1,0 +1,33 @@
+{
+  "format": "mrmak-card",
+  "version": 1,
+  "template": "gallery",
+  "title": "Mech Prototype assets",
+  "summary": "Existing AC_Game assets are catalogued here at their current Unity locations. They have not been copied into Workspace. Their final-game suitability and generation provenance remain to be reviewed.\n\nAdd future generated work with its prompt, source revision, exports, review notes, and eventual Unity import location. No new media was generated during the 23 October 2026 source inventory.",
+  "items": [
+    {
+      "id": "ac-game-player-camera",
+      "title": "Player and camera foundation",
+      "status": "review",
+      "body": "**Existing Unity content** in `F:\\Unity Projects\\AC_Game`.\n\n- `Assets/Prefabs/Player.prefab` contains the player model hierarchy, gun, bullet origin, aim core, and camera-follow target. No Animator or skinned-mesh component is configured on this prefab.\n- `Assets/Prefabs/ThirdPerson Camera.prefab` supplies the Cinemachine camera.\n- Gun and Eyes materials are under `Assets/Materials/`.\n\nThe scene supplies camera and crosshair references. Runtime appearance, feel, and fitness as a final mech have not been reviewed. The player prefab has local uncommitted edits. No newly generated model or motion is represented by this entry."
+    },
+    {
+      "id": "ac-game-prototype-map",
+      "title": "Prototype Map",
+      "status": "review",
+      "body": "**Existing test environment** in `F:\\Unity Projects\\AC_Game`.\n\n- Source/import: `Assets/Prototype Map/Models/PrototypeMap.FBX`\n- Prefab: `Assets/Prototype Map/Prefabs/PrototypeMap.prefab`\n- Material and texture: `Assets/Prototype Map/Materials/PrototypeMap_Gridbox.mat` and `Assets/Prototype Map/Textures/PrototypeMap_Gridbox.png`\n- Enabled scene: `Assets/Scenes/Prototype Map.unity`\n\nThe scene has local uncommitted edits. Source files are present; no generation history, licensing conclusion, or in-game visual acceptance is established."
+    },
+    {
+      "id": "ac-game-projectiles-crosshair",
+      "title": "Projectile and crosshair assets",
+      "status": "review",
+      "body": "**Existing Unity content** in `F:\\Unity Projects\\AC_Game`.\n\n- `Assets/Prefabs/Bullet.prefab` and `Assets/Prefabs/BulletTrail.prefab`\n- `Assets/Materials/Bullet.mat`\n- `Assets/Scriptable Objects/DefaultBulletType.asset`\n- `Assets/Images/Crosshair.png` and `CrosshairRed.png`\n\nThe default bullet asset specifies damage 10, speed 20 units/second, and lifetime 30 seconds, with gravity and piercing off. Fire audio, impact audio, and impact effect references are unassigned. Projectile visuals and effects have not been reviewed in the running game."
+    },
+    {
+      "id": "ac-game-cinemachine-samples",
+      "title": "Imported Cinemachine samples",
+      "status": "review",
+      "body": "**Imported package examples**, separate from authored game systems.\n\nLocation: `F:\\Unity Projects\\AC_Game\\Assets\\Samples\\Cinemachine\\3.1.3\\`. Contains example scenes, prefabs, scripts, the Cameron model, and animation clips. The project currently depends on Cinemachine **3.1.7**; the imported sample folder retains the older version label.\n\nThese are reference/imported materials, not newly generated project assets or confirmed production content. Their presence does not establish enemy AI, a final character rig, animation integration, or release readiness."
+    }
+  ]
+}

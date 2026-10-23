@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-mak-report="document">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mech Prototype source, build status, playable revisions, and playtest evidence.">
+  <title>Mech Prototype · Prototype</title>
+  <link rel="stylesheet" href="../_shared/report.css">
+  <link rel="stylesheet" href="project.css">
+  <script defer src="../_shared/report.js"></script>
+</head>
+<body class="project-document" id="top">
+<main class="project-page">
+  <div class="masthead">
+    <div class="project-identity"><span class="project-monogram" aria-hidden="true">MP</span><div class="identity-copy"><b>MECH PROTOTYPE</b><span>Game project / Prototype</span></div></div>
+    <span class="phase">Prototype foundation</span>
+  </div>
+  <nav class="page-nav" aria-label="Prototype sections"><a href="#source">Project source</a><a href="#systems">Current systems</a><a href="#controls">Controls</a><a href="#packages">Packages</a><a href="#playtests">Review notes</a><a href="#revisions">Build records</a></nav>
+
+  <header class="hero">
+    <div>
+      <span class="eyebrow">An existing foundation to build on</span>
+      <h1>The<br>prototype<span class="accent">.</span></h1>
+      <p class="lead">AC_Game brings movement, targeting, and projectile systems into a test scene. The next step is to evaluate that foundation.</p>
+      <div class="actions"><a class="action primary" href="#source">Project details <span aria-hidden="true">↓</span></a><a class="action" href="#playtests">Test records <span aria-hidden="true">↓</span></a></div>
+    </div>
+    <aside class="build-stage" aria-label="Playable build status">
+      <span class="stage-symbol" aria-hidden="true">＋</span>
+      <h2>AC_Game</h2>
+      <p>Unity project and Windows executable found. Current runtime behavior has not been verified.</p>
+      <span class="tab-hint">Source inspected · 23 October 2026</span>
+    </aside>
+  </header>
+
+  <dl class="status-strip" aria-label="Prototype status">
+    <div><dt>Unity Editor</dt><dd>6000.5.2f1</dd></div>
+    <div><dt>Starting scene</dt><dd>Prototype Map</dd></div>
+    <div><dt>Runtime review</dt><dd>Pending</dd></div>
+  </dl>
+
+  <section class="content-section" id="source" aria-labelledby="source-title">
+    <div class="section-heading"><div><span class="eyebrow">01 / Project source</span><h2 id="source-title">The working project.</h2></div><p>The existing Unity folder is the authoritative source. Workspace holds the wiki and review material.</p></div>
+    <div class="project-details">
+      <div class="source-panel">
+        <span class="eyebrow">Editable source</span>
+        <p><code>AC_Game</code> stays in its current location.</p>
+        <span class="source-path">F:\Unity Projects\AC_Game</span>
+        <pre aria-label="Project folder structure"><code>AC_Game/
+  Assets/
+  Packages/
+  ProjectSettings/
+  Build/AC.exe</code></pre>
+        <a class="action" href="links/AC_Game-shortcut.zip" download="AC_Game-shortcut.zip">Download folder shortcut <span aria-hidden="true">↓</span></a>
+        <p>Extract <code>AC_Game.url</code> from the ZIP, then open it on this Windows PC to reach the project folder. No second copy or folder junction is used.</p>
+      </div>
+      <dl class="readiness">
+        <div><dt>Engine &amp; renderer</dt><dd>Unity 6000.5.2f1 · Universal Render Pipeline 17.5.0</dd></div>
+        <div><dt>Enabled build scene</dt><dd><code>Assets/Scenes/Prototype Map.unity</code></dd></div>
+        <div><dt>Version control</dt><dd>Git HEAD <code>442c185</code> · Movement fixes</dd></div>
+        <div><dt>Local working changes</dt><dd>Player prefab, Prototype Map scene, and PlayerController.cs are modified. This inventory includes those edits.</dd></div>
+        <div><dt>Editor availability</dt><dd>The matching 6000.5.2f1 Editor is installed. No connected Editor was found during this inspection.</dd></div>
+      </dl>
+    </div>
+    <details class="record-guide">
+      <summary>Open and run the project</summary>
+      <ol class="launch-steps">
+        <li>In Unity Hub, add the existing project at <code>F:\Unity Projects\AC_Game</code> if it is not already listed.</li>
+        <li>Open it with <strong>6000.5.2f1</strong>. The installed Editor is at <code>F:\Unity Versions\6000.5.2f1\Editor\Unity.exe</code>.</li>
+        <li>Open <code>Assets/Scenes/Prototype Map.unity</code>, then enter Play mode and focus the Game view.</li>
+        <li>Use the bindings below. The player script locks the mouse cursor on startup. Exit Play mode through the Editor when finished.</li>
+      </ol>
+      <p class="detail-note">These steps are based on project configuration. Compilation, Play mode, and the executable were not tested in this inspection.</p>
+    </details>
+  </section>
+
+  <section class="content-section" id="systems" aria-labelledby="systems-title">
+    <div class="section-heading"><div><span class="eyebrow">02 / Current systems</span><h2 id="systems-title">What the source already contains.</h2></div><p>Existing implementation is a starting point for review, rather than a final design commitment.</p></div>
+    <div class="system-grid">
+      <article class="direction-card"><div class="card-topline"><span>Movement</span><span>Source present</span></div><h3>Move, jump, dash</h3><p>Camera-relative movement with ground and air acceleration, friction, gravity, capsule-cast collision sliding, and step handling. The model faces camera-forward.</p><code class="source-reference">Assets/Scripts/PlayerController.cs</code></article>
+      <article class="direction-card"><div class="card-topline"><span>Camera &amp; targeting</span><span>Source present</span></div><h3>Automatic aim selection</h3><p>Cinemachine third-person following and a crosshair-based target search with a visibility raycast. The configured targeting range is 20 units, with a radius of 6.5% of screen height. The crosshair changes color when a target is selected.</p><code class="source-reference">Assets/Scripts/LockOnAim.cs</code></article>
+      <article class="direction-card"><div class="card-topline"><span>Weapons</span><span>Source present</span></div><h3>Held fire &amp; pooled bullets</h3><p>Attack fires while held, using a 0.25-second cooldown and either a selected target or the camera crosshair ray. Bullet pools start at 30 per type and expand as needed.</p><code class="source-reference">ShootingController.cs · BulletManager.cs</code></article>
+      <article class="direction-card"><div class="card-topline"><span>Projectile data</span><span>Configured</span></div><h3>One default bullet type</h3><p>The default asset sets damage to 10, speed to 20 units/second, and lifetime to 30 seconds. Gravity and piercing are disabled; impact effects and audio are unassigned.</p><code class="source-reference">Assets/Scriptable Objects/DefaultBulletType.asset</code></article>
+    </div>
+    <div class="scope-note"><b>Scene connections</b><p>The scene instantiates Player, ThirdPerson Camera, and PrototypeMap prefabs, with a HUD crosshair and a Target object. It supplies both camera/crosshair pairs, the movement controller's aim reference, the shooting controller's bullet manager, and the camera tracking target. These seven references resolve in the scene file; their behavior still needs a runtime check.</p></div>
+    <div class="scope-note"><b>Still missing from authored code</b><p>The six scripts in <code>Assets/Scripts/</code> do not implement enemy AI, a health/death receiver, mech assembly, or a run/progression loop. <code>IDamageable</code> defines a damage interface, but no implementation was found there. The player prefab has no Animator or skinned-mesh component.</p></div>
+  </section>
+
+  <section class="content-section" id="controls" aria-labelledby="controls-title">
+    <div class="section-heading"><div><span class="eyebrow">03 / Controls</span><h2 id="controls-title">The configured bindings.</h2></div><p>Bindings and action usage are verified in files. Responsiveness and device behavior are untested.</p></div>
+    <p class="table-scroll-note">Scroll the table sideways to see all bindings.</p>
+    <div class="table-frame" tabindex="0" role="region" aria-label="Configured controls table"><table><thead><tr><th scope="col">Action</th><th scope="col">Keyboard &amp; mouse</th><th scope="col">Gamepad</th></tr></thead><tbody>
+      <tr><th scope="row">Move</th><td>WASD or arrow keys</td><td>Left stick</td></tr>
+      <tr><th scope="row">Look</th><td>Mouse / pointer delta</td><td>Right stick</td></tr>
+      <tr><th scope="row">Jump</th><td>Space</td><td>South face button</td></tr>
+      <tr><th scope="row">Dash</th><td>Left Shift</td><td>Left stick press</td></tr>
+      <tr><th scope="row">Fire (Attack)</th><td>Hold left mouse button or Enter</td><td>Hold west face button</td></tr>
+      <tr><th scope="row">Target selection</th><td>Automatic around crosshair</td><td>Automatic around crosshair</td></tr>
+    </tbody></table></div>
+    <p class="detail-note">Source: <code>Assets/Input/InputSystem_Actions.inputactions</code> and the player/shooting scripts. Touch, joystick, and XR bindings also exist in the action asset; this does not establish support for those devices. Interact, Crouch, Previous, and Next are declared actions but are not used by the six authored runtime scripts.</p>
+  </section>
+
+  <section class="content-section" id="packages" aria-labelledby="packages-title">
+    <div class="section-heading"><div><span class="eyebrow">04 / Project setup</span><h2 id="packages-title">Packages and existing assets.</h2></div><p>The Unity folder keeps its own source, imported content, and Git history.</p></div>
+    <dl class="question-list">
+      <div><dt>Universal Render Pipeline</dt><dd>17.5.0</dd></div><div><dt>Input System</dt><dd>1.19.0</dd></div>
+      <div><dt>Cinemachine</dt><dd>3.1.7</dd></div><div><dt>AI Navigation</dt><dd>2.0.13</dd></div>
+      <div><dt>Timeline</dt><dd>1.8.12</dd></div><div><dt>Unity UI (uGUI)</dt><dd>2.5.0</dd></div>
+      <div><dt>Test Framework</dt><dd>1.7.0</dd></div><div><dt>Visual Scripting</dt><dd>1.9.11</dd></div>
+    </dl>
+    <div class="scope-note"><b>Renderer &amp; input</b><p>Graphics settings reference <code>Assets/Settings/PC_RPAsset.asset</code>. Input settings point to the project action asset; the player settings permit both input backends. Mobile render settings are also present, without establishing a mobile release plan.</p></div>
+    <div class="scope-note"><b>Asset catalogue</b><p>The Assets tab now records the player/camera setup, prototype map, bullets/crosshair, and imported Cinemachine samples. They remain in AC_Game. Their provenance and final-game suitability have not been assessed; no newly generated work was added during this inspection. Imported samples are under version 3.1.3, while the current Cinemachine dependency is 3.1.7.</p></div>
+  </section>
+
+  <section class="content-section" id="playtests" aria-labelledby="playtests-title">
+    <div class="section-heading"><div><span class="eyebrow">05 / Review notes</span><h2 id="playtests-title">What has been verified?</h2></div><p>Keep file inspection distinct from tested game behavior.</p></div>
+    <div class="empty-record"><span class="record-symbol" aria-hidden="true">↳</span><div><h3>Source inspection complete. Runtime review pending.</h3><p>On 23 October 2026, the scripts, input bindings, project settings, scene references, and asset inventory were inspected read-only. Unity CLI found no connected Editor; the project manifest does not include Pipeline. No Editor was opened, no executable was launched, and no gameplay or compile result was established.</p></div></div>
+    <details class="record-guide">
+      <summary>Source observations and existing TODOs</summary>
+      <ul class="launch-steps">
+        <li><strong>Shooting audio:</strong> the <code>shootSound</code> branch in <code>ShootingController.cs</code> calls <code>muzzleFlash.Play()</code>. Both references are currently unassigned in the player prefab.</li>
+        <li><strong>Piercing state:</strong> <code>HandleBulletImpact</code> receives a <code>BulletData</code> struct by value, so its penetration decrement is not written back to the active bullet. Piercing is disabled in the default type.</li>
+        <li><strong>Existing project TODOs:</strong> investigate slope/step behavior across frame rates, improve lock-on and camera references, review movement mathematics, clean up code, and compare ground-check/skin-width approaches.</li>
+      </ul>
+      <p class="detail-note">These are file-level observations, not reproduced runtime defects. No fixes were applied. Existing TODOs were translated from <code>Assets/AAA/TODO.txt</code>.</p>
+    </details>
+    <details class="record-guide">
+      <summary>What to include in a test record</summary>
+      <dl class="record-fields">
+        <div><dt>Date &amp; revision</dt><dd>The exact build or source revision tested.</dd></div>
+        <div><dt>Question</dt><dd>What the test is intended to establish.</dd></div>
+        <div><dt>Setup</dt><dd>Scene, controls, and temporary or placeholder assets.</dd></div>
+        <div><dt>Observed result</dt><dd>Behavior, problems, captures, and measurements.</dd></div>
+        <div><dt>Next step</dt><dd>A proposed change or an agreed decision. Add accepted choices to the Decisions tab.</dd></div>
+      </dl>
+    </details>
+    <div class="scope-note"><b>Next validation questions</b><p>Check movement, slopes, steps and collision at different frame rates; jump/dash behavior; camera following; target acquisition, loss and occlusion; firing, pooling and impacts; window resizing; and configured gamepad inputs. A complete damage/death check still needs a receiver. The exact next prototype milestone remains undecided.</p></div>
+  </section>
+
+  <section class="content-section" id="revisions" aria-labelledby="revisions-title">
+    <div class="section-heading"><div><span class="eyebrow">06 / Build records</span><h2 id="revisions-title">An existing Windows build.</h2></div><p>Executable presence does not establish which source revision it contains.</p></div>
+    <div class="revision-note">
+      <span class="source-path">F:\Unity Projects\AC_Game\Build\AC.exe</span>
+      <p>The Build folder contains <code>AC.exe</code>, <code>AC_Data/</code>, <code>UnityPlayer.dll</code>, and supporting runtime files. Launch from that folder with its supporting files present.</p>
+      <p>The executable's last-modified timestamp is <strong>13 July 2026, 21:42 UTC</strong>. It was not launched, and its source revision or correspondence to the current working tree is unknown. The project product name is <code>AC</code>; this is not a chosen final game title.</p>
+    </div>
+    <details class="record-guide">
+      <summary>Recording the next build</summary>
+      <div class="revision-note">
+      <p>When a revision is ready, record how to run it and what it demonstrates.</p>
+      <ul class="revision-list" aria-label="Build record fields"><li>Engine &amp; version</li><li>Source revision</li><li>Scene or entry point</li><li>Launch steps</li><li>Controls</li><li>Build location</li></ul>
+      <p>Keep authoritative source in <code>F:\Unity Projects\AC_Game</code>. Record the commit and any local modifications used for the build. Store review captures with this card, and register downloadable builds only when a reviewable revision is prepared.</p>
+      <p>Preserve useful earlier revisions with their observations. Reference the selected asset revisions in the Assets tab and keep agreed choices in Decisions.</p>
+    </div>
+    </details>
+  </section>
+
+  <footer class="page-footer"><span>Mech Prototype / Source inventory checked 23 October 2026</span><a href="#top">Back to top ↑</a></footer>
+</main>
+</body>
+</html>

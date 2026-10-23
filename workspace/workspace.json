@@ -1,6 +1,38 @@
 {
   "entities": [
     {
+      "id": "mech-prototype",
+      "title": "Mech Prototype",
+      "description": "The AC_Game Unity prototype and living wiki for an Armored Core-inspired roguelike / roguelite, its assets, and decisions.",
+      "type": "group",
+      "category": "game",
+      "created": "2026-10-23",
+      "updated": "2026-10-23",
+      "folder": "2026-10-23_mech-prototype",
+      "steps": [
+        {
+          "name": "Overview",
+          "path": "overview.html"
+        },
+        {
+          "name": "Prototype",
+          "path": "prototype.html"
+        },
+        {
+          "name": "Assets",
+          "path": "assets.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Decisions",
+          "path": "decisions.md"
+        }
+      ],
+      "status": "active",
+      "pinned": true,
+      "defaultStep": 0
+    },
+    {
       "id": "project-playground",
       "title": "Project Playground",
       "description": "Assessing earning potential, choosing a first prototype, and calibrating production effort before committing to a game.",
