@@ -1,0 +1,26 @@
+{
+  "format": "mrmak-card",
+  "version": 1,
+  "template": "research",
+  "title": "Prototype Player Mech",
+  "summary": "The first player mech model for [Mech Prototype](#/mech-prototype/0). This card keeps its references, concept rounds, model revisions, and review history together.\n\n**Current stage:** [v008 low-poly neutral front experiment](#/prototype-player-mech/2) is ready for review. It simplifies v001 into broad faceted armor and simpler joints while keeping its neutral front pose, proportions, colors and markings, with the gun, both back weapons and shield removed. The detailed modular references and v007 body profile remain available.",
+  "items": [
+    {
+      "id": "player-mech-purpose",
+      "title": "A player mech for the prototype",
+      "body": "Create the first 3D mech intended for the player in the existing AC_Game Unity prototype.\n\nThe game remains under the Mech Prototype project. This is its dedicated asset-development card, with room for multiple design rounds in the same way as Arachne Character Lab. The game's [Assets catalogue](#/mech-prototype/2) will track the selected revision and its eventual Unity import location.",
+      "status": "in-progress"
+    },
+    {
+      "id": "player-mech-design-brief",
+      "title": "Main reference and modular sheet",
+      "body": "The owner supplied the main mech reference and requested a neutral symmetric pose, removal of the right-hand weapon, back weapons and left-hand shield, and a blank background.\n\nThe first edited reference is available in [Versions](#/prototype-player-mech/2), with its saved prompt and review. It uses the built-in image editor. Scale, articulation, the 3D generation route and any paid generation budget remain open.\n\nThe owner requested a character sheet based on v001, using head, core, paired arms and paired legs as frame groups, with complete visible fingers. v002 keeps shoulder armor and hands with the arms, and the pelvis with the legs. The sheet and both prompts are in Versions.\n\nThe owner requested separate module images and one complete arm with more neutral fingers like v001. v003 provides head, core, the anatomical right arm marked 01, and pelvis with both legs as four separate PNGs. The arm keeps four fingers plus a thumb, now gently curled and close together. Individual previews, prompts, review notes and a download pack are in Versions.\n\nThe owner marked toy-like core sockets and panel details for revision and identified the missing middle connection from v001. v004 replaces the hollow neck/shoulder sockets and oversized slotted screw/X-pattern details, and restores the complete articulated abdomen/waist bridge as part of the core. The pelvis remains with the legs. The revised core, markup, prompt and review are in Versions.\n\nThe owner requested a closer match to the v001 finger positions. The v003b arm correction curls the fingers inward together into a relaxed open C shape with natural overlap. The corrected image, exact prompt and review are in Versions, with the original v003 preserved for comparison.\n\nThe owner requested one separate back view of the legs. v005 shows the pelvis and both complete legs from behind in a neutral stance, based on v003 and the character sheet. Rear surfaces and mechanical details are inferred for owner review. The waist bridge remains with the v004 core. The rear image, prompt and review are in Versions.\n\nThe owner requested a side view of the legs and back/side views of the body and arm. v006 adds those five separate PNGs using v003/v005 legs, v004 core with its waist bridge, and the corrected v003b arm. All side views use the anatomical right side with front/toes toward image-left. Rear and side surfaces are inferred; the leg profile has a minor far-foot alignment note. Each image has its own visible Versions entry, prompt and review, plus a shared download pack.\n\nOn 25 October the owner identified the v006 body side view as too slim. v007 returns to the original photograph and neutral v001, retaining the v004 front design while adding depth through the chest, central hull and rear housing. The complete narrow waist bridge is preserved. The earlier profile and both prompts remain available for comparison; inferred side geometry awaits owner review.\n\nOn 25 October the owner requested an experiment: a simplified/low-poly version of the first neutral front reference, following the v001 pose, background and weapon removals. v008 edits v001 into broad faceted armor and simpler mechanical forms, retaining its recognizable silhouette, colors, stripes and main asymmetric markings. It is a separate image reference for review, with its exact prompt and source hashes; actual mesh topology has not been produced.",
+      "status": "in-progress"
+    },
+    {
+      "id": "player-mech-version-tracking",
+      "title": "Keep the development history together",
+      "body": "Use [References](#/prototype-player-mech/1) for inspiration and notes, and [Versions](#/prototype-player-mech/2) for concept and model revisions. Add dedicated review tabs here when a round needs more space.\n\nRecord source references, saved prompts when used, editable files, exports, review notes, and the selected revision. Keep concept selection, model review, and verification in Unity as distinct milestones."
+    }
+  ]
+}

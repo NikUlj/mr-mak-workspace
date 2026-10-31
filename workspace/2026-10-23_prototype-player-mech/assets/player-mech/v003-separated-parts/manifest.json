@@ -1,0 +1,132 @@
+{
+  "revision": "v003-separated-parts",
+  "created": "2026-10-24",
+  "status": "ready-for-owner-review",
+  "request": "Separate the modular character sheet into individual part images; use one complete arm and relax its fingers like v001.",
+  "generator": {
+    "provider": "built-in image_gen editor",
+    "model": null,
+    "seed": null,
+    "note": "Exact model and seeds were not exposed. Four completed image edits; no pending jobs."
+  },
+  "sources": [
+    {
+      "file": "../v002-character-sheet/player-mech-modular-sheet-v002.png",
+      "sha256": "2f403f4530957bd4376bb7df82a048a397a95f3993285c7f30ce913585927721",
+      "role": "Owner-requested extraction source and design authority for all parts."
+    },
+    {
+      "file": "../v001-neutral/player-mech-neutral-front-v001.png",
+      "sha256": "1c7695fad5d4fa0239c3c23af9fabafb4d28095d11e83eb75ec86b7c0ae64049",
+      "role": "Supporting neutral hand-pose reference for the single arm only."
+    }
+  ],
+  "parts": [
+    {
+      "part": "head",
+      "file": "player-mech-head-front-v003.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "9c14f45332f3a573f9bdf12a420fa470be55c8e640cd49e572869140c98e677c",
+      "contents": "Complete head and neck attachment, including pale cheek structures.",
+      "prompt": "prompts/head.txt",
+      "category": "body-essential",
+      "review": {
+        "method": "Host agent visual inspection of generated image against v002 and, for the hand pose, v001.",
+        "verdict": "pass",
+        "checks": {
+          "body_axis_dead_front": true,
+          "no_three_quarter": true,
+          "no_body_twist": true,
+          "no_hero_angle": true,
+          "no_partial_back": true,
+          "framing_clean": true
+        },
+        "reason": "Complete isolated head, centered front view, source identity retained.",
+        "estimated_camera_rotation_degrees": 0
+      }
+    },
+    {
+      "part": "core",
+      "file": "player-mech-core-front-v003.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "059a4cc1062080d4252dd09689285e96ff87222cfac69da29dfa66f62fd8cfb3",
+      "contents": "Headless core, shoulder connection sockets, chest columns and lower waist coupling.",
+      "prompt": "prompts/core.txt",
+      "category": "body-essential",
+      "review": {
+        "method": "Host agent visual inspection of generated image against v002 and, for the hand pose, v001.",
+        "verdict": "pass",
+        "checks": {
+          "body_axis_dead_front": true,
+          "no_three_quarter": true,
+          "no_body_twist": true,
+          "no_hero_angle": true,
+          "no_partial_back": true,
+          "framing_clean": true
+        },
+        "reason": "Headless core and empty neck socket preserved; no arms, head or pelvis.",
+        "estimated_camera_rotation_degrees": 0
+      }
+    },
+    {
+      "part": "arm",
+      "file": "player-mech-right-arm-neutral-v003.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "c727e7f9952d89ac449370f83b941a7eacf7da9f98b59a304df8e3a98be84535",
+      "contents": "Anatomical right arm, viewer-left in v002; shoulder armor through complete attached five-digit hand.",
+      "prompt": "prompts/arm.txt",
+      "category": "body-essential",
+      "review": {
+        "method": "Host agent visual inspection of generated image against v002 and, for the hand pose, v001.",
+        "verdict": "pass",
+        "checks": {
+          "body_axis_dead_front": true,
+          "no_three_quarter": true,
+          "no_body_twist": true,
+          "no_hero_angle": true,
+          "no_partial_back": true,
+          "framing_clean": true
+        },
+        "reason": "One complete arm; four distinct fingers held close with a gentle curl and one relaxed thumb. No wide splay or clenched fist.",
+        "estimated_camera_rotation_degrees": 0
+      },
+      "side": "anatomical-right",
+      "fingers": 4,
+      "thumbs": 1
+    },
+    {
+      "part": "legs",
+      "file": "player-mech-legs-front-v003.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "a17a30b1e4ef682b9bfb3b92362458ee15762d33dc8910d2b8a0a423a22188f0",
+      "contents": "Pelvis, hips, paired complete legs and both feet.",
+      "prompt": "prompts/legs.txt",
+      "category": "body-essential",
+      "review": {
+        "method": "Host agent visual inspection of generated image against v002 and, for the hand pose, v001.",
+        "verdict": "pass",
+        "checks": {
+          "body_axis_dead_front": true,
+          "no_three_quarter": true,
+          "no_body_twist": true,
+          "no_hero_angle": true,
+          "no_partial_back": true,
+          "framing_clean": true
+        },
+        "reason": "Complete paired lower body; level hips, forward feet, no upper torso.",
+        "estimated_camera_rotation_degrees": 0
+      }
+    }
+  ],
+  "limitations": [
+    "Image-editor extractions preserve the source design visually; they are not pixel-identical crops.",
+    "Native output is 1254 x 1254 for head/core and 1024 x 1536 for arm/legs, below the requested 2K preference; no upscaling was applied.",
+    "Independent framing scales do not establish physical dimensions or connector fit.",
+    "Fine decal lettering is approximate. Hidden interfaces remain inferred.",
+    "Owner acceptance, meshes, side/back views and Unity integration remain separate milestones."
+  ]
+}

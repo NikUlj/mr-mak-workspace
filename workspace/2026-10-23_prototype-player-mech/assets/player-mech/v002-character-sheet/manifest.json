@@ -1,0 +1,54 @@
+{
+  "revision": "v002-character-sheet",
+  "created": "2026-10-24",
+  "status": "ready-for-owner-review",
+  "source": {
+    "file": "../v001-neutral/player-mech-neutral-front-v001.png",
+    "sha256": "1c7695fad5d4fa0239c3c23af9fabafb4d28095d11e83eb75ec86b7c0ae64049",
+    "selection_basis": "Owner explicitly requested a character sheet from v001."
+  },
+  "generator": {
+    "provider": "built-in image_gen",
+    "model": null,
+    "seed": null,
+    "note": "Exact model and seed not exposed by the tool.",
+    "prompts": ["prompt.txt", "correction-prompt.txt"]
+  },
+  "output": {
+    "file": "player-mech-modular-sheet-v002.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "2f403f4530957bd4376bb7df82a048a397a95f3993285c7f30ce913585927721",
+    "requested_minimum_edge": 2048,
+    "upscaled": false,
+    "resolution_note": "Native output is below the prompt's 2K target; actual dimensions are reported."
+  },
+  "inventory": [
+    { "part": "head", "panel": "top-left", "contents": "Head and neck attachment including pale cheek structures", "front_verdict": "pass" },
+    { "part": "core", "panel": "top-right", "contents": "Headless central chest and lower torso; neck mount and lower core coupling", "front_verdict": "pass" },
+    { "part": "arms", "panel": "bottom-left", "contents": "Both complete arms from shoulder armor through attached hands", "front_verdict": "pass", "anatomical_right_hand_digits": 5, "anatomical_left_hand_digits": 5 },
+    { "part": "legs", "panel": "bottom-right", "contents": "Pelvis and hip assembly with both complete legs and feet", "front_verdict": "pass" }
+  ],
+  "attempts": [
+    { "file": "attempts/attempt-01-duplicate-head.png", "verdict": "hard_fail", "reason": "The core panel retained a duplicate head and white cheek structures.", "sha256": "1dc38dd201e1ed492d223e0b81c150e4de2211fa7b02933532ea91ceb35fc3e7" },
+    { "file": "player-mech-modular-sheet-v002.png", "verdict": "pass", "reason": "All four modules separated; core is headless; five complete visible digits on each hand." }
+  ],
+  "front_review": {
+    "method": "Host agent visual inspection with image tools; character-sheet front-view rubric.",
+    "verdict": "pass",
+    "body_axis_dead_front": true,
+    "no_three_quarter": true,
+    "no_body_twist": true,
+    "no_hero_angle": true,
+    "no_partial_back": true,
+    "framing_clean": true,
+    "estimated_camera_rotation_degrees": 0
+  },
+  "limitations": [
+    "Native output is 1254 x 1254 rather than the prompt's 2K target.",
+    "Panels use different display scales and cannot establish dimensions.",
+    "Hidden interfaces are inferred; connector fit is not verified.",
+    "Fine decal text is approximate.",
+    "Owner review and any later mesh work remain separate."
+  ]
+}

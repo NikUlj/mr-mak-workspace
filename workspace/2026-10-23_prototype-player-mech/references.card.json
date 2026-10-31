@@ -1,0 +1,17 @@
+{
+  "format": "mrmak-card",
+  "version": 1,
+  "template": "gallery",
+  "title": "Player mech references",
+  "summary": "Collect visual references for the [Prototype Player Mech](#/prototype-player-mech/0). Add images with source links and notes about the shapes, proportions, materials, or details to explore.\n\nNo references have been selected yet.",
+  "items": [
+    {
+      "id": "fc0f4f9c-6614-40d5-b985-77bdf82e5f2e",
+      "title": "Untitled entry",
+      "body": "",
+      "status": "idea",
+      "alt": "Main Reference",
+      "image": "media/ace8fa38792eade2eb1bcc6eeda9849b-6602bc15.jpg"
+    }
+  ]
+}

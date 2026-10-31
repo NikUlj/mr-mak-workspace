@@ -1,0 +1,47 @@
+{
+  "revision": "v003b-arm-pose",
+  "created": "2026-10-24",
+  "status": "ready-for-owner-review",
+  "request": "Make the finger positions in the v003 arm more closely resemble v001.",
+  "generator": {
+    "provider": "built-in image_gen editor",
+    "model": null,
+    "seed": null,
+    "note": "One completed image edit. Exact model and seed were not exposed."
+  },
+  "sources": [
+    {
+      "file": "player-mech-right-arm-neutral-v003.png",
+      "role": "Edit target and arm design authority",
+      "sha256": "c727e7f9952d89ac449370f83b941a7eacf7da9f98b59a304df8e3a98be84535"
+    },
+    {
+      "file": "../v001-neutral/player-mech-neutral-front-v001.png",
+      "role": "Anatomical right hand on viewer left: finger-pose reference only",
+      "sha256": "1c7695fad5d4fa0239c3c23af9fabafb4d28095d11e83eb75ec86b7c0ae64049"
+    }
+  ],
+  "output": {
+    "file": "player-mech-right-arm-neutral-v003b.png",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "9f5caf9d3b94e5fd73ca80284ddc0a361b0cd1dcb482c74b1338beaa0ed8c9b5",
+    "prompt": "prompts/arm-v003b.txt",
+    "review": "arm-v003b-review.md"
+  },
+  "review": {
+    "method": "Agent visual comparison of both input images and the generated output at full size.",
+    "verdict": "Closer to the requested v001 pose; ready for owner review.",
+    "findings": [
+      "Fingers bend inward toward viewer right into a relaxed open C shape.",
+      "Compact finger spacing and natural overlap replace the straighter front-facing spread of v003.",
+      "Bent thumb and red thumb tip remain distinct; the hand is empty.",
+      "Complete shoulder, 01 marking, crest, elbow, forearm, wrist and white portrait framing remain visually consistent."
+    ],
+    "limitations": [
+      "Generated revision, not a pixel-identical replacement outside the hand.",
+      "Finger pose approximates the small v001 reference; some digits overlap in projection.",
+      "Image reference only; no rig, mesh or runtime change."
+    ]
+  }
+}

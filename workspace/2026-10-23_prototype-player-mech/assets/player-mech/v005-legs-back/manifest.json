@@ -1,0 +1,58 @@
+{
+  "revision": "v005-legs-back",
+  "created": "2026-10-24",
+  "status": "ready-for-owner-review",
+  "request": "One separate back view of the legs.",
+  "generator": {
+    "provider": "built-in image_gen editor",
+    "model": null,
+    "seed": null,
+    "note": "One completed edit; exact model and seed were not exposed."
+  },
+  "sources": [
+    {
+      "file": "../v003-separated-parts/player-mech-legs-front-v003.png",
+      "role": "Primary front-view part reference: lower-body identity, proportions, neutral stance and pelvis/leg boundaries.",
+      "sha256": "a17a30b1e4ef682b9bfb3b92362458ee15762d33dc8910d2b8a0a423a22188f0"
+    },
+    {
+      "file": "../v002-character-sheet/player-mech-modular-sheet-v002.png",
+      "role": "Supporting front character sheet for the same mech.",
+      "sha256": "2f403f4530957bd4376bb7df82a048a397a95f3993285c7f30ce913585927721"
+    }
+  ],
+  "output": {
+    "file": "player-mech-legs-back-v005.png",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "76efc22dcc3f3debaa3df37bdb06d71dced2e9677149bbe242e73a399d595f65",
+    "view": "back",
+    "category": "multiview-back",
+    "background": "white",
+    "upscaled": false,
+    "prompt": "prompt.txt"
+  },
+  "module_boundary": "Pelvis/hips and both complete legs through both feet. Extended waist/abdomen bridge remains with the v004 core and is not included.",
+  "visual_review": {
+    "method": "Host agent full-size visual inspection against v003 leg front and v002 sheet.",
+    "verdict": "pass",
+    "checks": {
+      "body_axis_dead_back": true,
+      "no_three_quarter_back": true,
+      "no_front_armor_faces": true,
+      "body_pose_matches_front": true,
+      "framing_clean": true,
+      "complete_pelvis_and_legs": true,
+      "both_heels_present": true,
+      "no_core_waist_bridge": true
+    },
+    "reason": "Centered dead-back pose, rear thigh/knee/calf mechanisms and heel armor, complete lower-body module. Front thigh graphics are not duplicated on the back; overall proportions and materials remain recognizable.",
+    "estimated_rotation_away_from_back_degrees": 0
+  },
+  "limitations": [
+    "No authoritative rear reference exists; rear surfaces, joints and routing were inferred from the front design and require owner review.",
+    "Separate reference images do not prove matching 3D dimensions, hidden geometry, articulation or connector fit.",
+    "Native output is 1024 x 1536, below the prompt's 2K preference; it has not been upscaled.",
+    "Fine markings are approximate. This is a reference image, not a mesh."
+  ]
+}

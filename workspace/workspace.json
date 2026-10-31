@@ -1,13 +1,43 @@
 {
   "entities": [
     {
+      "id": "prototype-player-mech",
+      "title": "Prototype Player Mech",
+      "description": "Development of Mech Prototype's first player mech: visual references, concept rounds, 3D model revisions, and review history.",
+      "type": "group",
+      "category": "image-gen",
+      "created": "2026-10-23",
+      "updated": "2026-10-31",
+      "folder": "2026-10-23_prototype-player-mech",
+      "steps": [
+        {
+          "name": "Overview",
+          "path": "overview.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "References",
+          "path": "references.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Versions",
+          "path": "versions.card.json",
+          "viewer": "card"
+        }
+      ],
+      "status": "active",
+      "pinned": false,
+      "defaultStep": 0
+    },
+    {
       "id": "mech-prototype",
       "title": "Mech Prototype",
       "description": "The AC_Game Unity prototype and living wiki for an Armored Core-inspired roguelike / roguelite, its assets, and decisions.",
       "type": "group",
       "category": "game",
       "created": "2026-10-23",
-      "updated": "2026-10-23",
+      "updated": "2026-10-24",
       "folder": "2026-10-23_mech-prototype",
       "steps": [
         {
@@ -26,6 +56,10 @@
         {
           "name": "Decisions",
           "path": "decisions.md"
+        },
+        {
+          "name": "Code review",
+          "path": "code-review.md"
         }
       ],
       "status": "active",

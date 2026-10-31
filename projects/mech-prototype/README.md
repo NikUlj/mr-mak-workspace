@@ -16,7 +16,9 @@ estimates. Prototype before continuing the production research.
 
 - [Wiki overview](../../workspace/2026-10-23_mech-prototype/overview.html)
 - [Prototype status and observations](../../workspace/2026-10-23_mech-prototype/prototype.html)
+- [Code review and development stopping point (24 October 2026)](../../workspace/2026-10-23_mech-prototype/code-review.md)
 - [Asset catalogue](../../workspace/2026-10-23_mech-prototype/assets.card.json)
+- [Prototype Player Mech development card](../../workspace/2026-10-23_prototype-player-mech/overview.card.json)
 - [Decision log](../../workspace/2026-10-23_mech-prototype/decisions.md)
 - **Authoritative Unity project:** `F:\Unity Projects\AC_Game`
 - [Project folder shortcut for this Windows PC](../../workspace/2026-10-23_mech-prototype/links/AC_Game-shortcut.zip) (extract the ZIP, then open `AC_Game.url`)
@@ -54,8 +56,21 @@ import location in Unity, so the working source and runtime export are clear.
 Each catalogue entry should identify its purpose, revision, review notes,
 generator/model when used, saved prompt, and source/export locations. Keep
 related variants together, record which version is selected, and review it
-before treating it as accepted. Add motion or model review tabs to this card
-when needed.
+before treating it as accepted. Keep small asset reviews on the game card.
+Substantial asset-development tasks can use their own linked cards, with related
+iterations kept together and a catalogue entry on the game card.
+
+Keep every image revision as a separate visible Versions entry with its own
+stable ID, image, prompt and review notes. Preserve earlier entries when adding
+a correction; replace an existing entry only when the owner explicitly asks.
+
+The first player model uses the dedicated **Prototype Player Mech** card
+(`prototype-player-mech`). Its initial tabs are Overview, References, and
+Versions. Keep its generated working assets and editable sources in
+`workspace/2026-10-23_prototype-player-mech/assets/player-mech/`; desktop image
+uploads use that card's `media/` folder. References, appearance, scale,
+articulation, generation route, and budget are still open. Record the selected
+revision and eventual Unity import location in the game's Assets catalogue.
 
 Overview and Prototype are maintained directly in `overview.html` and
 `prototype.html`, using `project.css` and the shared report styles. The

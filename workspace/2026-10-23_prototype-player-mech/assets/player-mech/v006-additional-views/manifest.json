@@ -1,0 +1,180 @@
+{
+  "revision": "v006-additional-views",
+  "created": "2026-10-24",
+  "status": "ready-for-owner-review",
+  "request": "Five separate images: legs side; body back and side; arm back and side.",
+  "provider": {
+    "tool": "built-in image_gen editor",
+    "model": null,
+    "seed": null,
+    "note": "Five completed image edits, one per requested image. Exact model and seeds were not exposed. No pending jobs."
+  },
+  "orientation": "All side views show the anatomical right side with front/toes toward image-left. Back views face directly away.",
+  "boundaries": {
+    "legs": "Pelvis/hips and both complete legs including feet. Waist bridge excluded.",
+    "core": "Headless torso, neck/shoulder mounts and full attached abdomen/waist bridge down to its lower mounting interface. Pelvis and limbs excluded.",
+    "arm": "Single anatomical right arm, full shoulder armor through attached hand. v003b relaxed deeper curl retained."
+  },
+  "outputs": [
+    {
+      "id": "legs-side",
+      "part": "legs",
+      "view": "right-side",
+      "category": "multiview-side",
+      "file": "player-mech-legs-side-v006.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "a09d77bf12d6c639852e303ea763b2d034a502b73b71c71b96d39774d697f914",
+      "sources": [
+        {
+          "file": "../v003-separated-parts/player-mech-legs-front-v003.png",
+          "sha256": "a17a30b1e4ef682b9bfb3b92362458ee15762d33dc8910d2b8a0a423a22188f0",
+          "role": "Existing design reference"
+        },
+        {
+          "file": "../v005-legs-back/player-mech-legs-back-v005.png",
+          "sha256": "76efc22dcc3f3debaa3df37bdb06d71dced2e9677149bbe242e73a399d595f65",
+          "role": "Existing design reference"
+        }
+      ],
+      "prompt": "prompts/legs-side.txt",
+      "review": {
+        "method": "Host agent visual comparison of full-size generated outputs with supplied source references and view-specific rubric.",
+        "verdict": "soft_fail",
+        "reason": "Useful right-side profile with preserved proportions and complete feet; the far foot has slight depth/vertical separation, so this is not an exact orthographic alignment.",
+        "warning": "The far foot is slightly offset in projection. Accepted with a review note as a side reference, not a dimensionally registered drawing.",
+        "accepted_with_warning": true,
+        "framing_complete": true,
+        "materials_consistent": true,
+        "module_boundary_retained": true
+      },
+      "upscaled": false
+    },
+    {
+      "id": "core-back",
+      "part": "core",
+      "view": "back",
+      "category": "multiview-back",
+      "file": "player-mech-core-back-v006.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "30e056c9c47a50ed2af2c70dff32fa6256119769b510bae28c9a822973573534",
+      "sources": [
+        {
+          "file": "../v004-core-refinement/player-mech-core-refined-waist-v004.png",
+          "sha256": "7c709478b426fc34c3f0f367cce0d553e22bdc8f303cbe056810929a97aed29d",
+          "role": "Existing design reference"
+        }
+      ],
+      "prompt": "prompts/core-back.txt",
+      "review": {
+        "method": "Host agent visual comparison of full-size generated outputs with supplied source references and view-specific rubric.",
+        "verdict": "pass",
+        "reason": "Centered rear elevation, rear service/grille details and complete waist bridge; no head, arms or pelvis. Rear armor is a matching inferred shell, not established geometry.",
+        "framing_complete": true,
+        "materials_consistent": true,
+        "module_boundary_retained": true
+      },
+      "upscaled": false
+    },
+    {
+      "id": "core-side",
+      "part": "core",
+      "view": "right-side",
+      "category": "multiview-side",
+      "file": "player-mech-core-side-v006.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "ae4f2a6563883f9fbd625c60c49fef0d0a576c4a6b52b3303c6b0a16606c2a11",
+      "sources": [
+        {
+          "file": "../v004-core-refinement/player-mech-core-refined-waist-v004.png",
+          "sha256": "7c709478b426fc34c3f0f367cce0d553e22bdc8f303cbe056810929a97aed29d",
+          "role": "Existing design reference"
+        },
+        {
+          "file": "player-mech-core-back-v006.png",
+          "sha256": "30e056c9c47a50ed2af2c70dff32fa6256119769b510bae28c9a822973573534",
+          "role": "New working rear view, supplied to keep inferred side surfaces consistent"
+        }
+      ],
+      "prompt": "prompts/core-side.txt",
+      "review": {
+        "method": "Host agent visual comparison of full-size generated outputs with supplied source references and view-specific rubric.",
+        "verdict": "pass",
+        "reason": "Side-facing core structure, near shoulder bearing and complete waist bridge; front/rear depth inferred from the working references.",
+        "framing_complete": true,
+        "materials_consistent": true,
+        "module_boundary_retained": true
+      },
+      "upscaled": false
+    },
+    {
+      "id": "arm-back",
+      "part": "arm",
+      "view": "back",
+      "category": "multiview-back",
+      "file": "player-mech-right-arm-back-v006.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "fc52a1c7d5c05328e3164ca310621f42d1f1faae9c6fb0cfe6aa8097f7ce5b33",
+      "sources": [
+        {
+          "file": "../v003-separated-parts/player-mech-right-arm-neutral-v003b.png",
+          "sha256": "9f5caf9d3b94e5fd73ca80284ddc0a361b0cd1dcb482c74b1338beaa0ed8c9b5",
+          "role": "Existing design reference"
+        }
+      ],
+      "prompt": "prompts/arm-back.txt",
+      "review": {
+        "method": "Host agent visual comparison of full-size generated outputs with supplied source references and view-specific rubric.",
+        "verdict": "pass",
+        "reason": "Complete rear-facing arm with reversed projected lateral lean, rear shell/access details and no copied 01/crest on the rear; compact finger curl retained.",
+        "framing_complete": true,
+        "materials_consistent": true,
+        "module_boundary_retained": true
+      },
+      "upscaled": false
+    },
+    {
+      "id": "arm-side",
+      "part": "arm",
+      "view": "right-side",
+      "category": "multiview-side",
+      "file": "player-mech-right-arm-side-v006.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "1606cc9e2f987296958e0de675da8926c1de3728b3aea8a5ca6537773a0029a8",
+      "sources": [
+        {
+          "file": "../v003-separated-parts/player-mech-right-arm-neutral-v003b.png",
+          "sha256": "9f5caf9d3b94e5fd73ca80284ddc0a361b0cd1dcb482c74b1338beaa0ed8c9b5",
+          "role": "Existing design reference"
+        },
+        {
+          "file": "player-mech-right-arm-back-v006.png",
+          "sha256": "fc52a1c7d5c05328e3164ca310621f42d1f1faae9c6fb0cfe6aa8097f7ce5b33",
+          "role": "New working rear view, supplied to keep inferred side surfaces consistent"
+        }
+      ],
+      "prompt": "prompts/arm-side.txt",
+      "review": {
+        "method": "Host agent visual comparison of full-size generated outputs with supplied source references and view-specific rubric.",
+        "verdict": "pass",
+        "reason": "Nearly vertical profile projection of the A-pose arm; complete shoulder, elbow, forearm and curled hand. Fingers overlap naturally in profile.",
+        "framing_complete": true,
+        "materials_consistent": true,
+        "module_boundary_retained": true
+      },
+      "upscaled": false
+    }
+  ],
+  "limitations": [
+    "Previously hidden surfaces, part thickness, rear shells and side mechanisms are inferred, not recovered from an existing 3D model.",
+    "Independent generated views do not prove exact geometric correspondence, scale, articulation or connector fit.",
+    "The leg side view has slight far-foot projection offset; it is usable as a visual reference with this review note.",
+    "Curled fingers overlap naturally; five-digit construction was prompted but not every digit is individually countable from every new view.",
+    "Native outputs are 1254 x 1254 for body views and 1024 x 1536 for legs/arm, below the prompts' 2K preference. No upscaling was applied.",
+    "Fine markings may vary. All five images await owner review; no mesh or Unity change was made."
+  ]
+}

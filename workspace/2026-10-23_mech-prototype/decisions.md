@@ -65,6 +65,24 @@ to be checked. Its controls and systems do not settle the final game design.
 Catalogue existing assets by their Unity paths; record a generated asset's
 chosen source revision and runtime import location when it is integrated.
 
+### D-007: A dedicated Prototype Player Mech card
+
+**Agreed: 23 October 2026 | Source: owner's instruction in the card-organization discussion**
+
+Create a separate **Prototype Player Mech** card for the first player mech's
+references, concept rounds, model revisions, and review history. Keep related
+iterations on that card, following the Arachne Character Lab example. It remains
+an asset task within Mech Prototype, with a link from the game's
+[Assets catalogue](#/mech-prototype/2).
+
+This refines D-004's organization: the game card remains the main wiki and asset
+catalogue; this substantial asset-development task has its own linked card.
+The authoritative Unity project remains unchanged under D-006. The selected
+model revision and actual import location will be recorded when available.
+
+Open [Prototype Player Mech](#/prototype-player-mech/0). Its Workspace card ID is
+`prototype-player-mech`.
+
 ## Future entries
 
 For each new agreement, add a stable decision ID, date, choice, reason, and

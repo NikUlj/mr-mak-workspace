@@ -1,0 +1,52 @@
+{
+  "revision": "v008b-low-poly-front",
+  "created": "2026-10-25",
+  "status": "ready-for-owner-review",
+  "request": "Neutral front reference like v001 with simplified low-poly mesh appearance and all v001 weapon removals.",
+  "provider": {
+    "tool": "built-in image_gen editor",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "completed_edits_this_variant": 1
+  },
+  "sources": [
+    {
+      "file": "assets/player-mech/v001-neutral/player-mech-neutral-front-v001.png",
+      "role": "Edit target and authority for pose, proportions, front camera, design and weapon removal.",
+      "sha256": "1c7695fad5d4fa0239c3c23af9fabafb4d28095d11e83eb75ec86b7c0ae64049"
+    },
+    {
+      "file": "media/ace8fa38792eade2eb1bcc6eeda9849b-27fae130.jpg",
+      "role": "Original photograph; supporting design identity only.",
+      "sha256": "ae3976a904ba761d5278d06e5e444d67c7e6735e2edb08ef38398a35dd8848c3"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "player-mech-neutral-front-low-poly-v008b.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "76a55ab3041c4700c64515f94fcb817f3d08db17712ff0a184e9d42581c571f7",
+      "prompt": "prompt.txt",
+      "upscaled": false
+    }
+  ],
+  "review": {
+    "verdict": "pass",
+    "owner_approved": false,
+    "method": "Full-size visual comparison with v001 and the original photograph.",
+    "findings": [
+      "Complete neutral front A-pose with balanced stance, relaxed empty hands and visible feet.",
+      "Gun, both back weapons and shield absent; white background and neutral lighting.",
+      "Broad planar armor, faceted head and joint housings, and reduced small mechanical details.",
+      "Source proportions, charcoal/gray palette, red/brass accents and main asymmetric markings remain recognizable."
+    ]
+  },
+  "limitations": [
+    "Raster reference only; no mesh topology or polygon count is established.",
+    "Curled fingers overlap; individual digits cannot be independently counted.",
+    "Fine decals and small surfaces vary or are simplified. Hidden construction remains inferred."
+  ],
+  "version_note": "Another v008 result was saved concurrently. This independently generated result is preserved as v008b; neither image is replaced or selected on the owner's behalf."
+}

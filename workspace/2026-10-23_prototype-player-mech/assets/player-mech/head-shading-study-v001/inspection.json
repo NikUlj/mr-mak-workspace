@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-24",
+  "purpose": "Blender shading diagnosis; no geometry repair or runtime acceptance",
+  "source_file": "F:\\Assets\\Protoype_Mech\\Head\\robotic head 3d model.fbx",
+  "source_sha256": "a2a7da9ec4869da5c4c6dc16908f5e3741b4703b69e61a7b53cb968e5cb67e9e",
+  "generator": "Tripo, reported by owner; exact model and generation settings unavailable",
+  "blender_version": "5.2.2 LTS",
+  "mesh_counts": {
+    "vertices": 1053,
+    "edges": 2286,
+    "faces": 1236,
+    "triangles": 2075,
+    "boundary_or_nonmanifold_edges": 25
+  },
+  "same_geometry_across_variants": true,
+  "geometry_sha256": "f1f0a7ef8c4a5a83e24f9ac4cc37e10044879ad9468181e788f88881b030a777",
+  "variants": [
+    {
+      "object": "01 Original - imported normals",
+      "smooth_faces": 1236,
+      "sharp_edges": 0,
+      "custom_normals": true
+    },
+    {
+      "object": "02 Flat shading diagnostic",
+      "smooth_faces": 0,
+      "sharp_edges": 0,
+      "custom_normals": false
+    },
+    {
+      "object": "03 Sharp edges - 30 degrees",
+      "smooth_faces": 1236,
+      "sharp_edges": 1171,
+      "custom_normals": false
+    }
+  ],
+  "unity_validation": "Not performed",
+  "selection": "No repaired model accepted; rightmost object is a shading test only"
+}

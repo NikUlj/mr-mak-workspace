@@ -1,0 +1,71 @@
+{
+  "revision": "v004-core-refinement",
+  "created": "2026-10-24",
+  "status": "ready-for-owner-review",
+  "generator": {
+    "provider": "built-in image_gen editor",
+    "model": null,
+    "seed": null,
+    "note": "One completed image edit. Exact model and seed were not exposed."
+  },
+  "sources": [
+    {
+      "file": "../v003-separated-parts/player-mech-core-front-v003.png",
+      "role": "Clean v003 core: exact edit target and base design.",
+      "sha256": "059a4cc1062080d4252dd09689285e96ff87222cfac69da29dfa66f62fd8cfb3"
+    },
+    {
+      "file": "sources/owner-marked-core.png",
+      "role": "Owner annotation identifying the neck socket, shoulder sockets, oversized slotted screws and X-pattern panel details to change.",
+      "sha256": "34c082fc29a5ed5fda15a7c404c4f9c8e5dd45ee7fb2c9ea1542a2f1a70c98e3"
+    },
+    {
+      "file": "../v001-neutral/player-mech-neutral-front-v001.png",
+      "role": "Original full-body reference for restoring the mechanical abdomen/waist bridge between torso and pelvis.",
+      "sha256": "1c7695fad5d4fa0239c3c23af9fabafb4d28095d11e83eb75ec86b7c0ae64049"
+    }
+  ],
+  "output": {
+    "file": "player-mech-core-refined-waist-v004.png",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "7c709478b426fc34c3f0f367cce0d553e22bdc8f303cbe056810929a97aed29d",
+    "upscaled": false,
+    "background": "white",
+    "prompt": "prompt.txt"
+  },
+  "requested_changes": [
+    "Replace tall hollow neck peg with a low integrated mechanical bearing/actuator mount.",
+    "Replace hollow shoulder plug-in sockets with sealed servo/bearing assemblies.",
+    "Remove oversized slotted screw heads and molded X patterns from paired gray chest panels; retain long armor shapes with smaller fasteners, seams and vents.",
+    "Restore the missing articulated abdomen/waist bridge from v001 beneath the torso and assign it to the core module."
+  ],
+  "module_boundary": "Core includes central torso, neck and shoulder mounts, and the complete abdomen/waist bridge down to its lower interface immediately above the pelvis. Pelvis, hips and legs remain in the leg module.",
+  "visual_review": {
+    "method": "Host agent visual inspection at full size against clean v003, owner markup and v001.",
+    "verdict": "pass",
+    "checks": {
+      "body_axis_dead_front": true,
+      "no_three_quarter": true,
+      "no_body_twist": true,
+      "no_hero_angle": true,
+      "no_partial_back": true,
+      "framing_clean": true,
+      "neck_socket_replaced": true,
+      "shoulder_sockets_replaced": true,
+      "oversized_slotted_screws_removed": true,
+      "x_patterns_removed": true,
+      "waist_bridge_attached_and_complete": true,
+      "no_pelvis_or_legs": true,
+      "red_annotations_absent": true
+    },
+    "reason": "Requested toy-like details replaced with integrated metal assemblies and restrained panel details; complete slim articulated waist bridge visible below the core. Front view and design identity retained.",
+    "estimated_camera_rotation_degrees": 0
+  },
+  "limitations": [
+    "Subjective material/design refinement awaits owner review.",
+    "Waist geometry is reconstructed from the visible front reference; physical dimensions, hidden surfaces and fit are unverified.",
+    "Native image is 1254 x 1254; the requested 2K preference was not met and no upscaling was applied.",
+    "Fine markings are approximate. This revision is an image, not a mesh."
+  ]
+}

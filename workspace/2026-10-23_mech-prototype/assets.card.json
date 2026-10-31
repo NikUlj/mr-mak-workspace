@@ -6,6 +6,12 @@
   "summary": "Existing AC_Game assets are catalogued here at their current Unity locations. They have not been copied into Workspace. Their final-game suitability and generation provenance remain to be reviewed.\n\nAdd future generated work with its prompt, source revision, exports, review notes, and eventual Unity import location. No new media was generated during the 23 October 2026 source inventory.",
   "items": [
     {
+      "id": "prototype-player-mech",
+      "title": "Prototype Player Mech",
+      "status": "in-progress",
+      "body": "**New player-model development** for this game.\n\nOpen the [Prototype Player Mech card](#/prototype-player-mech/0) for its brief, references, concept rounds, and 3D model revisions. Related iterations stay together on that dedicated card.\n\nCurrent stage: brief and references. No concept or model has been selected, and no new model has been imported into Unity. Record the selected revision, editable source, runtime export, and actual Unity import location here when they exist."
+    },
+    {
       "id": "ac-game-player-camera",
       "title": "Player and camera foundation",
       "status": "review",

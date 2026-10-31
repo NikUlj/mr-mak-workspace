@@ -1,0 +1,19 @@
+Use case: precise-object-edit.
+Asset type: corrected standalone modeling reference, one headless mech body/core in strict anatomical RIGHT-SIDE profile.
+Primary request: The owner says the current side view is much too slim. Correct the actual fore-to-aft torso volume to match the original reference's heavy, blocky core.
+
+INPUT ROLES:
+Image 1 is the v006 side-view EDIT TARGET: keep its right-side orientation (FRONT toward IMAGE LEFT), metal palette, component identity and complete attached waist bridge. Its thin torso silhouette is the defect to change, not a dimensional authority.
+Image 2 is the owner's ORIGINAL photographed full-body reference and is the principal authority for the massive block-like torso proportions and construction. Study the torso beneath/behind the head and between the arm shoulders: substantial upper housings, thick chest armor, a deep central body and integrated rear mass. Its weapons, shield, head and limbs are context only and must not appear in the output.
+Image 3 is the refined v004 FRONT body: authority for the headless core's parts, simpler long gray armor plates, red accent rails, gold piston details, sealed industrial shoulder joints, capped neck mount and the restored waist bridge.
+Image 4 is the neutral full-body v001 reference: supporting authority for the same core's scale, blocky mass and waist connection.
+
+CHANGE:
+Rebuild the torso as a significantly DEEPER, STOCKIER three-dimensional core. At the same torso height, increase the main body's front-to-back depth roughly 45–55 percent over Image 1. Aim for a substantial main-hull side silhouette with fore-aft depth around 0.8–0.9 of the main torso height (exclude the slender waist bridge from that height). This is a proportion guide, not labels to draw.
+Carry real volume through the UPPER, MIDDLE and LOWER torso. Advance the layered chest structure slightly toward image-left and expand the integrated rear hull toward image-right. Thick front plates sit over a deep structural body with credible room for its internal machinery. Use broad, blocky integrated side housings and load-bearing armor masses faithful to the original. The torso must read as a heavy compact armored block with a narrow waist below, not a tall thin stack of plates. Do not obtain bulk by widening shoulder joints, enlarging the neck, adding a separate backpack or merely stretching the old pixels. Keep the main body's vertical proportions and complete waist bridge length.
+
+INVARIANTS:
+Preserve the existing charcoal and gray metal, restrained red, small gold/brass piston details, recognizable layered upper housing and long simplified front armor column. Preserve industrial sealed bearings and small fasteners from v004; no hollow toy sockets, large slotted screw-head ornaments or molded X patterns. Retain the COMPLETE articulated waist/abdomen bridge attached under the core, including its dark central support, exposed metal guide/piston and angular lower mounting block. End just above the pelvis interface. The waist bridge stays relatively slim and is not widened with the chest. No head, arms, hands, pelvis, legs, weapons, shield, thrusters or new accessories.
+
+CAMERA AND PRESENTATION:
+Exactly 90-degree right-side elevation, front left/back right, level orthographic-style camera. Near shoulder bearing viewed along its axis as a circle; far-side parts naturally overlap. Keep profile rather than yawing to three-quarter to fake extra width. One complete centered isolated body with even white margins above, below and at both ends, pure white background, neutral flat illumination, crisp modeling-reference detail. Square canvas, prefer native 2K. No captions, arrows, dimensions, panels, floor or cast shadow.

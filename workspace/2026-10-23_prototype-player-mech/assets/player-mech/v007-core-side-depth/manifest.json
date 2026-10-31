@@ -1,0 +1,93 @@
+{
+  "revision": "v007-core-side-depth",
+  "created": "2026-10-25",
+  "status": "ready-for-owner-review",
+  "request": "Correct the body side view which looks too slim, using the original reference for shape.",
+  "provider": {
+    "tool": "built-in image_gen editor",
+    "model": null,
+    "seed": null,
+    "note": "Two completed edits: initial depth pass retained as rejected, then a targeted central-hull correction. Exact model and seed not exposed. No pending jobs."
+  },
+  "orientation": "Anatomical right-side profile, front toward image-left, rear toward image-right.",
+  "sources": [
+    {
+      "file": "assets/player-mech/v006-additional-views/player-mech-core-side-v006.png",
+      "role": "Original side edit target; owner identified its torso as too slim",
+      "sha256": "ae4f2a6563883f9fbd625c60c49fef0d0a576c4a6b52b3303c6b0a16606c2a11"
+    },
+    {
+      "file": "media/ace8fa38792eade2eb1bcc6eeda9849b-27fae130.jpg",
+      "role": "Owner original photograph, primary torso mass and construction reference",
+      "sha256": "ae3976a904ba761d5278d06e5e444d67c7e6735e2edb08ef38398a35dd8848c3"
+    },
+    {
+      "file": "assets/player-mech/v004-core-refinement/player-mech-core-refined-waist-v004.png",
+      "role": "Refined front body, industrial details and waist bridge authority",
+      "sha256": "7c709478b426fc34c3f0f367cce0d553e22bdc8f303cbe056810929a97aed29d"
+    },
+    {
+      "file": "assets/player-mech/v001-neutral/player-mech-neutral-front-v001.png",
+      "role": "Neutral full-body proportions and waist connection reference",
+      "sha256": "1c7695fad5d4fa0239c3c23af9fabafb4d28095d11e83eb75ec86b7c0ae64049"
+    }
+  ],
+  "attempts": [
+    {
+      "file": "attempts/attempt-01-insufficient-depth.png",
+      "sha256": "a67909d6c3c7eade23534b0c18af4e1a3ded4da4893cc1bdb7ddae172f94a7cc",
+      "prompt": "attempts/attempt-01-prompt.txt",
+      "sources": [
+        "assets/player-mech/v006-additional-views/player-mech-core-side-v006.png",
+        "media/ace8fa38792eade2eb1bcc6eeda9849b-27fae130.jpg",
+        "assets/player-mech/v004-core-refinement/player-mech-core-refined-waist-v004.png",
+        "assets/player-mech/v001-neutral/player-mech-neutral-front-v001.png"
+      ],
+      "verdict": "rejected",
+      "reason": "Torso gained some depth but the central hull still read too thin; retained for provenance."
+    },
+    {
+      "file": "player-mech-core-side-deeper-v007.png",
+      "sha256": "2a77aa9e29ea51e608271e271ef02a925221eb366c317a429be6813132a05cd6",
+      "prompt": "correction-prompt.txt",
+      "inputs": [
+        "attempts/attempt-01-insufficient-depth.png",
+        "media/ace8fa38792eade2eb1bcc6eeda9849b-27fae130.jpg",
+        "assets/player-mech/v004-core-refinement/player-mech-core-refined-waist-v004.png",
+        "assets/player-mech/v001-neutral/player-mech-neutral-front-v001.png"
+      ],
+      "verdict": "pass",
+      "reason": "Fuller central load-bearing hull, chest and integrated rear housing; complete waist bridge retained. Ready for owner review."
+    }
+  ],
+  "outputs": [
+    {
+      "id": "core-side",
+      "part": "core",
+      "view": "right-side",
+      "file": "player-mech-core-side-deeper-v007.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "2a77aa9e29ea51e608271e271ef02a925221eb366c317a429be6813132a05cd6",
+      "prompt": "correction-prompt.txt",
+      "upscaled": false,
+      "review": {
+        "method": "Host agent visual comparison at full size with original photo, v001, v004 and v006 profile.",
+        "verdict": "pass",
+        "owner_approved": false,
+        "findings": [
+          "Deeper main torso with fuller central and lower side blocks.",
+          "Original charcoal/gray metal, red rails, gold piston and recognizable component family retained.",
+          "Complete narrow attached waist bridge and lower mounting block visible.",
+          "Headless, armless, isolated complete core with white margins."
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Original photograph is not a strict side view; hidden depth and surfaces remain inferred.",
+    "Prompt proportions are direction for the image editor, not verified dimensions. No exact percentage of depth increase is claimed.",
+    "Native output is 1254 x 1254, below requested 2K; no upscaling.",
+    "Fine geometry and markings vary between generated views; exact alignment and fit require a later mesh. No other view or Unity project was changed."
+  ]
+}

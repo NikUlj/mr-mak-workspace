@@ -1,0 +1,55 @@
+{
+  "revision": "v008-low-poly-front",
+  "created": "2026-10-25",
+  "status": "experiment-ready-for-owner-review",
+  "request": "A new neutral front reference like v001, but with a simplified/low-poly mesh appearance, retaining its weapon removals and other instructions.",
+  "provider": {
+    "tool": "built-in image_gen editor",
+    "model": null,
+    "seed": null,
+    "note": "One completed reference-based edit. Exact model and seed were not exposed. No pending jobs."
+  },
+  "sources": [
+    {
+      "file": "assets/player-mech/v001-neutral/player-mech-neutral-front-v001.png",
+      "role": "v001 edit target; authority for full-body pose, proportions, front camera, identity and weapon removals",
+      "sha256": "1c7695fad5d4fa0239c3c23af9fabafb4d28095d11e83eb75ec86b7c0ae64049"
+    },
+    {
+      "file": "media/ace8fa38792eade2eb1bcc6eeda9849b-27fae130.jpg",
+      "role": "Owner original photograph; supporting character identity, not equipment or pose",
+      "sha256": "ae3976a904ba761d5278d06e5e444d67c7e6735e2edb08ef38398a35dd8848c3"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "low-poly-front",
+      "part": "full-body",
+      "view": "front",
+      "file": "player-mech-neutral-low-poly-front-v008.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "71ee785d2332d6d5c1f2aa7f2ede3ebe84b141bf98e219c414d987fe2f5df84e",
+      "prompt": "prompt.txt",
+      "upscaled": false,
+      "review": {
+        "method": "Host agent full-size visual comparison with v001 and the owner original photograph.",
+        "verdict": "pass",
+        "owner_approved": false,
+        "findings": [
+          "Full single mech in a neutral balanced front A-pose with complete visible hands and feet.",
+          "Gun, both back weapons and shield remain removed; hands empty.",
+          "Broad planar armor, faceted helmet and joints, simpler chest/limb surfaces and reduced greebles give a clear low-poly appearance.",
+          "Recognizable body proportions, charcoal/gray palette, red/brass details, white thigh stripe and asymmetric shoulder/thigh markings retained.",
+          "Blank white background, neutral light and clear silhouette margins."
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "This is a raster image depicting a simplified mesh, not a generated or retopologized 3D mesh; no topology or polygon count is verified.",
+    "Based on v001 as requested. Later isolated-part design changes are separate references.",
+    "Fine markings and small geometry are deliberately simplified. Curled fingers overlap, so each digit cannot be independently counted in this front view.",
+    "Previously occluded surfaces are inferred. Exact construction, joint articulation and mesh readiness remain unverified."
+  ]
+}
