@@ -1,5 +1,40 @@
 # Changelog
 
+## 0.6.3 - 2026-11-06
+
+- Answer CLI questions in Conversation and on the phone, including multiple selections, typed answers and long option descriptions. Keep unread indicators and compaction messages current, and ignore terminal device replies when deciding whether you are typing.
+- Read Antigravity and OpenCode conversations alongside Codex and Claude, with tool activity and media previews. Native history is read without changing the provider's database. Antigravity session discovery and context updates keep running while its transcript is attached.
+- Show each chat's latest context occupancy, with unknown states when native data is missing or stale. Claude's model-based window is labelled as an estimate; OpenCode reports tokens without inventing a limit.
+- Choose the default reasoning effort in Settings or New chat. Extra high remains the initial default, and existing chats and explicit choices keep their effort.
+- Group tabs by project with one button. Custom names survive ungrouping, regrouping and app restart, including groups whose members are all open.
+- Remove inherited Claude parent-session identity from new terminal chats while preserving user configuration. Recognize Antigravity 1.4.7 log suffixes and its print/streaming lifecycle messages without accepting arbitrary trailing text.
+- Update the pinned setup-python action and add context/unread browser checks on Windows and macOS.
+- Patch the bundled `@hono/node-server` dependency to 2.1.3 for [GHSA-rmxm-3fg6-px4f](https://github.com/advisories/GHSA-rmxm-3fg6-px4f).
+
+Thanks to @vladimirstempel and @vanderleitelesjr for the contributions. This release includes #61, #62, #63, #64, #68, #70 and #71. The remaining feature stack is being split for separate review.
+
+Phone Codex first-message delivery (#67) and OpenCode terminal touch navigation (#69) remain under investigation.
+
+## 0.6.2 - 2026-10-29
+
+- Give each report folder its own local origin. Pages of one report can frame and read each other again, so multi-page reports such as a project wiki show their articles. Other reports, the app and the repository grant stay on separate origins, a folder starts each session with empty browser storage, and reports cannot start workers or service workers.
+
+## 0.6.1 - 2026-10-24
+
+- Reduce unnecessary drawing in the sidebar logo and 3D viewer. Static models stop submitting frames, while camera controls, shading changes and restored graphics contexts still repaint.
+- Update the Rust toolchain action to the reviewed commit pin.
+- MCP lists the servers of Claude plugins that claude.ai syncs to the signed-in account (for example PDF Viewer), with the same on/off state Claude Code uses. claude.ai connectors are not stored on the computer, so the panel points to `/mcp` in a Claude chat for them.
+- An empty MCP configuration file, as Antigravity creates before a server is added, no longer shows a read error in MCP.
+- Add independent Workspace and Chat themes with thirteen named palettes: Codex / ChatGPT, Antigravity, Claude Code, and light/dark variants of Nordic, Forest, Sandstone, Ocean and Plum. Saved choices sync across windows and apply to standard reports, Conversation and Terminal without losing drafts or reconnecting the CLI. Reading text and action labels maintain at least 4.5:1 contrast.
+
+- Restrict desktop HTML and SVG previews to the selected report folder, with expiring access and an opaque sandbox. Keep local report assets, theme changes and external links working.
+- Keep desktop window credentials in memory, with native reload recovery. Bundle Inter and Fraunces locally so the app UI does not request Google Fonts.
+- Limit phone pairing attempts per source, invalidate repeatedly guessed codes, and expire phones after 30 idle days.
+- Enforce the selected permission default when the coordinator sends to or reopens an existing bypass chat.
+- Preserve typographic apostrophes as literal text in Windows command shims and pasted shell paths.
+- Refresh six service dependency versions to clear the current npm audit findings.
+- Read optional mesh-generation credentials from the Hugging Face login or environment, and update the video downloader minimum version. The Linux glib dependency advisory remains an upstream follow-up, documented in SECURITY.md.
+
 ## 0.5.2 - 2026-10-18
 
 - Group chat tabs with named, coloured headers. Drag or collapse a group, manage it from a tab's right-click menu, and find groups in History. Deleting a group keeps its chats. Pinned tabs retain their separate order.

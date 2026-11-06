@@ -34,8 +34,9 @@ delayed first prompts, and reads bounded metadata records larger than one small
 buffer. Closing or resuming a tab can recover a missing ID from its exact Mr. Mak
 origin marker. Shared working directories alone are not proof of ownership.
 
-New Codex and Claude chats default to `xhigh`; explicit saved effort choices are
-preserved. Terminal URLs and OSC 8 links use xterm link handlers. New-window
+New Codex, Claude and Antigravity chats default to `xhigh`; explicit saved effort
+choices are preserved. Settings and New chat offer a default reasoning-effort
+picker for subsequent chats. Terminal URLs and OSC 8 links use xterm link handlers. New-window
 requests from both app windows open HTTP(S) links in the system default browser
 (the Windows shell association, `open` on macOS, `xdg-open` on Linux), while the
 current app view stays open.
@@ -51,7 +52,7 @@ missing folders are skipped. Pins are saved in `settings.pinnedProjects`. A phon
 may start a chat only in a listed folder. The voice coordinator uses the same list
 through `list_projects`.
 
-Claude and Codex chats can switch between Terminal and Conversation. Conversation
+Claude, Codex, Antigravity and OpenCode chats can switch between Terminal and Conversation. Conversation
 reads the same native transcript as the phone, sends a prompt through the PTY with
 bracketed paste and Enter, and serves media through short-lived `/media/` grants
 bound to one chat. A new chat opens in Terminal until it has a conversation, since
@@ -77,8 +78,11 @@ Git). The new chat uses the same agent, folder, permission and effort settings a
 receives one first-message argument naming that file. Claude also receives
 `--add-dir` for the handoff folder. Nothing changes in the original chat.
 
-`settings.groupTabsByProject` groups open tabs by working folder. A group keeps
-the position of its first tab; tabs reorder only within their project.
+
+**Group tabs by project** in the Chat header organises open tabs into named
+groups by working folder. Existing project grouping and its saved order migrate
+automatically to the 0.5.2 group model. Drag a group or use Alt+Left/Right on its
+header to reorder it; right-click offers the native group controls.
 
 Fullscreen Claude scrolls its own conversation. Terminal snapshots preserve
 both mouse tracking and the requested SGR encoding, including saved screens,
@@ -92,6 +96,30 @@ dictation. Follow [setup and review behavior](../docs/mobile-access.md#voice-inp
 The local engine is the default. Choose Free/Paid/Off in the top-right phone
 button (**Phone settings**) or **Settings → Speech-to-text**. The choice is saved
 and shared with paired phones. Paid providers require an API key on the computer.
+
+## Workspace and Chat themes
+
+Settings → Appearance offers independent **Workspace theme** and **Chat theme**
+choices. Chat also has an Appearance button in its header. Thirteen named palettes
+are available, alongside Dark, Light and System. **Codex / ChatGPT**,
+**Antigravity** and **Claude Code** take visual inspiration from those tools;
+they are not exact copies. The other five families each offer a light and dark option:
+
+| Family | Light | Dark |
+| --- | --- | --- |
+| Nordic | Fjord | Polar Night |
+| Forest | Botanical | Moss & Brass |
+| Sandstone | Clay | Desert Night |
+| Ocean | Sea Glass | Harbor |
+| Plum | Orchid Paper | Velvet |
+
+Existing family preferences select Fjord, Moss & Brass, Clay, Harbor and Velvet
+respectively. Both approved variants are selectable by their family and name.
+
+Selections are saved and synchronised across open windows. Workspace also themes
+standard reports; custom artwork and games retain their colours. Chat themes apply
+to Conversation and Terminal without restarting a CLI or losing a draft. Terminal
+text has a minimum contrast ratio of 4.5; Original and Focus remain separate choices.
 
 ## Terminal appearance
 

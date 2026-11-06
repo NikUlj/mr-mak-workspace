@@ -20,6 +20,7 @@ async function fixture(t) {
   const writes = [];
   sessions.get = value => { assert.equal(value, id); return session; };
   sessions.list = () => [session]; sessions.input = (_id, value) => writes.push(value);
+  sessions.read = async () => ({ screen: session.screen || '' }); sessions.keys = (_id, value) => writes.push(value);
   sessions.snapshot = async () => ({ session, sequence: 1, data: 'hello' });
   sessions.seen = () => {};
   const transport = { probe: async () => ({ installed: true, ready: true }), enable: async origin => ({ origin }), disable: async () => {} };
@@ -40,6 +41,38 @@ async function fixture(t) {
   return { gateway, request, pair, repo, writes, id, session, closed };
 }
 
+test('pairing throttles each source independently and invalidates repeatedly guessed codes', async t => {
+  const { gateway, request } = await fixture(t);
+  for (let i = 0; i < 60; i++) gateway.rateLimit('peer-one');
+  assert.throws(() => gateway.rateLimit('peer-one'), /Too many/);
+  gateway.rateLimit('peer-two');
+  gateway.rates.get('claim:peer-one').at -= 61000; gateway.rateLimit('peer-one');
+  assert.equal(gateway.source({ socket: { remoteAddress: '127.0.0.1' }, headers: { 'x-forwarded-for': '100.64.0.2' } }), '100.64.0.2');
+  assert.equal(gateway.source({ socket: { remoteAddress: '100.64.0.1' }, headers: { 'x-forwarded-for': '100.64.0.2' } }), '100.64.0.1');
+  assert.equal(gateway.source({ socket: { remoteAddress: '127.0.0.1' }, headers: { 'x-forwarded-for': '100.64.0.2, 100.64.0.3' } }), '127.0.0.1');
+  const qr = await gateway.newPairing();
+  for (let i = 0; i < 10; i++) assert.throws(() => gateway.claim({ token: 'wrong' }, 'peer-two'), /expired/);
+  assert.equal(gateway.pairing, null);
+  assert.throws(() => gateway.claim({ token: new URL(qr.url).hash.slice(6) }, 'peer-three'), /expired/);
+  const fresh = await gateway.newPairing(), pending = gateway.claim({ token: new URL(fresh.url).hash.slice(6) }, 'peer-three');
+  for (let i = 0; i < 10; i++) assert.equal((await request('/pair/finish', { ...pending, claim: 'wrong' })).status, 403);
+  assert.equal(gateway.pending.has(pending.id), false);
+});
+
+test('paired phones expire after 30 idle days and active use refreshes lastSeen', async t => {
+  const { gateway, pair, request } = await fixture(t), connected = await pair();
+  const device = gateway.state.devices.find(item => item.id === connected.pending.id);
+  device.lastSeen = new Date(Date.now() - 29 * 86400000).toISOString();
+  assert.equal((await request('/bootstrap', undefined, connected.cookie)).status, 200);
+  assert.ok(Date.now() - Date.parse(device.lastSeen) < 10000);
+  device.lastSeen = new Date(Date.now() - 31 * 86400000).toISOString();
+  assert.equal((await request('/bootstrap', undefined, connected.cookie)).status, 401);
+  assert.equal(gateway.status().devices.length, 0);
+  device.lastSeen = null; device.createdAt = new Date().toISOString();
+  assert.equal(gateway.validDevice(device), true);
+  device.expires = Date.now() - 1; assert.equal(gateway.validDevice(device), false);
+});
+
 test('terminal navigation sends all four arrows only from a paired same-origin phone', async t => {
   const { request, pair, id, writes, session, gateway } = await fixture(t), device = await pair();
   const route = `/sessions/${id}/key`;
@@ -54,6 +87,24 @@ test('terminal navigation sends all four arrows only from a paired same-origin p
   session.agent = 'codex'; await gateway.revoke(device.pending.id);
   assert.equal((await request(route, { key: 'right' }, device.cookie)).status, 401);
   assert.equal(writes.length, 4);
+});
+
+test('a paired phone reads the terminal menu with its conversation and answers it once', async t => {
+  const { request, pair, id, writes, session, gateway } = await fixture(t), device = await pair();
+  gateway.transcripts.read = async () => ({ supported: true, messages: [] });
+  session.screen = ['Allow command?', '$ echo phone', '', '> 1. Yes, proceed', '  2. No', 'Press enter to confirm'].join('\n');
+  const { data } = await request(`/sessions/${id}/messages`, undefined, device.cookie);
+  assert.deepEqual([data.prompt.question, data.prompt.detail, data.prompt.options], ['Allow command?', ['$ echo phone'], ['Yes, proceed', 'No']]);
+  const route = `/sessions/${id}/prompt`, answer = { id: data.prompt.id, choice: 0 };
+  assert.equal((await request(route, answer)).status, 401);
+  assert.equal((await request(route, answer, device.cookie, { Origin: 'https://unrelated.example' })).status, 403);
+  assert.equal((await request(route, { ...answer, id: 'stale' }, device.cookie)).status, 409);
+  assert.deepEqual(writes, []);
+  assert.equal((await request(route, answer, device.cookie)).status, 200);
+  assert.deepEqual(writes, ['\r']);
+  assert.equal((await request(route, answer, device.cookie)).status, 409);
+  session.process = null;
+  assert.equal((await request(`/sessions/${id}/messages`, undefined, device.cookie)).data.prompt, null);
 });
 
 test('mobile close uses the shared close action, retains history and rejects untrusted requests', async t => {

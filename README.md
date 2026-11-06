@@ -58,6 +58,10 @@ Workspace preview, resolved against the chat's folder.
   started it, and how long each has been running.
 - **Know the model.** The status bar shows the model the chat last used, next to
   reasoning effort and permissions.
+- **Check session context.** The Context row shows native context usage. Codex,
+  Claude and Antigravity show percent and used/limit tokens. OpenCode shows
+  reported tokens with an unknown limit. Missing data is marked Unknown or Unavailable.
+  See [context usage](docs/session-context-usage.md) for data sources and limits.
 - **Read aloud on the desktop** with the same local voices as the phone.
   *Preparing audio…* shows while your computer generates each part.
 
@@ -66,6 +70,18 @@ Workspace preview, resolved against the chat's folder.
 Codex 0.163 chats are supported: Mr. Mak starts Codex with `--no-daemon` when
 the installed version offers it, so every chat stays linked to its conversation,
 and a chat follows a rewind or a `/new` made in its terminal.
+
+## Workspace and Chat themes
+
+Choose independent themes for Workspace and Chat in **Settings → Appearance**,
+or use the Chat header's Appearance button. Thirteen named palettes include
+**Codex / ChatGPT**, **Antigravity** and **Claude Code**, plus light and dark
+variants of **Nordic**, **Forest**, **Sandstone**, **Ocean** and **Plum**.
+Dark, Light and System remain available.
+
+Workspace themes also style standard reports. Chat themes cover Conversation
+and Terminal while retaining drafts and terminal connections. Choices save and
+sync across open windows. See the [palette list](desktop/README.md#workspace-and-chat-themes).
 
 ## Projects and long chats
 

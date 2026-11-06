@@ -3,15 +3,14 @@ import { existsSync, readFileSync, statSync } from 'node:fs';
 import path from 'node:path';
 import { promisify } from 'node:util';
 import { parse as parseEnv } from 'dotenv';
-import { isWindows, macLocale, resolveCommand, shellCommand, shellLabel } from './platform.mjs';
+import { isWindows, macLocale, powerShellLiteral, resolveCommand, shellCommand, shellLabel } from './platform.mjs';
 import { validAntigravityId } from './antigravity.mjs';
 
 export { shellCommand };
 
 export function wrapCommand(file, args = []) {
   if (!isWindows || /\.exe$/i.test(file)) return { file, args };
-  const quote = value => "'" + value.replaceAll("'", "''") + "'";
-  const script = `[Console]::InputEncoding = [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new(); & ${[file, ...args].map(quote).join(' ')}; exit $LASTEXITCODE`;
+  const script = `[Console]::InputEncoding = [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new(); & ${[file, ...args].map(powerShellLiteral).join(' ')}; exit $LASTEXITCODE`;
   return { file: shellCommand().file, args: ['-NoLogo', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-EncodedCommand', Buffer.from(script, 'utf16le').toString('base64')] };
 }
 
@@ -148,7 +147,8 @@ export function childEnvironment(repo) {
   }
   // Drop host-agent identity from the parent so every terminal is an independent CLI.
   for (const key of Object.keys(env)) {
-    if (/^(CLAUDECODE|CLAUDE_CODE_ENTRYPOINT|CODEX_THREAD_ID|CODEX_TURN_ID|CODEX_SHELL|ANTIGRAVITY_AGENT|MRMAK_TOKEN|MRMAK_PARENT_PID)$/.test(key) || key.startsWith('MRMAK_OPENCODE_')) delete env[key];
+    // A Claude Code parent marks children as child sessions, and they then stop writing transcripts.
+    if (/^(CLAUDECODE|CLAUDE_CODE_(ENTRYPOINT|CHILD_SESSION|SESSION_ID|SESSION_ATTENDED|MESSAGING_SOCKET|MESSAGING_TOKEN|EXECPATH)|CLAUDE_(PID|EFFORT|PLUGIN_DATA|PLUGIN_ROOT)|CODEX_THREAD_ID|CODEX_TURN_ID|CODEX_SHELL|ANTIGRAVITY_AGENT|MRMAK_TOKEN|MRMAK_PARENT_PID)$/.test(key) || /^(MRMAK_OPENCODE|CODEX_COMPANION)_/.test(key)) delete env[key];
   }
   return env;
 }

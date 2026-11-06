@@ -7,7 +7,7 @@ import { mkdtemp, mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createService } from '../server.mjs';
-import { launchBrowser } from './browser.mjs';
+import { launchBrowser, desktopAuth } from './browser.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 await mkdir(path.join(root, '.cache'), { recursive: true });
@@ -31,6 +31,7 @@ try {
   };
   browser = await launchBrowser();
   const page = await browser.newPage({ viewport: { width: 900, height: 600 } });
+  await desktopAuth(page.context(), service.urls.workspace);
   page.setDefaultTimeout(8000);
   const errors = []; page.on('pageerror', error => errors.push(error.message));
   const names = () => page.locator('.chat-tabs .chat-tab-name').allTextContents();
@@ -43,6 +44,12 @@ try {
   assert.deepEqual(await names(), ['Director', 'Network', 'Animator', 'Combat']);
   assert.deepEqual(await page.locator('.chat-group-chip .chip-name').allTextContents(), ['ThugLife', 'Dungeon']);
   assert.deepEqual(await page.locator('.chat-group-chip small').allTextContents(), ['2', '1']);
+
+  // Existing project-group keyboard controls now move native named groups.
+  await chip('ThugLife').focus(); await page.keyboard.press('Alt+ArrowRight');
+  await expect.poll(names).toEqual(['Animator', 'Director', 'Network', 'Combat']);
+  await chip('ThugLife').focus(); await page.keyboard.press('Alt+ArrowLeft');
+  await expect.poll(names).toEqual(['Director', 'Network', 'Animator', 'Combat']);
 
   // Collapse hides every member except the selected one, and the choice survives a reload.
   await chip('ThugLife').click();
