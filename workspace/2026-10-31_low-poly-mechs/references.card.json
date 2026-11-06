@@ -1,0 +1,25 @@
+{
+  "format": "mrmak-card",
+  "version": 1,
+  "template": "gallery",
+  "title": "Low poly mech references",
+  "summary": "The owner selected the same original reference used in [Prototype Player Mech](#/prototype-player-mech/1). For this exploration, remove the weapons and other external equipment and simplify the mech into low poly forms.",
+  "items": [
+    {
+      "id": "original-mech-reference",
+      "title": "Original mech reference",
+      "image": "media/original-mech-reference.jpg",
+      "alt": "Original charcoal mech photograph with a handheld gun, two back weapons and an arm shield.",
+      "body": "The same owner-supplied photograph from Prototype Player Mech. **Primary design reference.** Preserve the recognizable proportions, major armor shapes, palette and simplified main markings.\n\nRemove the handheld gun, both back weapons, the shield and their attachments, plus other external equipment. Local copy; the earlier card is unchanged.",
+      "status": "done"
+    },
+    {
+      "id": "neutral-front-pose-guide",
+      "title": "Neutral front guide ? earlier v001",
+      "image": "media/neutral-front-pose-guide.png",
+      "alt": "Detailed charcoal mech in a neutral front A-pose on white with empty hands and no gun, back weapons or shield.",
+      "body": "Copied from the earlier card as a supporting guide for neutral front pose, framing and weapon removal. The original photograph remains the design source. This detailed guide is an earlier image, not a new low poly result.",
+      "status": "done"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿Use case: precise-object-edit.
+Edit the supplied mechanical hand image. CHANGE ONLY THE THUMB'S POSITION AND BEND. Preserve the four long fingers, enlarged armored palm, wrist coupling, white background, material, camera and framing exactly.
+
+The thumb currently looks like a fifth finger: upright, coplanar and facing the same way as the four fingers. It must instead be a TRUE OPPOSING JAW.
+Keep the thumb root on the lower thumb-side palm. Keep ALL its hinge axles exactly PARALLEL TO THE FOUR FINGER KNUCKLE AXLES, across the width of the palm. Do NOT rotate the hinge mount sideways and do not restore the old circular forward-facing screw. All joints fold in the SAME front-to-back plane as the fingers, but the thumb acts as the opposite jaw.
+
+Repose the two thumb links in DEPTH:
+- The proximal thumb link projects forward OUT of the palm toward the camera, at roughly a right angle to the palm. Its broad side surface is visible.
+- The distal thumb link bends back toward the palm and finger row, so its contact pad faces INWARD / AWAY FROM THE CAMERA toward the four finger contact pads. The thumb tip points toward the index/middle knuckles from a position in FRONT of the palm, not upward alongside the index finger.
+- This makes an unmistakable bent opposing hook / C-shaped pincer in side profile, with a visible open grasping space between thumb pad and palm/fingers. It remains a blunt mechanical digit, not a sharp claw.
+- Show it lower than the finger knuckles and offset just enough toward the thumb side to avoid concealing any finger. A small amount of overlap over the lower side of the palm is appropriate to show that the thumb stands forward in depth. It must be physically attached, never floating.
+- The pad on the thumb tip faces the finger pads, like the two opposing jaws of a clamp. It does NOT face the viewer like the finger pads.
+
+Keep the thumb links simple and faceted, with the SAME dark hinge-barrel construction as the other fingers. Use only the existing two links and existing root, no extra articulation, ball joint, sideways swivel, decorative parts or extra digit. Exactly five digits. Do not change anything else.

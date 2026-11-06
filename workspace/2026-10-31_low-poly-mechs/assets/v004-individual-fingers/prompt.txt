@@ -1,0 +1,16 @@
+Use case: precise-object-edit.
+Asset type: v004 individual-finger correction for Low Poly Mechs.
+
+Input: the supplied v003b three-quarter action mech is the EDIT TARGET.
+
+Change ONLY BOTH HANDS. Replace the merged mitten/gripper finger masses with proper separate robotic fingers that can wrap around a gun handle, while matching this mech's chunky very-low-poly PS1 design.
+
+Each hand must have exactly FOUR individually separated fingers — index, middle, ring and little — plus ONE opposable thumb. All digits originate correctly from a compact broad palm, without extra or missing digits. Preserve the wrist positions and the overall hand scale relative to the forearms. Fingers should be moderately slim solid rectangular forms, roughly one fifth the palm width each, with useful gaps between fingers, not a single solid finger plate. They are slimmer than the previous merged gripper, but still substantial, sturdy and visually proportional to the heavy angular mech. No thin skeletal rods, spidery fingers, spikes or oversized sausage digits.
+
+Use two or three economical block segments per finger and two simple thumb segments, with obvious basic bend locations. Keep the index finger separate so it could sit on a trigger while the other three wrap around a handle. The thumb sits opposite the fingers to close a functional grip. A relaxed partially open gripping posture, with gentle inward bends, visible separation of all four fingers, and a clear handle-sized opening between fingers and thumb. Orient only the hands slightly as needed to show the digits clearly; do not alter the arms or body pose. Both hands remain EMPTY. No gun or handle prop should be added.
+
+Keep the hands plain, angular, flat shaded and economical in geometry: charcoal/gray fingers and palms with the existing simple red thumb-end accents. No fingernails, round human skin forms, tiny mechanical joints, exposed pistons, bolts, panel lines or fine detail. Functional separate fingers are the only added complexity.
+
+Preserve EVERYTHING ELSE exactly: the same character, full body and proportions, broad boxy shoulder blocks, wedge head, twin chest slabs, narrow waist, pelvis, broad thigh armor, long shins, split-toe feet, broad charcoal/gray colors, simple red/brass accents and white double stripe on the same thigh. Same three-quarter camera, grounded staggered action stance, image layout and white background. Same PS1-style low-poly flat surfaces and lighting. No restoration of weapons, shield, backpack or equipment. Do not redesign the torso or add fine details elsewhere.
+
+One full-body portrait image only, both complete hands and feet fully in frame, no inset panels, captions, labels or watermark.

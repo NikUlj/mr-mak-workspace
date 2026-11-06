@@ -1,0 +1,31 @@
+{
+  "id": "shared-hand-tripo-reference-v001",
+  "date": "2026-11-05",
+  "status": "owner-rejected",
+  "tool": "built-in image_gen",
+  "model": null,
+  "seed": null,
+  "request_id": null,
+  "purpose": "Single isolated hand reference image for the owner to use in Tripo",
+  "output": "shared-hand-tripo-reference-v001.png",
+  "width": 1086,
+  "height": 1448,
+  "bytes": 1237705,
+  "sha256": "06d83e08964bd7c8f36f4c354a55bc0d01c55344a27da527a866990f7293fd0d",
+  "prompt": "prompt.txt",
+  "source_references": [
+    {
+      "path": "../reference-study-v001/rounded-palm-wrist.png",
+      "sha256": "64148e6d8af05ef4839db91004756f8031f6163844e4578795ca06b30b6350a6"
+    },
+    {
+      "path": "../reference-study-v001/rounded-back-wrist.png",
+      "sha256": "bfa74217deba4f877f425d0701d6c5e968c0bcca0cfc4490bddaeae51b889328"
+    }
+  ],
+  "owner_accepted": false,
+  "mesh_created": false,
+  "tripo_job_submitted": false,
+  "review": "Five digits, visible hinge bracket at thumb root, exposed wrist connector, simplified faceted forms and clean single-object framing.",
+  "owner_feedback": "Fingers accepted. Thumb not correctly opposing or axis-aligned; wrist too thin and simple; palm too small and basic."
+}

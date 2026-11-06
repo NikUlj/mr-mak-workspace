@@ -1,0 +1,27 @@
+{
+  "id": "shared-hand-tripo-reference-v002c",
+  "date": "2026-11-05",
+  "status": "owner-rejected",
+  "tool": "built-in image_gen",
+  "model": null,
+  "seed": null,
+  "request_id": null,
+  "output": "shared-hand-tripo-reference-v002c.png",
+  "width": 1086,
+  "height": 1448,
+  "bytes": 1569539,
+  "sha256": "d97bfda8553531c4316a9514976567a2b3dd6c153087aa0483107b136b19998d",
+  "prompt": "prompt.txt",
+  "source_references": [
+    {
+      "path": "assets/shared-hand/v002b-opposed-thumb/shared-hand-tripo-reference-v002b.png",
+      "relative_to": "Mech Lab card folder",
+      "sha256": "ad4ba412ecac621d8670ddb6d61b32f89da4ab729986f7036714ed908b132114"
+    }
+  ],
+  "owner_accepted": false,
+  "mesh_created": false,
+  "tripo_job_submitted": false,
+  "review": "Current candidate for owner review. The thumb is bent forward into an opposing hook; its root and inter-link joints now show transverse finger-style barrels in bracket ears, aligned with the finger hinge direction. The four accepted long fingers retain their forms and pose. The larger palm has a broad center plate, recessed structural border and stepped side armor. The thin peg is replaced by a broad faceted wrist drum in a U-shaped support with a short mounting stub. All five digits and the full coupling are visible against white. This is a visual reference; mechanical travel and mesh topology have not been verified.",
+  "owner_feedback": "Thumb still wrong and bent in a strange way; try another angle and a clear reference of the desired thumb."
+}

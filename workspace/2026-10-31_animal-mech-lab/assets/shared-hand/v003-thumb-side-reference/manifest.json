@@ -1,0 +1,32 @@
+{
+  "id": "shared-hand-tripo-reference-v003",
+  "date": "2026-11-05",
+  "status": "ready-for-owner-review",
+  "tool": "built-in image_gen",
+  "model": null,
+  "seed": null,
+  "request_id": null,
+  "output": "shared-hand-tripo-reference-v003.png",
+  "width": 1774,
+  "height": 887,
+  "bytes": 1204173,
+  "sha256": "d4428c6e94a6bb9b98ee32116e8548c61890a3d751b4c0883fb3db592dbeb633",
+  "prompt": "prompt.txt",
+  "source_references": [
+    {
+      "path": "assets/shared-hand/reference-study-v003/ac6-thumb-palm-oblique.png",
+      "relative_to": "Mech Lab card folder",
+      "sha256": "8dc5359b6b8cffd9a0c59b0aa78b430c77d7f94a42bb5dc5404869256b0f8c13"
+    },
+    {
+      "path": "assets/shared-hand/reference-study-v003/ac6-thumb-side-profile.png",
+      "relative_to": "Mech Lab card folder",
+      "sha256": "2c2204e4bdf55cab0e97d3e8383c80d2464aa453924c289132882fca6ac2111b"
+    }
+  ],
+  "previous_generated_hand_used_as_input": false,
+  "owner_accepted": false,
+  "mesh_created": false,
+  "tripo_job_submitted": false,
+  "review": "New candidate from fresh native Blender references. The horizontal thumb-side view shows four separate three-link fingers and a shorter open thumb offset forward of the palm. The thumb follows the source position and relaxed angle instead of the invented hook in v002c. Its visible hinge direction reads consistently with the finger joints from this angle. The palm is substantial and faceted; the wrist attachment is a short broad collar with a stepped flange. All five digits and the whole connector are visible on white. The output simplifies the source; exact mechanical travel and topology are not established by an image. Owner acceptance is pending."
+}

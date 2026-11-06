@@ -1,0 +1,26 @@
+{
+  "id": "shared-hand-tripo-reference-v002b",
+  "date": "2026-11-05",
+  "status": "agent-rejected",
+  "tool": "built-in image_gen",
+  "model": null,
+  "seed": null,
+  "request_id": null,
+  "output": "shared-hand-tripo-reference-v002b.png",
+  "width": 1086,
+  "height": 1448,
+  "bytes": 1281563,
+  "sha256": "ad4ba412ecac621d8670ddb6d61b32f89da4ab729986f7036714ed908b132114",
+  "prompt": "prompt.txt",
+  "source_references": [
+    {
+      "path": "assets/shared-hand/v002-tripo-reference/shared-hand-tripo-reference-v002.png",
+      "relative_to": "Mech Lab card folder",
+      "sha256": "c4af29548650a67c362124205ef7dfa4f3781eaeafbb8fc5d0c4a0e729e91e6b"
+    }
+  ],
+  "owner_accepted": false,
+  "mesh_created": false,
+  "tripo_job_submitted": false,
+  "review": "Agent rejected: the thumb now bends into an opposed hook, but generation introduced a vertical-axis drum at its root, perpendicular to the finger axes. This conflicts with the key thumb requirement. The enlarged palm, broad wrist coupling and four long fingers are retained."
+}

@@ -1,0 +1,11 @@
+Use case: precise-object-edit.
+Input: this full-body mech image is the edit target.
+
+Make ONE localized correction to the FAR HAND ONLY: the mech's anatomical LEFT hand at the RIGHT EDGE of the picture. Leave the nearer hand at the left edge completely unchanged; that nearer hand already has the correct FOUR fingers plus thumb.
+
+The far/right-edge hand still shows only THREE fingers plus thumb. Give it FOUR fingers plus ONE thumb, using a smaller anatomically mirrored version of the correct near hand's structure. Match its sturdy but moderately slim angular finger proportions, rectangular segments, colors and low-poly style.
+Rotate the far wrist so its broad palm surface faces toward the camera. Pose the four fingers pointing downward, in a loose shallow curl, with four clearly separate parallel finger chains and FOUR clearly visible individual fingertips. Small visible gaps between ALL four fingers, no finger hidden behind the next. The outer little finger must be a complete distinct finger from palm base through to its fingertip, not a stub. Keep the red-tipped thumb on the OPPOSITE side of the palm from the little finger, opening inward toward the other hand. Four non-red fingers plus one red-tipped thumb = five total digits. Do not mistake the thumb for a fourth finger. Copy the correct near hand's four-finger structure in mirror anatomy, not its exact view angle.
+
+A compact palm and solid rectangular segmented fingers: slim enough to close around a gun grip, thick enough to belong to this chunky mech. No tiny mechanical details or skeletal rods. The hand remains empty; no gun or prop.
+
+Everything else must remain the SAME image: the entire mech body and its proportions, armor, PS1-style simple flat faces, stance, near hand, arm positions, camera, framing, all colors and white thigh stripes, pure white background and lighting. The ONLY changed region is the far hand and a minimal wrist turn. No extra views, captions or watermark. One full-body portrait image.

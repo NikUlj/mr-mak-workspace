@@ -1,0 +1,17 @@
+﻿Use case: precise-object-edit.
+Create ONE clean low-poly hand reference for the owner to use in Tripo, using these two screenshots of the SAME AC6 hand.
+
+IMAGE 1 is the PRIMARY geometry, pose and camera reference: a thumb-side/palm three-quarter view, wrist on the LEFT and four fingers pointing RIGHT.
+IMAGE 2 is the exact SIDE PROFILE of that hand, supplied to clarify the thumb. The four long fingers overlap in this side view; they are four, not one.
+
+FIRST PRIORITY: faithfully preserve the actual thumb from these references. Copy its root location, offset IN FRONT OF the palm, short link lengths, joint orientation and relaxed OPEN pose. In image 1 the thumb is the short digit in the lower foreground, projecting from the heel of the palm toward the right. It is spatially opposed to the four fingers, not spread out across the palm's width. Image 2 shows the thumb and index finger in their common bending plane: a simple open diverging jaw profile. ALL thumb hinges turn on parallel axes matching the finger bending axes.
+Do not invent a new thumb mechanism or change its pose. Do not twist the thumb, splay it sideways like a human thumb, fold it into a C-shaped hook, face its pad outward, create a perpendicular swivel or add an extra root pivot. Preserve the reference's simple gently angled thumb chain and clear gap between thumb and finger row. The thumbnail silhouette and mounting orientation are more important than decorative details.
+
+Simplify this exact hand into low-poly geometry:
+- Exactly FOUR separate long fingers plus the reference's ONE shorter opposing thumb.
+- Four long fingers use plain three-link chamfered rectangular blocks and simple dark hinge barrels, with the same arrangement and slim proportions as the reference. Clear small gaps between all four fingers.
+- Keep the reference's substantial palm-to-finger proportion. A large faceted center plate, two simple angular side rails and a dark structural recess. Remove small inset borders, bolts, repeated thin plates and fine mechanism detail.
+- Keep a SHORT BROAD mechanical wrist attachment at the left end, approximately two-thirds of palm width: a simple faceted collar/drum with one stepped flange and a short thick mating face. Preserve the visible separation from palm. No thin long peg or Lego-style plug. Remove the FOREARM beyond this coupling, leaving only the complete hand and wrist connector.
+
+CAMERA: preserve IMAGE 1's oblique thumb-side angle and horizontal orientation, wrist LEFT, fingers RIGHT, thumb in the LOWER FOREGROUND. Do not rotate it into a front-facing upright human-hand presentation. Ensure four individual long fingers, thumb and complete connector are visible. The palm and thumb's offset in depth must read clearly. Use image 2 only to resolve geometry, do not output a second view.
+Presentation: isolated gray low-poly mechanical hand, matte light-gray armor and medium-dark gray joints, neutral soft studio light, pure white background. Entire object with generous white margins. One object, one landscape image, no arm, no Blender UI, no text, arrows, inset diagram, ghost pose, grid, weapon or stand.

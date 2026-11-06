@@ -1,0 +1,13 @@
+Use case: precise-object-edit.
+Asset type: corrected v003b three-quarter action concept.
+
+Image 1 is the action-pose EDIT TARGET. Image 2 is the v002 PS1 design reference, controlling the plain armor masses, proportions, low geometric complexity and colors.
+
+ONE correction: show this same action pose from a MUCH STRONGER three-quarter SIDE-FRONT camera angle. The first image is still nearly frontal. Orbit the camera roughly 50-55 degrees around to the mech's anatomical RIGHT side, which has the white-striped thigh, and place it slightly lower, around the upper waist. The whole mech should now face toward the RIGHT edge of the picture. Show front and side surfaces together, with a substantial side profile. The torso's deep side wall, shoulder side faces, side of the near forearm, hip depth and side planes of the shins must be clearly visible. The far shoulder and far chest slab may overlap naturally behind the nearer body masses. Project the two shoulders at noticeably different apparent widths and positions. Rotate the WHOLE body presentation, not just the head. Do not keep the torso squared to the viewer. No frontal symmetry or overhead camera.
+
+Keep the dynamic grounded staggered stance from Image 1, one knee bent and other leg supporting behind, a modest forward body lean and waist twist, bent counterbalancing arms, both simple hands empty. Keep arms off the chest so the model's shape remains readable. Both complete feet and both hands fully inside the frame.
+
+Keep v002's extremely simple PS1-era construction exactly: broad plain angular shoulder blocks, small wedge head, two long plain chest slabs on a simple torso, narrow waist, compact pelvis, broad thigh blocks, long angular shins, split-toe wedge feet, low-sided dark joints and chunky grouped grippers. No new parts, no detailed fingers. Previously hidden side surfaces are plain flat continuations, not places to add fittings.
+Keep charcoal/gray broad colors, simple red/brass accent blocks and white double stripes only on the original anatomical right thigh. Do not change the design, proportions or level of simplification. No panel lines, ports, vents, pistons, bolts, hoses, logos, lettering, extra armor layers, back equipment, thrusters, weapons or shield.
+
+One full-body portrait concept on solid white with comfortable margins, crisp coarse 3D flat shading, neutral even light, moderate perspective. No scenery, effects, blur, floor texture, cast shadows, captions, inset views or watermark.

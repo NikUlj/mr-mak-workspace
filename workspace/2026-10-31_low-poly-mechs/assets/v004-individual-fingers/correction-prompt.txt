@@ -1,0 +1,13 @@
+Use case: precise-object-edit.
+Input: this is the first individual-finger edit of the mech, and it has an anatomy error. Each visible hand currently reads as only THREE fingers plus a red-tipped thumb. Correct ONLY the hands.
+
+CRITICAL CORRECTION, BOTH HANDS:
+Each hand must have FOUR distinct parallel fingers plus ONE opposable thumb: index, middle, ring, LITTLE finger, and thumb. FIVE digits TOTAL on each hand, TEN digits TOTAL across both hands. Add the missing fourth/little finger along the outer edge opposite the thumb. Do not count the thumb as one of the four fingers. Do not duplicate thumbs.
+
+Make all FOUR finger chains and their four separate fingertip silhouettes visible on EACH hand. Rotate the wrists just enough toward the viewer and mildly separate the fingers so no finger is hidden behind another. A gently curled, partially open gun-gripping hand posture with four individually countable fingers. No gun or prop. Keep a useful opening between the four fingers and the opposed thumb. Four narrower fingers should fit across the same palm rather than enlarging the whole hand. Make the individual fingers slightly narrower than in this first edit, around one fifth the palm width, but still solid and angular enough to suit the heavy mech. Middle finger longest, index and ring slightly shorter, little finger shorter. Use only two or three simple rectangular segments per finger and two thumb blocks. No fine joints, rods, cables or knuckle greebles.
+
+Preserve the same compact broad palm, wrist scale, charcoal/gray hand colors and red thumb tips. Simple faceted PS1-style forms, no human skin, fingernails, rounded smooth anatomy or skinny skeletal digits.
+
+Keep EVERYTHING outside the hands and wrists unchanged: identical mech design, body and armor, proportions, three-quarter camera, action pose, full-body composition, shoulders, chest, waist, hips, limbs, feet, white thigh stripes and other colors. No new armor detail, weapons, shield or equipment. Same pure white background and even lighting. One full-body portrait image, all parts in frame, no insets or labels.
+
+Final check before rendering: near hand = FOUR clearly separate fingers + ONE red-tipped thumb. Far hand = FOUR clearly separate fingers + ONE red-tipped thumb.

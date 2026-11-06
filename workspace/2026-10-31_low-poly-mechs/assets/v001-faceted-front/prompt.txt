@@ -1,0 +1,18 @@
+Use case: precise-object-edit.
+Asset type: first low poly mech image for the Low Poly Mechs exploration.
+
+Input roles:
+Image 1 is the owner's ORIGINAL MECH PHOTOGRAPH and the authoritative design reference. Transform this same mech into a simplified low-poly game-asset appearance.
+Image 2 is the earlier neutral front reference, used only as a guide for the straight-on relaxed pose, full-body framing and removal of weapons/equipment.
+
+Requested style change:
+Rebuild the visible forms with a deliberately small number of broad flat polygonal planes. Large clean angular armor shells, wedge-shaped helmet, simple blocky chest and limbs, low-sided joint cylinders, restrained single-edge bevels and flat face-to-face shading. Remove dense tiny bolts, grooves, layered trim and fine mechanical greebles. Keep enough large functional joints and armor breaks to identify the design. This should visibly resemble a simply modeled low-poly 3D game asset, not a detailed miniature with matte paint, a wireframe, triangular texture overlay, mosaic or voxel robot.
+
+Preserve:
+The same recognizable tall mech proportions and silhouette: broad boxy shoulders, compact angular head, twin long chest columns, narrow articulated waist, separate pelvis, substantial thigh shells, long lower legs and split-toe feet. Keep the charcoal/gray palette, restrained red and brass accents, white double thigh stripe and the main asymmetric painted markings in simplified form. No chibi proportions or new design.
+
+Remove completely:
+The handheld gun, BOTH back-mounted weapon assemblies (cannon and triple-tube launcher), the entire arm shield, equipment-specific brackets and attachments, and any external backpack payloads, racks or dangling gear. No replacement weapons, holsters, weapon stubs or props. Preserve the mech's underlying body, structural armor and mechanical joints. Both complete hands visible and empty, fingers relaxed and gently curled.
+
+Presentation:
+One single full-body mech, strict level FRONT view, minimal perspective, neutral symmetric relaxed A-pose like Image 2, shoulders level, torso upright, arms slightly away from body, legs evenly spaced, both feet flat on one plane. All hands and feet completely in frame with comfortable margins. Solid white background, even neutral lighting, clean matte broad color areas. No room, floor texture, scenery, cast shadow, wear, labels, inset panels, captions or watermark. Portrait approximately 3:4 image.

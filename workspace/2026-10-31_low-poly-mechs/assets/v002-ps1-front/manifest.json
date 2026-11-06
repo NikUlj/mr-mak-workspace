@@ -1,0 +1,36 @@
+{
+  "revision": "v002-ps1-front",
+  "created": "2026-10-31",
+  "status": "ready-for-owner-review",
+  "request": "Much lower poly PS1-style appearance; remove fine details and preserve the main shapes that make the mech unique.",
+  "provider": {
+    "tool": "built-in image_gen editor",
+    "model": null,
+    "seed": null,
+    "request_id": null,
+    "completed_edits": 1
+  },
+  "sources": [
+    {
+      "file": "assets/v001-faceted-front/low-poly-mech-faceted-front-v001.png",
+      "role": "Edit target and identity, silhouette, proportions, pose and color guide; derived from the original owner reference.",
+      "sha256": "ef8fc665bad70399d7038441b85d9cb7642b5847eee14909ba6541a56c57c3a5"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "low-poly-mech-ps1-front-v002.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "0139f093e91809eb50a10b6ff16bbc4d741d835150c1e965c175f1722ffd9579",
+      "prompt": "prompt.txt",
+      "review": "review.md",
+      "upscaled": false,
+      "owner_approved": false
+    }
+  ],
+  "limitations": [
+    "Raster image only; actual mesh geometry and polygon count unverified.",
+    "Broad bevels, simple accent blocks and grouped grippers remain."
+  ]
+}

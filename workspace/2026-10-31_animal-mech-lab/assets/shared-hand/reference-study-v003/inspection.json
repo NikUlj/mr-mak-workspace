@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-05",
+  "source": "Live unsaved owner-supplied AC6 scene",
+  "object": "mesh[0]",
+  "rig": "Master",
+  "views": [
+    "ac6-thumb-palm-oblique.png",
+    "ac6-thumb-edge-oblique.png",
+    "ac6-thumb-side-profile.png"
+  ],
+  "observation": "Thumb lies forward of the palm in depth, along the index finger bending plane. The open side profile forms a simple diverging jaw, not the twisted hook in the generated v002c.",
+  "geometry_and_pose_changed": false,
+  "viewport_and_visibility_restored": true
+}

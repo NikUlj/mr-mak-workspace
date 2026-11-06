@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-05",
+  "card": "shared-hand.card.json",
+  "widths": [
+    1440,
+    768,
+    390
+  ],
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "sidebar": "Collapsed for narrow viewport review; expanded browser sidebar leaves insufficient reading space at 390 px.",
+  "images": 3,
+  "previewsAndDownloads": "passed",
+  "measurementLink": "passed",
+  "geometryAndPose": "unchanged",
+  "viewportAndVisibility": "restored",
+  "limitations": "No new mesh, grip validation or Unity verification."
+}

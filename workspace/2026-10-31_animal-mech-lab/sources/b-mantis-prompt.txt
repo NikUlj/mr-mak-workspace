@@ -1,0 +1,26 @@
+INITIAL GENERATION
+
+Use case: stylized-concept.
+Asset type: one individual concept image for an animal-inspired low-poly mech exploration.
+Input image role: the supplied gray mech is a STYLE AND SIMPLICITY REFERENCE ONLY. Match its broad flat faces, extremely sparse detail, simple joints and early PlayStation 3D game-model appearance. Invent a substantially new silhouette and proportions for the animal concept below.
+
+Primary request: an original military bipedal mech in the industrial design spirit of the original PlayStation-era Armored Core games, taking structural inspiration from an animal. The animal informs the arrangement and outline of armor, body proportions and mechanical balance. It remains a piloted armored machine with a compact sensor head, torso core, waist, two articulated arms, two legs and compact booster housings.
+
+CRITICAL HAND DESIGN: BOTH hands have exactly FIVE INDIVIDUAL DIGITS: FOUR distinct fingers in a row plus ONE visibly separate opposable thumb. Use a simple block palm, four separate long cuboid fingers of slightly varied lengths, each made from only two rectangular segments, and a short two-block thumb attached to the side. Make clear air gaps between every finger. Pose both hands relaxed and open with palms angled partly toward the camera, fingers spread slightly and completely visible, away from thighs. Make the fingers large enough to count. Fingers must have the SAME deliberately crude angular geometry as the body, without rounded knuckles or intricate joints. No mittens, fused grippers, pincers, claws replacing fingers, three-finger hands or six digits.
+
+Style/medium: render a deliberately primitive low-poly 3D game model. Main armor shells are very simple box, wedge and low-sided prism forms, just a few broad polygon faces per piece, flat shading and solid colors, occasional broad painted blocks only. Simple square hinges. Keep the fewest forms that express the unique silhouette. No fine panel lines, tiny bevels, greebles, rivets, hoses, pistons, realistic metal, weathering, elaborate textures, wireframe overlay or triangle-pattern textures. No voxel aesthetic, chibi proportions, smooth modern toy render, organic flesh, fur, feathers or decorative animal costume.
+
+Composition: ONE mech, full body from helmet to feet, front three-quarter angle about 25 degrees so torso and limb depth read but both hands are visible; neutral grounded standing stance, arms slightly away from torso, entire head, silhouette extremities, hands and feet in frame with white margins. Neutral even light, pure white backdrop, no scenery, no text, logos, labels, inset views, diagrams or watermark. Portrait composition about 3:4. Empty hands, no guns, shields, carried props or weapon mounts that obscure the silhouette.
+
+Concept B — MANTIS tall light biped. An extremely narrow vertical chest and small triangular wedge sensor head sit between two elevated blade-shaped shoulder armor wedges. Long slim upper arms lead into long faceted forearm armor which folds back alongside the elbow, recalling the folded profile of mantis forelimbs, while ending in fully functional FIVE-DIGIT humanoid block hands. The forearms are armor shells, not sickle blades or claws. Narrow waist, very long thin mechanical legs, strongly angular bent knees, small planted wedge feet, and two thin flat booster fins along the upper back. Distinctively tall, sparse and triangular in silhouette. Main colors muted olive-green armor, a few broad bone-gray blocks, charcoal hinges and bone-gray fingers. Just a few large faces per armor shell; no insect face or extra limbs.
+
+TARGETED HAND CORRECTION
+
+Use case: precise-object-edit.
+Edit the supplied mech concept. Change ONLY the hands to correct the digit count.
+
+BOTH hands currently have only three long fingers plus a thumb. Add the missing FOURTH long finger to EACH hand. Each palm must have FOUR distinct long fingers along its lower edge: index, middle, ring, little, plus the existing separate side thumb. This is FIVE total digits on EACH hand, TEN total digits across both hands.
+
+This missing finger is the entire requested edit. Make the little finger short and the middle finger longest so the four-finger fan is easy to read. Widen the block palm just enough to attach FOUR fingers. Show clear white air gaps between all four fingers and keep the thumb distinct on the side. Make both palms face a little more forward only if necessary so all five digits can be counted. Use the same very simple low-poly two-segment cuboid fingers and flat gray shading as the current hands. No rounded knuckles, realistic robotics or added hand detail.
+
+Preserve EVERYTHING else: exact mech identity, silhouette, head, armor, proportions, colors, pose of the body and limbs, camera angle, framing, white backdrop, light and PS1-style geometry. Same full-body image. No crop, closeup, insets, text, extra limbs or redesign. Before finishing, count FOUR long fingertips plus ONE side thumb per hand.

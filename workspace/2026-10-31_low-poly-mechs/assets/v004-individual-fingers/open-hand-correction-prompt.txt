@@ -1,0 +1,7 @@
+Edit only the SMALL FAR HAND AT THE RIGHT EDGE OF THIS IMAGE. Preserve the rest of this exact image, including the large near hand.
+
+Turn the far hand to display an OPEN PALM facing the viewer, with FOUR straight separate fingers extended downward in a mild fan and a red-tipped thumb extending separately to the left. A five-digit robotic hand: four gray fingers PLUS the red-tipped thumb. The four fingers are index, middle, ring and pinky, each separately attached to the palm, each completely visible from base to fingertip. Add the missing pinky at the hand's rightmost edge. Leave small WHITE BACKGROUND GAPS between all four fingers. Do not curl them into overlapping shapes. Four visible GRAY fingertip silhouettes at the bottom of the palm, plus one separate RED thumb tip to the left.
+
+Widen the far palm slightly if necessary to fit FOUR fingers and make each finger slightly narrower, rather than merging or omitting a finger. Solid angular fingers with two or three simple block segments: moderately slim, sturdy and proportional to the mech. Keep a simple thumb capable of opposing the fingers for a later gun grip. No gun or prop. Same charcoal/gray color, red thumb tip and plain PS1-style flat-shaded geometry.
+
+All other pixels should remain the same: the nearer hand already has FOUR correct fingers and a thumb, do not change it. Same low-poly mech body, pose, camera, framing, colors and solid white background. No weapons, shield, equipment, detail additions, insets or text.

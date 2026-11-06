@@ -1,0 +1,17 @@
+Use case: precise-object-edit.
+Asset type: v003 angled action concept for Low Poly Mechs.
+
+Input: the supplied v002 PS1 shape study is the approved visual-direction reference and EDIT TARGET. Use this exact mech. Change only its pose and camera angle, revealing simple consistent depth for the same body masses.
+
+Pose and camera:
+One full-body mech in a dynamic grounded advancing combat stance: a broad staggered stride, forward knee bent, rear leg extended for support, weight convincingly over the feet, torso leaning slightly into the movement with a modest waist twist. Both arms bent naturally and separated from the torso as counterbalances, with empty simple gripper hands. Keep the chest and waist unobstructed; no arm crossing the body. Energetic and weighty, while keeping the whole model readable.
+Three-quarter FRONT view about 40 degrees around toward the mech's anatomical RIGHT / white-striped-thigh side. The striped thigh is on the nearer side. Show the front and side thickness of the chest, boxy shoulders, arm blocks, thigh armor, shin shapes and split-toe feet. Camera around chest height with moderate long-lens perspective; no extreme foreshortening, fisheye or tilted horizon. Both hands and both complete feet remain visible and distinct.
+
+Design invariants:
+Match v002's exact proportions, armor masses and deliberately very low geometric complexity: extremely broad plain shoulder blocks, small wedge head, two long plain vertical chest slabs, narrow simple waist connector, compact pelvis, broad thigh blocks, long angular shins, chunky split-toe feet, simple limb connectors and grouped mitten-like grippers. Each body part remains an economical angular volume with large uninterrupted flat faces. Keep the charcoal/gray blocks, simple muted red/brass accents and the two broad flat white stripes on the SAME anatomical thigh. Preserve the v002 silhouette as it turns; do not bulk up or redesign the torso.
+Previously hidden side/rear surfaces must be plain continuations of these same major volumes. No new armor layers, vents, fins, thrusters, backpack or accessories.
+
+Style and presentation:
+Keep exactly the same coarse PS1-era 3D game-model appearance and simple flat face shading. No finer or medium mechanical details: no bolts, panel grooves, ports, pistons, cables, knee discs, logos, numbers, individual fingers, intricate joints or added bevel stacks. Do not increase mesh complexity for the action pose.
+The gun, both back weapons, shield and all external equipment remain completely absent. No weapons or props.
+Clean solid white background, even neutral lighting, readable broad flat colors, no floor texture, scenery, effects, speed lines, motion blur, glossy photorealism or dramatic cast shadows. One single portrait image, centered full body with comfortable margins. No inset views, labels, text or watermark.

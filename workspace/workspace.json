@@ -1,13 +1,71 @@
 {
   "entities": [
     {
+      "id": "animal-mech-lab",
+      "title": "Mech Lab",
+      "description": "Low-poly mech concepts, shared components and reference studies, including animal silhouettes, knight frames and a reusable hand design.",
+      "type": "group",
+      "category": "image-gen",
+      "created": "2026-10-31",
+      "updated": "2026-11-05",
+      "folder": "2026-10-31_animal-mech-lab",
+      "steps": [
+        {
+          "name": "Version 1 · Animal silhouettes",
+          "path": "report.html"
+        },
+        {
+          "name": "Version 2 · Knight frames",
+          "path": "report_v2.html"
+        },
+        {
+          "name": "Shared Hand",
+          "path": "shared-hand.card.json",
+          "viewer": "card"
+        }
+      ],
+      "status": "active",
+      "pinned": false,
+      "defaultStep": 1
+    },
+    {
+      "id": "low-poly-mechs",
+      "title": "Low Poly Mechs",
+      "description": "Image exploration of low poly mech designs, with visual references, concept rounds, saved prompts and review notes.",
+      "type": "group",
+      "category": "image-gen",
+      "created": "2026-10-31",
+      "updated": "2026-10-31",
+      "folder": "2026-10-31_low-poly-mechs",
+      "steps": [
+        {
+          "name": "Overview",
+          "path": "overview.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "References",
+          "path": "references.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Versions",
+          "path": "versions.card.json",
+          "viewer": "card"
+        }
+      ],
+      "status": "active",
+      "pinned": false,
+      "defaultStep": 0
+    },
+    {
       "id": "prototype-player-mech",
       "title": "Prototype Player Mech",
       "description": "Development of Mech Prototype's first player mech: visual references, concept rounds, 3D model revisions, and review history.",
       "type": "group",
       "category": "image-gen",
       "created": "2026-10-23",
-      "updated": "2026-10-31",
+      "updated": "2026-11-05",
       "folder": "2026-10-23_prototype-player-mech",
       "steps": [
         {

@@ -1,0 +1,31 @@
+{
+  "id": "shared-hand-tripo-reference-v002",
+  "date": "2026-11-05",
+  "status": "agent-rejected",
+  "tool": "built-in image_gen",
+  "model": null,
+  "seed": null,
+  "request_id": null,
+  "output": "shared-hand-tripo-reference-v002.png",
+  "width": 1086,
+  "height": 1448,
+  "bytes": 1271856,
+  "sha256": "c4af29548650a67c362124205ef7dfa4f3781eaeafbb8fc5d0c4a0e729e91e6b",
+  "prompt": "prompt.txt",
+  "source_references": [
+    {
+      "path": "assets/shared-hand/v001-tripo-reference/shared-hand-tripo-reference-v001.png",
+      "relative_to": "Mech Lab card folder",
+      "sha256": "06d83e08964bd7c8f36f4c354a55bc0d01c55344a27da527a866990f7293fd0d"
+    },
+    {
+      "path": "assets/shared-hand/reference-study-v001/rounded-palm-wrist.png",
+      "relative_to": "Mech Lab card folder",
+      "sha256": "64148e6d8af05ef4839db91004756f8031f6163844e4578795ca06b30b6350a6"
+    }
+  ],
+  "owner_accepted": false,
+  "mesh_created": false,
+  "tripo_job_submitted": false,
+  "review": "Agent rejected for insufficient opposition: the thumb still reads as a fifth forward-facing finger. The four long fingers retain their design, the palm is larger with stepped armor and the wrist is a short broad supported coupling. The original front-facing thumb pivot is replaced by finger-style barrels, but the pose does not yet communicate an opposing jaw."
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-05",
+  "source": "Live unsaved Blender scene; owner-supplied AC6 references",
+  "count_method": "Base mesh triangles whose vertices all have their dominant group in L_Hand or L_Finger*; excludes forearm; wrist subset not separately labeled. Bounds are dominant-weight palm region, not exact anatomical measurements.",
+  "measurements": [
+    {
+      "object": "mesh[0].001",
+      "reference": "blocky-left",
+      "hand_vertices_dominant_weight": 2816,
+      "hand_triangles_all_vertices_in_region": 1820,
+      "boundary_triangles": 0,
+      "palm_bounds_dimensions_xyz": [
+        0.503361701965332,
+        0.7843755483627319,
+        0.6632242202758789
+      ]
+    },
+    {
+      "object": "mesh[0]",
+      "reference": "rounded-right",
+      "hand_vertices_dominant_weight": 4836,
+      "hand_triangles_all_vertices_in_region": 4106,
+      "boundary_triangles": 0,
+      "palm_bounds_dimensions_xyz": [
+        0.3897686004638672,
+        0.7660670280456543,
+        0.6441268920898438
+      ]
+    }
+  ]
+}

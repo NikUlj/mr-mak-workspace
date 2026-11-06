@@ -1,0 +1,75 @@
+{
+  "revision": "v004-individual-fingers",
+  "created": "2026-10-31",
+  "status": "take-d-ready-for-owner-review",
+  "request": "Individual fingers slim enough to grip a gun, but substantial enough to suit the rest of the low poly mech.",
+  "provider": {
+    "tool": "built-in image_gen editor",
+    "model": null,
+    "seed": null,
+    "request_ids": [],
+    "completed_edits": 4
+  },
+  "sources": [
+    {
+      "file": "assets/v003-action-three-quarter/low-poly-mech-action-v003b.png",
+      "role": "Initial edit target; authority for body, action pose, angle and colors.",
+      "sha256": "2c974f29c956f821c7ffb5ff1b1ba2a94794e85e6ff04d0f35e375a651d2f345"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "take-a",
+      "file": "low-poly-mech-individual-fingers-v004a.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "b247715b9b51b71f93907f7bb9df328ba41f7fa74793e5cccc530f736f65b98f",
+      "prompt": "prompt.txt",
+      "input": "assets/v003-action-three-quarter/low-poly-mech-action-v003b.png",
+      "agent_verdict": "not-selected-missing-fingers",
+      "owner_approved": false,
+      "upscaled": false
+    },
+    {
+      "id": "take-b",
+      "file": "low-poly-mech-individual-fingers-v004b.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "e13bb06a22c038d4aec9d03a7a68b30630430088cbee001952d043b066e4322d",
+      "prompt": "correction-prompt.txt",
+      "input": "low-poly-mech-individual-fingers-v004a.png",
+      "agent_verdict": "not-selected-far-hand-count",
+      "owner_approved": false,
+      "upscaled": false
+    },
+    {
+      "id": "take-c",
+      "file": "low-poly-mech-individual-fingers-v004c.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "644f7da9418a594e9c605d08cdd1ec397cc4c9031232dd8161a7f0f0e1b4d332",
+      "prompt": "far-hand-correction-prompt.txt",
+      "input": "low-poly-mech-individual-fingers-v004b.png",
+      "agent_verdict": "not-selected-far-hand-count",
+      "owner_approved": false,
+      "upscaled": false
+    },
+    {
+      "id": "take-d",
+      "file": "low-poly-mech-individual-fingers-v004d.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "815cf33e62498a26d571029e9e948242f7fc9a2d2fb424a803424394b20d9e7c",
+      "prompt": "open-hand-correction-prompt.txt",
+      "input": "low-poly-mech-individual-fingers-v004c.png",
+      "agent_verdict": "ready-for-owner-review",
+      "owner_approved": false,
+      "upscaled": false
+    }
+  ],
+  "review": "review.md",
+  "limitations": [
+    "Raster hand design only; gun fit, trigger clearance, articulation and collisions not tested in 3D.",
+    "Body appearance preserved visually; no mesh topology or polygon count verified."
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "round": "v002",
+  "created": "2026-11-01",
+  "updated": "2026-11-01",
+  "tool": "built-in image_gen",
+  "exact_model": null,
+  "seed": null,
+  "request_ids": null,
+  "correction_count": 0,
+  "visual_review_complete": true,
+  "delivery_checks": {
+    "date": "2026-11-01",
+    "workspace_version_tabs": "Both Version 1 and Version 2 opened successfully.",
+    "document_widths_px": [1440, 768, 390],
+    "themes": ["dark", "light"],
+    "shared_hand_and_four_concept_images": "Loaded, enlarged, displayed at 100%, closed and downloaded.",
+    "reference_images_and_saved_prompt_links": "passed",
+    "local_links_checked": 14,
+    "horizontal_overflow": false,
+    "browser_errors": [],
+    "visual_layout_review": "Desktop two-column gallery and phone single-column layout inspected."
+  },
+  "hand_master": {
+    "id": "H01",
+    "image": "media/round-02/h01-shared-hands-v001.png",
+    "width": 1536,
+    "height": 1024,
+    "review": "Matching mirrored hand architecture with four long separate articulated fingers and one shorter side thumb on each hand. Slim silver dorsal plates, gunmetal interiors and compact palms.",
+    "owner_selected": false,
+    "exact_mesh_reuse_verified": false,
+    "bytes": 1977128,
+    "sha256": "b8baddea2780d7230008a28d5bc3d16fddc8e5daa6f2df13a93e99e83dbcc0f4"
+  },
+  "concepts": [
+    {
+      "id": "v002-a-ivory-paladin",
+      "alt": "Ivory and brass low-poly knight mech with tall twin crests, flared armor, burgundy cape and slim silver five-digit hands",
+      "review": "The closest direction to the supplied knight illustration: tall crests, long tassets and a broad burgundy cape. Broad faceted plates pick up ivory and brass highlights. Both slim hands retain the H01 silver-over-gunmetal structure and five separate digits.",
+      "state": "v002a · Ready for owner review",
+      "hands": "five visible digits per hand; H01 architecture retained",
+      "image": "media/round-02/v002-a-ivory-paladin-v001.png",
+      "width": 1086,
+      "height": 1448,
+      "owner_selected": false,
+      "upscaled": false,
+      "bytes": 2030916,
+      "sha256": "d0b140cebdd612de93d85574b82e983b4151562ba796b404cbd8b00531cab194"
+    },
+    {
+      "id": "v002-b-iron-bulwark",
+      "alt": "Broad iron and blue low-poly knight mech with slit visor, high gorget, heavy shoulders and slim silver five-digit hands",
+      "review": "The high gorget, plain slit visor and broad shoulder masses make the heavy frame easy to distinguish. Brushed iron, restrained blue paint and surface wear enrich the large flat faces. Both hands retain five digits and the shared slim H01 construction.",
+      "state": "v002a · Ready for owner review",
+      "hands": "five visible digits per hand; H01 architecture retained",
+      "image": "media/round-02/v002-b-iron-bulwark-v001.png",
+      "width": 1086,
+      "height": 1448,
+      "owner_selected": false,
+      "upscaled": false,
+      "bytes": 2348685,
+      "sha256": "b4e10b852b050440241e9b9440f54678e3f7b49f369f8a22937f3ce63ccbd1eb"
+    },
+    {
+      "id": "v002-c-silver-lancer",
+      "alt": "Tall silver and teal low-poly knight mech with a swept single crest, narrow torso, long greaves and slim five-digit hands",
+      "review": "The single swept crest, narrow torso and long greaves establish the light frame. Satin silver and teal planes give it a cleaner, sharper appearance. Both small hands show four fingers and a thumb in the H01 design; their apparent size also reflects the long body proportions.",
+      "state": "v002a · Ready for owner review",
+      "hands": "five visible digits per hand; H01 architecture retained",
+      "image": "media/round-02/v002-c-silver-lancer-v001.png",
+      "width": 1086,
+      "height": 1448,
+      "owner_selected": false,
+      "upscaled": false,
+      "bytes": 1892578,
+      "sha256": "179ae1f861349f053ea355f9bfa40f088588a87d8bf65ca07e98e0e3761d838b"
+    },
+    {
+      "id": "v002-d-black-errant",
+      "alt": "Graphite and wine-red low-poly knight mech with a broad asymmetric pauldron, angular plate armor and slim silver five-digit hands",
+      "review": "The broad swept pauldron and compact opposite shoulder create the clearest asymmetry in this round. Graphite metal, steel edge planes and wine-red plates retain large readable facets. Both hands match the shared slim H01 architecture and show five separate digits.",
+      "state": "v002a · Ready for owner review",
+      "hands": "five visible digits per hand; H01 architecture retained",
+      "image": "media/round-02/v002-d-black-errant-v001.png",
+      "width": 1086,
+      "height": 1448,
+      "owner_selected": false,
+      "upscaled": false,
+      "bytes": 2116993,
+      "sha256": "8c51954cb8a8cd98b3c403e563d03a03abdeb8eb4e82d857573b7d51088df886"
+    }
+  ],
+  "earlier_attempts": [],
+  "limitations": [
+    "Raster concepts establish a shared visual hand design; identical reusable geometry is a later 3D deliverable.",
+    "Polygon count, topology and articulation are unverified.",
+    "The supplied hand crop is a small proportions reference."
+  ],
+  "references": [
+    {
+      "file": "media/round-02/knight-style-reference.png",
+      "width": 736,
+      "height": 1308,
+      "sha256": "114a39510d31f76cc11bf9b6a1c9ef81fc1064467d274fea283dd1b00371a552"
+    },
+    {
+      "file": "media/round-02/slim-hand-reference.png",
+      "width": 95,
+      "height": 80,
+      "sha256": "dbcdb637cfc0fd728001e53211463505ae625d3fb9e322b06b6a1dd67fe9d400"
+    }
+  ]
+}

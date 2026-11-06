@@ -1,0 +1,54 @@
+{
+  "revision": "v003-action-three-quarter",
+  "created": "2026-10-31",
+  "status": "take-b-ready-for-owner-review",
+  "request": "Use the liked v002 low poly version for an action-pose concept from an angle that shows the whole model shape.",
+  "provider": {
+    "tool": "built-in image_gen editor",
+    "model": null,
+    "seed": null,
+    "request_ids": [],
+    "completed_edits": 2
+  },
+  "sources": [
+    {
+      "file": "assets/v002-ps1-front/low-poly-mech-ps1-front-v002.png",
+      "role": "Owner-liked visual direction; primary design and simplicity reference for both takes.",
+      "sha256": "0139f093e91809eb50a10b6ff16bbc4d741d835150c1e965c175f1722ffd9579"
+    },
+    {
+      "file": "assets/v003-action-three-quarter/low-poly-mech-action-v003a.png",
+      "role": "Pose edit target for the stronger-angle correction only.",
+      "sha256": "cd6fa688c09b5aa39bb85445bf2c2df81b9e5efc8779435942bc509172f35daf"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "take-a",
+      "file": "low-poly-mech-action-v003a.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "cd6fa688c09b5aa39bb85445bf2c2df81b9e5efc8779435942bc509172f35daf",
+      "prompt": "prompt.txt",
+      "agent_verdict": "not-selected-angle-too-frontal",
+      "owner_approved": false,
+      "upscaled": false
+    },
+    {
+      "id": "take-b",
+      "file": "low-poly-mech-action-v003b.png",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "2c974f29c956f821c7ffb5ff1b1ba2a94794e85e6ff04d0f35e375a651d2f345",
+      "prompt": "correction-prompt.txt",
+      "agent_verdict": "ready-for-owner-review",
+      "owner_approved": false,
+      "upscaled": false
+    }
+  ],
+  "review": "review.md",
+  "limitations": [
+    "Side and rear depth inferred from a single front image.",
+    "Raster concepts only; mesh consistency, articulation, topology and polygon count unverified."
+  ]
+}

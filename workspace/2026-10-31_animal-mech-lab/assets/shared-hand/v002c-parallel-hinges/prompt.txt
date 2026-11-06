@@ -1,0 +1,10 @@
+﻿Use case: precise-object-edit.
+Correct only the thumb hinges in the supplied image. Everything else stays exactly unchanged: four long fingers, the thumb's bent opposing C-shaped pose and tip location, larger palm, wrist coupling, camera, lighting and white background.
+
+CRITICAL ERROR TO FIX: at the ROOT of the thumb, beside the lower-left palm, the dark barrel is currently VERTICAL, with a visible round TOP. That is an incorrect swivel. It must be a HORIZONTAL axle, oriented LEFT TO RIGHT across the palm, exactly parallel to the dark barrels at the bases of the four long fingers. The thumb's second hinge also must share that exact left-right axle orientation.
+
+Replace the thumb ROOT connection with the SAME fork-and-barrel shape as a finger-base hinge: two fixed bracket ears on the LEFT and RIGHT of the root, a short horizontal dark cylinder between them, its circular end caps buried inside the left and right ears. We should see the CURVED SIDE of the horizontal cylinder from this camera, like the finger knuckles. There must be NO visible circular TOP surface, NO vertical-axis drum, NO rotating platform, NO front-facing circular bolt, and NO second perpendicular joint.
+Replace the smaller thumb inter-link hinge with the same horizontal finger-style barrel and left-right bracket ears. Its rotation axis is parallel to the root's and to all FOUR finger hinge barrels.
+The thumb is therefore fixed to bend only front-to-back along the fingers' grip direction, as an OPPOSING JAW. Keep the bent hook pose of the thumb, with its pad facing toward the four fingers. Do not straighten the thumb or splay it sideways.
+
+This is a small surgical correction of two hinge joints, not a hand redesign. Preserve all other pixels and forms as closely as possible. No labels or arrows.

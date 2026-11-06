@@ -1,0 +1,26 @@
+{
+  "format": "mrmak-card",
+  "version": 1,
+  "template": "research",
+  "title": "Low Poly Mechs",
+  "summary": "An image exploration of very low poly versions of the owner's existing mech reference, preserving the main shapes that make its design unique.\n\n**Current stage:** [v004d - Individual fingers](#/low-poly-mechs/2) is ready for review. It keeps the v003b three-quarter action concept and replaces its merged grippers with separate, sturdy segmented fingers and opposed thumbs. The owner likes v002's PS1-style direction; the whole model remains under review.",
+  "items": [
+    {
+      "id": "low-poly-mechs-brief",
+      "title": "Explore low poly mech images",
+      "body": "The owner requested a new card on 31 October 2026, focused on trying to create images of low poly mechs.\n\nEarlier references, low poly experiments and player-mech revisions remain in [Prototype Player Mech](#/prototype-player-mech/0). This exploration has its own references and version history.",
+      "status": "in-progress"
+    },
+    {
+      "id": "low-poly-mechs-direction",
+      "title": "PS1-style simplification",
+      "body": "**Confirmed direction:** use the same original mech reference, with weapons and other external equipment removed. After the first image, the owner requested a PS1-style appearance with fine details stripped away, then liked v002's resulting simplification.\n\nKeep its broad boxy shoulders, small wedge head, twin long chest slabs, narrow waist, broad thighs, long lower legs and split-toe feet. Use plain angular masses and simple joints without small or medium mechanical fittings, fine panel details, logos or decals. Broad color areas and white thigh stripes can remain.\n\n**Next design check:** action and angle concepts to confirm the whole model's shape. [v003b](#/low-poly-mechs/2) shows a stronger three-quarter view; side and rear depth are inferred and remain for review. v002 is the visual-direction reference. The source photograph and earlier neutral pose guide remain in [References](#/low-poly-mechs/1).\n\n**Hand requirement, 31 October 2026:** individual fingers, slim enough to wrap around a gun grip but substantial enough to match the rest of the mech. Use simple angular finger segments and an opposed thumb rather than merged grippers. v004d proposes four fingers and a thumb per hand while retaining the simple body design. Gun dimensions, trigger clearance and articulated grip remain for later 3D verification.",
+      "status": "in-progress"
+    },
+    {
+      "id": "low-poly-mechs-rounds",
+      "title": "Keep the image rounds together",
+      "body": "Use [References](#/low-poly-mechs/1) for source images and style notes, and [Versions](#/low-poly-mechs/2) for generated candidates.\n\nGive every candidate its own image, stable name, exact prompt, generator details when available and review notes. Preserve earlier takes when refining a design. Generated images establish an appearance; mesh topology and polygon counts require a later 3D model review."
+    }
+  ]
+}

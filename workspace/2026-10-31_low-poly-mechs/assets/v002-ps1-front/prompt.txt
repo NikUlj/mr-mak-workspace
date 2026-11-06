@@ -1,0 +1,16 @@
+Use case: precise-object-edit.
+Asset type: v002 PS1-style very-low-poly mech reference image.
+
+Input: the supplied v001 mech is the EDIT TARGET and the guide to its identity, silhouette, proportions, pose, camera and colors.
+
+Primary change: simplify this mech MUCH more aggressively into an authentic early PlayStation 1 era 3D game character. Reduce it to only the major masses that make its shape distinctive. Aim for the apparent geometric complexity of a few hundred triangles for the entire character, with large angular planar faces and extremely economical forms. The current image is still far too detailed. Strip away most of its parts instead of merely making their surfaces more faceted.
+
+Keep the recognizable shape: tall adult-mech proportions, very broad boxy shoulders, small wedge-shaped head between them, TWO prominent long vertical slabs down the front of the chest, a narrow exposed waist, a compact pelvis, broad thigh armor, long lower legs, chunky split-toe feet and long arms hanging slightly out from the body. Keep the silhouette and relative size of these major masses close to the reference.
+
+Simplify each major piece into ONE economical volume: one angular block per shoulder; one wedge for the head; one central torso block with the two plain chest slabs; a single narrow waist connector; simple pelvis; a block each for upper arm, forearm, thigh and shin. Elbows, knees and hips become very simple dark low-sided connectors. Hands become simple chunky mitten-like grippers with a thumb and one grouped finger mass, no individual knuckles or small finger segments. Feet become two simple broad angular wedges with only a central toe split.
+
+REMOVE the fine and medium details completely: bolts, screws, circular ports, knee discs, colored joint rings, pistons, rods, hoses, cables, exhaust tubes, small tabs, brackets, vents, inset panels, chest X grooves, cutlines, edge trim, tiny bevels, stacked overlapping armor layers, logos, emblems, numbers, letters and warning decals. Fill these areas with uninterrupted flat surfaces. No tiny parts anywhere. No replacement decorative detailing. Keep only the broad charcoal/gray color blocks, a few simple muted red or brass color patches, and the two broad white thigh stripes as FLAT painted color, without raised geometry. Most armor should be completely plain.
+
+Rendering: unmistakably coarse low-poly PS1-style 3D geometry with hard angular silhouettes, simple flat or basic vertex shading and plain low-detail color textures. No photorealistic material rendering, metallic shine, detailed textures, ambient-occlusion creases, wear, added triangulation overlay, pixel-art sprite, voxel construction or blurring to fake simplification. Make the geometric simplification clear in a crisp readable image.
+
+Preserve the same level straight-on front camera, full-body framing, neutral symmetric relaxed A-pose, empty hands and blank white background. Keep every part in frame, with both feet flat and comfortable margins. Weapons, back weapons, shield and external equipment remain completely absent. No extra views, captions, polygon counts, wireframes or watermark. One portrait image only.

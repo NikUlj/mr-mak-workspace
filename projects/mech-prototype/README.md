@@ -27,6 +27,25 @@ estimates. Prototype before continuing the production research.
 
 The Workspace card ID is `mech-prototype`, in the `game` category.
 
+### Shared hand study — 5 November 2026
+
+The owner wants a shared, lower-poly hand established before further mech
+concepts, with a distinct wrist connection like the rounded AC6 reference on
+the right in the supplied Blender scene. Blender MCP is verified and both
+reference hands have been inspected. See the [Shared Hand review](../../workspace/2026-10-31_animal-mech-lab/shared-hand.card.json)
+on the Mech Lab card for close-ups, measured reference triangle counts and
+the generated hand image. The owner will use Tripo for the first mesh; the
+current deliverable is a clear image with simplified geometry, an exposed wrist
+attachment and an opposing thumb whose hinge axes align with the other fingers,
+without a swivel or ball joint. The owner rejected v001's thumb, narrow peg
+attachment and small, plain palm while accepting its fingers. The owner also
+rejected v002c's thumb and its unnatural bend. Fresh thumb-side and side-profile
+captures of the actual AC6 model now guide v003 directly, keeping the source's
+open thumb pose and using an oblique horizontal view. The new image is ready
+for owner review; earlier rejected images remain visible. Final
+proportions and budget remain open; no new hand mesh or Unity import has been
+produced.
+
 ## Project state and upkeep
 
 The current prototype is the existing external `AC_Game` Unity project. Keep
