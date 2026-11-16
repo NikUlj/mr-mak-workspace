@@ -1,6 +1,6 @@
 ---
 name: image-reference-workflow
-description: Explore image concepts and make faithful edits of accepted references for 3D or creative production, with explicit model choices and visual review.
+description: Develop visual concepts from image references, document which images informed each design, and make faithful edits of accepted images with explicit model choices and visual review.
 ---
 
 # Image references and faithful edits
@@ -18,6 +18,14 @@ Label candidates with stable names and keep each prompt. For an edit, identify
 what remains unchanged and the exact delta. Use the accepted image as input,
 not a reconstruction of it from text. A two-image merge must explain the role
 of each reference. Avoid injecting extra style adjectives that redesign the asset.
+
+When an image informs a design, put a **References used** note beside that
+design, including in written pitches and on sheets with several concepts.
+For each image actually used, link the individual pin, image, local file or
+earlier revision and say which feature it informed. If an attachment has no
+reusable link, identify it by filename or description. Mark any image supplied
+directly to the generator. For edits and alternate views, identify the exact
+source revision and keep its reference history accessible from the new version.
 
 Choose the camera for the deliverable. A hero concept can use dramatic framing;
 a modeling sheet needs readable parts and neutral light. Do not force the same

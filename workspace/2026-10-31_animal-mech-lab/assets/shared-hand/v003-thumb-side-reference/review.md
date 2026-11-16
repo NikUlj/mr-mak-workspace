@@ -7,3 +7,7 @@ New candidate from fresh native Blender references. The horizontal thumb-side vi
 The owner rejected the preceding thumb and its unnatural bend, and suggested a different angle and a clearer reference. The new input pair consists of an oblique palm/thumb view and a strict thumb-edge profile. Both were captured without changing source geometry or pose; original visibility and viewpoint were restored. The side profile confirms that the thumb projects forward of the palm along the index finger bending plane. Earlier attempts incorrectly spread it across the palm width or forced it into a hook.
 
 [PNG](shared-hand-tripo-reference-v003.png) | [Prompt](prompt.txt) | [Manifest](manifest.json)
+
+## Owner feedback - 7 November 2026
+
+The owner likes this design and requested further simplification, especially on the fingers, while retaining its look. The raised rear palm strip and small finger tab are marked for removal. v004 continues from this image. This is approval of the direction for refinement, not a final selection of the Tripo reference.

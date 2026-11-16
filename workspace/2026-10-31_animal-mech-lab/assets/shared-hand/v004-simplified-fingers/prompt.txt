@@ -1,0 +1,13 @@
+Use case: precise-object-edit.
+Asset: one clean reference image of the existing low-poly mech hand for later image-to-3D work.
+
+IMAGE 1 is the EDIT TARGET: the clean v003 hand, whose overall design the owner likes.
+IMAGE 2 is the owner's MARKUP of that same image. Red outlines indicate geometry to DELETE. They are editing instructions only, never part of the output.
+
+Make a restrained simplification of Image 1:
+1. Completely REMOVE the entire raised segmented armor strip along the upper/rear outer edge of the palm, inside the large red outline in Image 2. This is the long elevated rail starting at the upper-left heel of the palm and continuing rightward over its far edge. Remove the whole strip, including its thick left cap and projecting right tip. Reveal the lower underlying palm body with a clean simple edge. Do not replace the strip with another ridge, ledge, plate or decoration. Keep the large central palm plate and the lower underlying knuckle shoulder.
+2. REMOVE the small protruding light-gray tab over the first hinge of the uppermost long finger, inside the small red outline.
+3. Simplify the FOUR long fingers slightly and consistently: each of their existing three articulated links becomes one plain chamfered block with broad flat faces and only a single simple bevel at silhouette edges. Eliminate small raised lips, tiny tabs, thin extra cap layers, and fussy stepped corners on the finger segments. Keep the fingertip outlines and slight taper, original slender widths, relative lengths, spacing, pose, three-link articulation and dark hinge barrels. Retain all finger-base joints and readable separation between links; do not fuse the fingers or joints.
+
+PRESERVE EVERYTHING ELSE as closely as possible: exact existing thumb root, hinge orientations, thumb shape and open pose; substantial main palm shape and dark recess; broad stepped wrist coupling; gray materials; soft studio lighting; pure white background; original horizontal composition and camera, wrist left, fingertips right, thumb in lower foreground. This is the same hand with selected excess geometry removed, not a redesign. Do not change the thumb or invent a new mechanism.
+Exactly four long fingers plus one shorter thumb. All five digits and complete wrist connection visible, same generous margins and landscape aspect ratio as Image 1. One hand, one view. No red markings, text, diagrams, arrows, extra parts, arm, weapon, stand or UI.

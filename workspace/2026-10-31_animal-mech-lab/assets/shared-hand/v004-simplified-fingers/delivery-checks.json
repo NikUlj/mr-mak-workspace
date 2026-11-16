@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-07",
+  "method": "Real Workspace browser preview in headless Edge",
+  "checks": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "imagePreview": "passed",
+      "markupPreview": "passed",
+      "downloads": "passed",
+      "sourceLinks": "passed",
+      "pageOverflow": false,
+      "closeAndDownloadReachable": true
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "imagePreview": "passed",
+      "markupPreview": "passed",
+      "downloads": "passed",
+      "sourceLinks": "passed",
+      "pageOverflow": false,
+      "closeAndDownloadReachable": true
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "imagePreview": "passed",
+      "markupPreview": "passed",
+      "downloads": "passed",
+      "sourceLinks": "passed",
+      "pageOverflow": false,
+      "closeAndDownloadReachable": true
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "imagePreview": "passed",
+      "markupPreview": "passed",
+      "downloads": "passed",
+      "sourceLinks": "passed",
+      "pageOverflow": false,
+      "closeAndDownloadReachable": true
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "imagePreview": "passed",
+      "markupPreview": "passed",
+      "downloads": "passed",
+      "sourceLinks": "passed",
+      "pageOverflow": false,
+      "closeAndDownloadReachable": true
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "imagePreview": "passed",
+      "markupPreview": "passed",
+      "downloads": "passed",
+      "sourceLinks": "passed",
+      "pageOverflow": false,
+      "closeAndDownloadReachable": true
+    }
+  ],
+  "browserErrors": [],
+  "visualReview": "Agent inspected generated image against v003 and owner markup; card screenshots recorded for desktop, tablet and phone in both themes."
+}

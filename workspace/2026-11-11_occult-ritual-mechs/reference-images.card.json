@@ -1,0 +1,108 @@
+{
+  "format": "mrmak-card",
+  "version": 1,
+  "template": "gallery",
+  "title": "Occult Ritual Mechs · Reference images",
+  "summary": "Face and upper-body studies, Gekko-like limbs and grimdark field armor for the occult frames. [Earlier insect, animal and alien-figure studies on Mech Lab](#/animal-mech-lab/7).",
+  "items": [
+    {
+      "id": "smooth-mask",
+      "title": "Smooth mask",
+      "image": "references/pinterest/smooth-mask-788411478568823397.jpg",
+      "alt": "Pale face with shallow hollows, small low openings and short side struts.",
+      "body": "Pale face with shallow hollows, small low openings and short side struts.\n\n400 × 400 px.",
+      "url": "https://www.pinterest.com/pin/788411478568823397/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "plated-head",
+      "title": "Plated head",
+      "image": "references/pinterest/plated-head-788411478568508346.jpg",
+      "alt": "Long gray head casing with a single red optic, shown on the complete armored figure.",
+      "body": "Long gray head casing with a single red optic, shown on the complete armored figure.\n\n1137 × 1933 px.",
+      "url": "https://www.pinterest.com/pin/788411478568508346/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "smooth-mask-full-body",
+      "title": "Smooth mask, full body",
+      "image": "references/pinterest/smooth-mask-full-body-788411478568840781.jpg",
+      "alt": "The full-body companion to the smooth-mask crop. Marked red shoulder tissue narrows into long dark arms.",
+      "body": "The full-body companion to the smooth-mask crop. Marked red shoulder tissue narrows into long dark arms.\n\n720 × 1122 px.",
+      "url": "https://www.pinterest.com/pin/788411478568840781/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "ribbed-chest",
+      "title": "Ribbed chest and upper arms",
+      "image": "references/pinterest/ribbed-chest-788411478568840783.jpg",
+      "alt": "Open ribs surround dark red tissue where the arms meet the torso. Thick outer plates frame the shoulders.",
+      "body": "Open ribs surround dark red tissue where the arms meet the torso. Thick outer plates frame the shoulders.\n\n400 × 400 px.",
+      "url": "https://www.pinterest.com/pin/788411478568840783/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "hooded-shoulders",
+      "title": "Hooded head and shoulders",
+      "image": "references/pinterest/hooded-shoulders-788411478568840784.jpg",
+      "alt": "A pale face sits between long dark side panels. Red striated tissue defines the shoulder silhouette.",
+      "body": "A pale face sits between long dark side panels. Red striated tissue defines the shoulder silhouette.\n\n400 × 400 px.",
+      "url": "https://www.pinterest.com/pin/788411478568840784/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "curved-load-bearing-limbs",
+      "title": "Curved load-bearing limbs",
+      "image": "references/pinterest/curved-load-bearing-limbs-788411478568823391.jpg",
+      "alt": "Long curved limbs and broad feet support a compact horizontal body.",
+      "body": "Long curved limbs and broad feet support a compact horizontal body.\n\n1458 × 2048 px.",
+      "url": "https://www.pinterest.com/pin/788411478568823391/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "dark-flexing-limbs",
+      "title": "Dark flexing limbs",
+      "image": "references/pinterest/dark-flexing-limbs-788411478568823387.jpg",
+      "alt": "Folded dark limbs bend beneath a yellow hard shell.",
+      "body": "Folded dark limbs bend beneath a yellow hard shell.\n\n1280 × 1798 px.",
+      "url": "https://www.pinterest.com/pin/788411478568823387/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "yellow-joint-covering",
+      "title": "Continuous yellow joint covering",
+      "image": "references/pinterest/yellow-joint-covering-788411478568822504.jpg",
+      "alt": "A continuous yellow surface curves around the joints of a small walking machine.",
+      "body": "A continuous yellow surface curves around the joints of a small walking machine.\n\n1000 × 1000 px.",
+      "url": "https://www.pinterest.com/pin/788411478568822504/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "vented-armor",
+      "title": "Vented field armor",
+      "image": "references/pinterest/vented-armor-788411478568822585.jpg",
+      "alt": "Deep vents break up the battered upper body of a dark industrial mech.",
+      "body": "Deep vents break up the battered upper body of a dark industrial mech.\n\n720 × 960 px.",
+      "url": "https://www.pinterest.com/pin/788411478568822585/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "mismatched-plates",
+      "title": "Mismatched field plates",
+      "image": "references/pinterest/mismatched-plates-788411478568822614.jpg",
+      "alt": "Uneven shoulder armor, painted numbers and weathered brown plating.",
+      "body": "Uneven shoulder armor, painted numbers and weathered brown plating.\n\n791 × 960 px.",
+      "url": "https://www.pinterest.com/pin/788411478568822614/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "muted-field-paint",
+      "title": "Muted field paint",
+      "image": "references/pinterest/muted-field-paint-788411478568822596.jpg",
+      "alt": "A squat olive field mech with recessed openings and scattered paint markings.",
+      "body": "A squat olive field mech with recessed openings and scattered paint markings.\n\n600 × 735 px.",
+      "url": "https://www.pinterest.com/pin/788411478568822596/",
+      "linkLabel": "Original pin"
+    }
+  ]
+}

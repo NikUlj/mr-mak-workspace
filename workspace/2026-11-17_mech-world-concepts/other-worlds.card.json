@@ -1,0 +1,21 @@
+{
+  "format": "mrmak-card",
+  "version": 1,
+  "template": "research",
+  "title": "Other worlds",
+  "summary": "Two new pitches for comparison with [The Hand](#/mech-world-concepts/0). Both start from an old tale, a visible catastrophe and a patron willing to lend the pilot a body. Both are awaiting a first reaction.",
+  "items": [
+    {
+      "id": "missing-hour",
+      "title": "The Missing Hour",
+      "status": "idea",
+      "body": "The clockmakers used to leave one tooth out of every public clock. The old explanation was that something needed an hour in which to cross the street. Then a city cast a wheel with all its teeth. That winter its station clocks began jumping straight from noon to one. Trains emerged with a winter’s rust on their axles. Yesterday one came through with a fortified town built on its flatbeds.\n\nPeople have been living for years inside the hour the city skips. They have built turntables and armored engines to keep the few entrances moving. You pilot an expedition into noon to bring a stranded train through. Across the points, a squat switching engine braces its feet against both rails and slews the track sideways under your guns. Its crew needs that line for a departure of its own.\n\n*“Leave me one second uncounted.”* The patron lends a frame with two heels on each foot. During a boost, the second heel leaves a footprint a beat behind the first. Once before it fades, the pilot can step back into that print with any weapon still trained downrange. The price of passage is to bring the train through with its clock one second slow. Whether something crosses in that second is an open question."
+    },
+    {
+      "id": "moult",
+      "title": "The Country That Molts",
+      "status": "idea",
+      "body": "At midsummer people used to leave knives standing in the fields. By morning the old skin of the earth hung from their tips, thin enough to read through. This year the skin came away with the roads and houses still attached. From the new ground below, the old town looks like the underside of a table. Lights are still coming on upstairs.\n\nThe creatures that ate the old skins have arrived on schedule. One moves through the wheat on two enormous winding drums. By the time its head reaches the station, three streets are rolled around its belly. The pilot has to turn it down an abandoned cutting long enough for the town to get off the skin. Its next meal is easy to read from the direction in which the telegraph poles are leaning.\n\n*“Sow me where the road ends.”* This patron lends a black, seed-shaped core in a pair of steel husks. Ejecting a husk into the cutting gives the drums a fresh edge to catch. The lighter frame can boost alongside them and fire a shared weapon into the exposed axle. In return, the pilot takes the core below the torn road and plants it in the bare earth. Nothing else has grown there yet."
+    }
+  ]
+}

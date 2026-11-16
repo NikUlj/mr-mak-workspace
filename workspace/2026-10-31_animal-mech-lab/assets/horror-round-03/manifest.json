@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-07",
+  "tool": "built-in image_gen",
+  "model": null,
+  "seed": null,
+  "request_id": null,
+  "prompt_set": "../../sources/horror-round-03-prompts.json",
+  "framing_revision_prompt": "../../sources/h03-d-brood-v002-prompt.txt",
+  "gallery": "../../horror-frames.card.json",
+  "images": [
+    {
+      "id": "h03-a-ossuary-v001",
+      "file": "h03-a-ossuary-v001.png",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 2211736,
+      "sha256": "a3f14f3767177eb8f49956c553b09944e1dcf6db212da44292c7581547720336",
+      "selected_for_gallery": true,
+      "owner_accepted": false,
+      "source_image": null
+    },
+    {
+      "id": "h03-b-pallbearer-v001",
+      "file": "h03-b-pallbearer-v001.png",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 2563844,
+      "sha256": "9cf4d8e087f786ca38bb4eb40769a60811710df621d03542e4abdcdf84f8d240",
+      "selected_for_gallery": true,
+      "owner_accepted": false,
+      "source_image": null
+    },
+    {
+      "id": "h03-c-marionette-v001",
+      "file": "h03-c-marionette-v001.png",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 1950994,
+      "sha256": "b447f9a4b8c5f7753aca12df7b5269f29a23076c3f5ed214ce73151cd4ff9bb1",
+      "selected_for_gallery": true,
+      "owner_accepted": false,
+      "source_image": null
+    },
+    {
+      "id": "h03-d-brood-v002",
+      "file": "h03-d-brood-v002.png",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 2109354,
+      "sha256": "c22bb82e4bac8b150d0fba870b2a65d042511585ac0ed3d923b6fd6302c08cef",
+      "selected_for_gallery": true,
+      "owner_accepted": false,
+      "source_image": "h03-d-brood-v001.png"
+    },
+    {
+      "id": "h03-d-brood-v001",
+      "file": "h03-d-brood-v001.png",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 2289584,
+      "sha256": "10fc8b3ae2c97752645d8600bfc2c603418036dddd2c76aa2e5196e1270f9152",
+      "selected_for_gallery": false,
+      "owner_accepted": false,
+      "source_image": null
+    }
+  ]
+}

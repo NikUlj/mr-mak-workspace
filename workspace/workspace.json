@@ -1,13 +1,93 @@
 {
   "entities": [
     {
+      "id": "mech-world-concepts",
+      "title": "Mech Prototype · World Concepts",
+      "description": "Possible worlds for the mech roguelite, with their opening tales, patron contracts and first encounters.",
+      "type": "group",
+      "category": "game",
+      "created": "2026-11-17",
+      "updated": "2026-11-17",
+      "folder": "2026-11-17_mech-world-concepts",
+      "steps": [
+        {
+          "name": "The Hand",
+          "path": "the-hand.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Other worlds",
+          "path": "other-worlds.card.json",
+          "viewer": "card"
+        }
+      ],
+      "status": "active",
+      "pinned": false,
+      "defaultStep": 0
+    },
+    {
+      "id": "occult-ritual-mechs",
+      "title": "Occult Ritual Mechs",
+      "description": "Ritual-built combat frames for Mech Prototype. Design rules, artwork, lore and references for Counterpart, Knell, Witness, Sitter and Mantle.",
+      "type": "group",
+      "category": "image-gen",
+      "created": "2026-11-11",
+      "updated": "2026-11-12",
+      "folder": "2026-11-11_occult-ritual-mechs",
+      "steps": [
+        {
+          "name": "Design rules",
+          "path": "design-rules.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Counterpart",
+          "path": "counterpart.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Knell",
+          "path": "knell.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Witness",
+          "path": "witness.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Sitter",
+          "path": "sitter.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Reference images",
+          "path": "reference-images.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Face study",
+          "path": "face-study.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Mantle",
+          "path": "mantle.card.json",
+          "viewer": "card"
+        }
+      ],
+      "status": "active",
+      "pinned": false,
+      "defaultStep": 0
+    },
+    {
       "id": "animal-mech-lab",
       "title": "Mech Lab",
-      "description": "Low-poly mech concepts, shared components and reference studies, including animal silhouettes, knight frames and a reusable hand design.",
+      "description": "Player mech concepts, shared components and enemy studies, including lightweight silhouettes, animal and knight frames, and biomechanical horror.",
       "type": "group",
       "category": "image-gen",
       "created": "2026-10-31",
-      "updated": "2026-11-05",
+      "updated": "2026-11-11",
       "folder": "2026-10-31_animal-mech-lab",
       "steps": [
         {
@@ -22,11 +102,36 @@
           "name": "Shared Hand",
           "path": "shared-hand.card.json",
           "viewer": "card"
+        },
+        {
+          "name": "Version 3 · Horror frames",
+          "path": "horror-frames.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "False Herd · Player mech",
+          "path": "false-herd.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Return Ward · Recovery cradle",
+          "path": "return-ward.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Light frames · Silhouettes",
+          "path": "light-frames.card.json",
+          "viewer": "card"
+        },
+        {
+          "name": "Reference images",
+          "path": "reference-images.card.json",
+          "viewer": "card"
         }
       ],
       "status": "active",
       "pinned": false,
-      "defaultStep": 1
+      "defaultStep": 3
     },
     {
       "id": "low-poly-mechs",
@@ -95,7 +200,7 @@
       "type": "group",
       "category": "game",
       "created": "2026-10-23",
-      "updated": "2026-10-24",
+      "updated": "2026-11-11",
       "folder": "2026-10-23_mech-prototype",
       "steps": [
         {

@@ -12,8 +12,96 @@ This is a separate brief from Project Playground. Do not carry over that
 project's game concept, proposed scope, art direction, content counts, or
 estimates. Prototype before continuing the production research.
 
+## Player frame design direction — 10 November 2026
+
+Design most frames around thruster-driven combat movement. Visible rear and
+side thrusters can sit flush with the hull. The legs must also support the
+loaded frame and give it a convincing walking gait. For each proposed frame,
+describe its boost posture, how it changes direction, and how it settles back
+onto its feet. Allow room for the current loadout idea of one mech-scale
+science-fiction weapon in each hand and two on the back, with clearance around
+the exhausts. Individual frames may vary.
+
+The current plan treats each mech body as a complete chassis with its own head,
+torso and limbs. Body-part swapping is outside the current plan. Frames can
+have different outlines and joint spacing while accepting their weapon loadouts.
+
+Lacewing and Lurcher were explored in the
+[light frame study](../../workspace/2026-10-31_animal-mech-lab/light-frames.card.json).
+Effigy's human face and humanoid shape were rejected.
+
+### Current exploration — 11 November 2026
+
+Set Lacewing and Lurcher aside. Explore new frames in writing, starting with
+their silhouettes and movement. The premise under consideration is that an
+occult ritual produces the mech, binds a presence into it or makes the machine
+itself a demon in an abstract sense. The current visual references are
+grimdark field machinery, face-like sensor arrangements and the uncanny
+weight and flex of Gekko-like limbs. The alien-woman references remain outside
+this round.
+
+Keep a consistent industrial style across the frames as their silhouettes vary.
+Give each outside reference a specific role, such as the relief of a faceplate
+or the way a shoulder flexes. Establish the chassis, loadout and movement on
+their own terms. Usually develop the ritual afterward and adjust the design
+where that adds something. A ritual can lead when it already suggests a
+distinctive form, sound or movement worth building around.
+
+Read the [Occult Ritual Mechs card](../../workspace/2026-11-11_occult-ritual-mechs/design-rules.card.json)
+before starting a new occult design. Give each occult frame its own tab on that
+card and keep its written concept, lore, references, artwork and later revisions together there.
+Each frame in this branch can equip two mech-scale hand weapons and two independent
+back weapons on high, outboard pivots. Draw heavily on Armored Core for the
+weapon housings and the placement of the boosters. The main bells sit low on
+the rear core, with visible quick-boost ports on the outer hips. Leave clearance
+for both back weapons to deploy and for the legs to walk and catch a landing.
+
+[Counterpart](../../workspace/2026-11-11_occult-ritual-mechs/counterpart.card.json)
+is the owner's favorite of this round. [Knell](../../workspace/2026-11-11_occult-ritual-mechs/knell.card.json)
+also has promise, especially its sustained note. The owner wants to leave both
+designs as they are for now and revisit refinements later.
+
+Set [Witness](../../workspace/2026-11-11_occult-ritual-mechs/witness.card.json)
+aside. Its hull felt too large and the traveling shutter missed the intended
+face aesthetic. The owner liked the legs across all three frames. For a fresh
+design, revisit the [smooth mask](https://www.pinterest.com/pin/788411478568823397/)
+and [long plated head](https://www.pinterest.com/pin/788411478568508346/)
+and explore Gekko-like movement in the arms or torso.
+
+The owner also likes the arms and torsos in the
+[hooded portrait](https://www.pinterest.com/pin/788411478568840784/),
+[ribbed chest portrait](https://www.pinterest.com/pin/788411478568840783/)
+and [full-body view of the smooth mask](https://www.pinterest.com/pin/788411478568840781/).
+Use these as upper-body references for fresh designs. In the full-body view,
+striated red shoulder tissue tapers into smooth dark arms. The ribbed portrait
+shows a second way to frame the shoulder tissue, between the torso ribs and the
+outer arm plates. The same material can inform how arms and torso take weight.
+
+[Mantle](../../workspace/2026-11-11_occult-ritual-mechs/mantle.card.json) develops
+the stamped head and red upper arms the owner liked in Face study v003. Its
+armored collar defines a slim, humanlike frame. For v002 the owner requested
+the Face study’s separate collar plates, the small rounded teeth from Mantle’s
+first full-body sheet rendered in steel, and a slightly wider, more mechanical
+torso. The new study shows exposed red bundles most clearly in the upper arms
+and legs, with smaller openings along the lower ribs.
+
+### Reference tracking for every mech design
+
+The [Occult Ritual Mechs reference gallery](../../workspace/2026-11-11_occult-ritual-mechs/reference-images.card.json)
+holds the face, upper-body, limb and field-armor studies.
+The [Mech Lab reference gallery](../../workspace/2026-10-31_animal-mech-lab/reference-images.card.json)
+holds the earlier insect, animal and alien-figure studies. Each image links to its source pin.
+Use these files for direct visual input when making a study from those references.
+
+On each new design tab, keep a **References used** entry. Link each specific pin,
+image, official page or previous revision actually used and say which feature
+it informed. For an image edit or new view, identify the exact image and version
+supplied. Distinguish shared art direction, references cited for that frame, and
+ideas introduced in its written pitch. Carry the record forward with revisions.
+
 ## Locations
 
+- [World Concepts · The Hand](../../workspace/2026-11-17_mech-world-concepts/the-hand.card.json) and [other possible settings](../../workspace/2026-11-17_mech-world-concepts/other-worlds.card.json) collect the opening tales, patron bargains and encounter proposals under discussion.
 - [Wiki overview](../../workspace/2026-10-23_mech-prototype/overview.html)
 - [Prototype status and observations](../../workspace/2026-10-23_mech-prototype/prototype.html)
 - [Code review and development stopping point (24 October 2026)](../../workspace/2026-10-23_mech-prototype/code-review.md)
@@ -41,8 +129,12 @@ without a swivel or ball joint. The owner rejected v001's thumb, narrow peg
 attachment and small, plain palm while accepting its fingers. The owner also
 rejected v002c's thumb and its unnatural bend. Fresh thumb-side and side-profile
 captures of the actual AC6 model now guide v003 directly, keeping the source's
-open thumb pose and using an oblique horizontal view. The new image is ready
-for owner review; earlier rejected images remain visible. Final
+open thumb pose and using an oblique horizontal view. On 7 November the owner
+said they like v003 and requested further simplification, especially the fingers,
+with two marked pieces removed. v004 edits that image: the raised rear palm
+strip and small finger tab are removed, and finger surfaces are simpler while
+the thumb, main palm and wrist remain visually consistent. v004 is ready for
+owner review; v003 and earlier rejected images remain visible. Final
 proportions and budget remain open; no new hand mesh or Unity import has been
 produced.
 

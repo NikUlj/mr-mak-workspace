@@ -1,0 +1,72 @@
+{
+  "format": "mrmak-card",
+  "version": 1,
+  "template": "gallery",
+  "title": "Mech Lab · Reference images",
+  "summary": "Insect, animal and alien-figure references from the earlier mech explorations. [Face, limb and field-armor studies on Occult Ritual Mechs](#/occult-ritual-mechs/5).",
+  "items": [
+    {
+      "id": "winged-shell",
+      "title": "Winged shell",
+      "image": "references/pinterest/winged-shell-788411478568822546.jpg",
+      "alt": "A stocky green and dark violet figure with translucent wings.",
+      "body": "A stocky green and dark violet figure with translucent wings.\n\n650 × 834 px.",
+      "url": "https://www.pinterest.com/pin/788411478568822546/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "pale-winged-frame",
+      "title": "Pale winged frame",
+      "image": "references/pinterest/pale-winged-frame-788411478568822545.jpg",
+      "alt": "An upright ivory and gold figure with tapered limb armor and translucent wings.",
+      "body": "An upright ivory and gold figure with tapered limb armor and translucent wings.\n\n650 × 1073 px.",
+      "url": "https://www.pinterest.com/pin/788411478568822545/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "insect-limbs",
+      "title": "Insect-like limbs",
+      "image": "references/pinterest/insect-limbs-788411478568822502.jpg",
+      "alt": "A green jointed figure with a narrow waist and swept appendages.",
+      "body": "A green jointed figure with a narrow waist and swept appendages.\n\n768 × 1024 px.",
+      "url": "https://www.pinterest.com/pin/788411478568822502/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "long-armed-animal",
+      "title": "Long-armed animal frame",
+      "image": "references/pinterest/long-armed-animal-788411478568822515.jpg",
+      "alt": "A crouched blue-green body, hanging forelimbs and a trailing tail.",
+      "body": "A crouched blue-green body, hanging forelimbs and a trailing tail.\n\n3455 × 4707 px.",
+      "url": "https://www.pinterest.com/pin/788411478568822515/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "skeletal-animal",
+      "title": "Skeletal animal frame",
+      "image": "references/pinterest/skeletal-animal-788411478568772952.jpg",
+      "alt": "An exposed rib cage and long limbs form a hunched animal silhouette.",
+      "body": "An exposed rib cage and long limbs form a hunched animal silhouette.\n\n736 × 1016 px.",
+      "url": "https://www.pinterest.com/pin/788411478568772952/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "alien-figure-front",
+      "title": "Alien figure, front view",
+      "image": "references/pinterest/alien-figure-front-788411478568822595.png",
+      "alt": "Pale figure with a ringed headdress and curved plates around its torso.",
+      "body": "Pale figure with a ringed headdress and curved plates around its torso.\n\n375 × 500 px.",
+      "url": "https://www.pinterest.com/pin/788411478568822595/",
+      "linkLabel": "Original pin"
+    },
+    {
+      "id": "alien-figure-profile",
+      "title": "Alien figure, profile",
+      "image": "references/pinterest/alien-figure-profile-788411478568822618.jpg",
+      "alt": "A dark sculptural head and torso with layered ridges and spines.",
+      "body": "A dark sculptural head and torso with layered ridges and spines.\n\n678 × 1205 px.",
+      "url": "https://www.pinterest.com/pin/788411478568822618/",
+      "linkLabel": "Original pin"
+    }
+  ]
+}

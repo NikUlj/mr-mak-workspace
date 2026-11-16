@@ -1,7 +1,7 @@
 {
   "id": "shared-hand-tripo-reference-v003",
   "date": "2026-11-05",
-  "status": "ready-for-owner-review",
+  "status": "owner-liked-refinement-requested",
   "tool": "built-in image_gen",
   "model": null,
   "seed": null,
@@ -28,5 +28,12 @@
   "owner_accepted": false,
   "mesh_created": false,
   "tripo_job_submitted": false,
-  "review": "New candidate from fresh native Blender references. The horizontal thumb-side view shows four separate three-link fingers and a shorter open thumb offset forward of the palm. The thumb follows the source position and relaxed angle instead of the invented hook in v002c. Its visible hinge direction reads consistently with the finger joints from this angle. The palm is substantial and faceted; the wrist attachment is a short broad collar with a stepped flange. All five digits and the whole connector are visible on white. The output simplifies the source; exact mechanical travel and topology are not established by an image. Owner acceptance is pending."
+  "review": "New candidate from fresh native Blender references. The horizontal thumb-side view shows four separate three-link fingers and a shorter open thumb offset forward of the palm. The thumb follows the source position and relaxed angle instead of the invented hook in v002c. Its visible hinge direction reads consistently with the finger joints from this angle. The palm is substantial and faceted; the wrist attachment is a short broad collar with a stepped flange. All five digits and the whole connector are visible on white. The output simplifies the source; exact mechanical travel and topology are not established by an image. Owner acceptance is pending.",
+  "owner_feedback": {
+    "date": "2026-11-07",
+    "design_direction_liked": true,
+    "final_selection": false,
+    "summary": "Owner likes v003 and requests modest simplification, especially fingers, plus removal of the two marked pieces.",
+    "continued_in": "shared-hand-tripo-reference-v004"
+  }
 }

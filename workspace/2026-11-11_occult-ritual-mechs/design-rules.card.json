@@ -1,0 +1,34 @@
+{
+  "format": "mrmak-card",
+  "version": 1,
+  "template": "research",
+  "title": "Occult Ritual Mechs · Design rules",
+  "summary": "Design each mech as a working member of the same fleet. Establish its proportions, how it carries its weapons and how it moves under thrust. A ritual can finish the chassis, bind a presence inside it or make the machine itself a demon.\n\n[Counterpart](#/occult-ritual-mechs/1) is the current favorite. [Knell](#/occult-ritual-mechs/2) is worth revisiting for its sound. [Witness](#/occult-ritual-mechs/3) is set aside. Its hull felt too large and its shutter missed the intended face.",
+  "items": [
+    {
+      "id": "weapons",
+      "title": "Two hand weapons and two back weapons",
+      "body": "The head, core and limbs are currently conceived as fixed to each chassis. Give each frame its own outline, joint spacing and proportions. The four weapon positions are the shared equipment constraint.\n\nDesign every frame in this branch to carry four independently swappable weapons. Each hand grips one substantial sci-fi weapon. A second pair rides high on the back, one on each side of the core, on separate mounts that pivot clear of the arms. The hands should visibly support the load, with the grip and firing direction readable. Leave space for a back weapon to deploy while either hand stays on target.\n\nArmored Core is the main reference for placement and appearance. Deep breech housings, recessed missile cells and exposed pivots give the weapons a scale that reads from the chase camera. [Armored Core VI assembly manual](https://www.fromsoftware.jp/manual/armoredcore6/ps5/customize.html) · [Official visual gallery](https://www.armoredcore.net/gallery.html)"
+    },
+    {
+      "id": "thrusters",
+      "title": "Low rear boosters and lateral hip jets",
+      "body": "Put the main booster bells low on the rear of the core, below the back-weapon pivots. Recess a smaller outward-facing quick-boost nozzle into each outer hip. The ports can sit flush with the armor and should be visible at rest. From behind, the player should be able to see a shoulder weapon swing forward and a side jet fire without one obscuring the other. [Armored Core VI visual gallery](https://www.armoredcore.net/gallery.html)\n\nBuild the silhouette around thrust-driven combat. The legs also carry the fully armed mech on foot. Describe its walking gait, how it holds its weapons through a lateral boost, and which foot takes the weight when the jet cuts."
+    },
+    {
+      "id": "ritual",
+      "title": "When the ritual shapes the design",
+      "body": "Usually develop the machine first, then find a rite that suits a feature already worth showing. A later change to a joint, a sound or an idle motion can carry that idea. A rite can also come first when it already suggests something distinctive in the design, such as Knell’s suspended plates and the silence when they touch. Judge that feature from the pilot’s or opponent’s viewpoint.\n\nThe visual direction is worn grimdark field machinery, a face suggested by functional openings, and Gekko-like limbs that flex under load. Keep the body compact enough to read at combat speed. A mech can carry the uncanny quality in a crease behind a joint, the way a shoulder takes recoil, or the timing of a step.\n\nThe original limb studies show the bend that carries the weight, from a dark sleeve under a hard shell to a continuous covering over the joint. [Curved load-bearing limbs](https://www.pinterest.com/pin/788411478568823391/) · [Dark flexing limbs](https://www.pinterest.com/pin/788411478568823387/) · [Yellow joint covering](https://www.pinterest.com/pin/788411478568822504/)."
+    },
+    {
+      "id": "next-studies",
+      "title": "Face, arms and torso studies for future frames",
+      "body": "Revisit the mask’s small apertures and the long head’s recessed mouth panel when exploring a face. The goal is an expression the player can recognize in a piece of machinery. [Smooth mask](https://www.pinterest.com/pin/788411478568823397/) · [Long plated head](https://www.pinterest.com/pin/788411478568508346/)\n\nThe legs in this round worked. For a new frame, try the same sense of weight in the arms or torso. The hooded portrait shows how the arms sit against the body. The ribbed chest and full-body views show striated shoulder tissue meeting ribs, outer plates and smooth dark arms. [Hooded portrait](https://www.pinterest.com/pin/788411478568840784/) · [Ribbed chest](https://www.pinterest.com/pin/788411478568840783/) · [Full-body shoulder and arm study](https://www.pinterest.com/pin/788411478568840781/)"
+    },
+    {
+      "id": "record-references",
+      "title": "Using references across the fleet",
+      "body": "Give each outside image a specific job, such as how the shoulder takes a load. Design the surrounding chassis, armor seams and attachment points in the game’s own industrial style. For a side-by-side comparison, a new frame should look credible next to Counterpart with its equipment removed or swapped.\n\nKeep a **References used** entry on each design tab. Link the individual pin, image, official page or earlier frame revision and name the feature it informed. Identify any image supplied directly for a generation or edit, including the version used. Credit an original design choice as such when the pitch names no outside source for it."
+    }
+  ]
+}

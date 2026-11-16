@@ -83,6 +83,10 @@ model revision and actual import location will be recorded when available.
 Open [Prototype Player Mech](#/prototype-player-mech/0). Its Workspace card ID is
 `prototype-player-mech`.
 
+### D-008 · Track references on each mech design
+
+**Agreed 11 November 2026.** Keep a record of what informed each new mech so a future revision can return to the same source. On its design tab, link the specific references, name the features they informed and identify any earlier image supplied for an edit or new view. The occult branch uses its own card for the shared movement and four-weapon layout, original lore, artwork and reference records. [Occult Ritual Mechs](#/occult-ritual-mechs/0)
+
 ## Future entries
 
 For each new agreement, add a stable decision ID, date, choice, reason, and

@@ -1,0 +1,44 @@
+{
+  "format": "mrmak-card",
+  "version": 1,
+  "template": "research",
+  "title": "The Hand",
+  "summary": "**World concept under consideration · 17 November 2026.** The opening and the thought of **being prayed to by something immense** caught the owner’s interest. The Hand is one possible setting for Mech Prototype. The siege, the two patrons and their chassis are proposed ways to make it playable.",
+  "items": [
+    {
+      "id": "tale",
+      "title": "The tale of the fifth pier",
+      "body": "In the oldest paintings, rain falls straight down. Children know these pictures by their mistakes. Rain runs along the creases of the sky and falls in five rivers beyond the city walls.\n\nThe story says that during a calamity something put its hand over the people who asked for shelter. Generations built iron piers beneath the sagging fingers. At each pier stood a chapel where anyone could ask the patron for help.\n\nOne night a woman went into an empty chapel. Before she could speak, something on the other side of the grille whispered, *“Would you lift my smallest finger? There is something underneath it I have wanted to see.”*\n\nThe request belongs to the opening tale. People in this world could tell that story for centuries without ever seeing what lies on the other side of their sky."
+    },
+    {
+      "id": "first-closing",
+      "title": "The first closing",
+      "body": "The trams were running the morning the little finger closed. One came out with every window on its left side broken. The next was due four minutes later. At the old junction the rails still run into the gap beneath the vault, polished to the point where the clearance dwindles to an inch.\n\nA generation later, the river under the fourth finger dries up. It did that last time, too. The pilot has a reason to act before anyone agrees on what a finger is. In one version the pilot maintains the piers and knows how much time the district has."
+    },
+    {
+      "id": "siege",
+      "title": "What a pilot goes out to do",
+      "body": "In the latest pitch, immense black shafts have entered the vault from above and buried their points in the ground. Every few nights the lines draw tight. At ground level, the operation looks like a siege. From above, it might look like an attempt to pin something down.\n\nOne possible run takes a pilot from the last inhabited junction to an anchor, with time to sever its line before the next tightening. A patron lends a complete chassis for the journey. The pilot can take weapons and modules found en route. Which patron offered the body matters again at the anchor, where the pilot can fulfil the other half of the bargain."
+    },
+    {
+      "id": "opposition",
+      "title": "The anchor gets up",
+      "body": "Seen from the junction, the shaft is a landmark. Up close, its buried point unfolds into a three-legged machine. Two feet hold fast while the third searches for deeper purchase. The gun under that foot can fire only while lifted. The same movement gives the pilot a clear shot at it.\n\nSmaller machines descend edgewise along the line. On the ground they open toothed jaws around the severed sections and haul them together. Through the legs of the anchor, a pilot can see a repair crew winching the ends back within reach of each other. Breaking off an attack to intercept them has an immediately visible consequence."
+    },
+    {
+      "id": "burden",
+      "title": "“Let something rest upon me.”",
+      "body": "A possible patron lends a low chassis with two broad, upturned shoulder saddles. The pilot plants its feet under the anchor’s lifted foot and catches the load. With one edge of the foot on the saddle, the pilot can tilt the gun away and keep the knee exposed. A rifle or a plasma thrower can exploit the same opening.\n\nOnce the line parts, the prayer asks for something precise. Lower the damaged pier onto the saddles, then climb out. The district has time to clear. The patron gets to bear the pier indefinitely. Future pilgrims might call that devotion. They might someday find they need its permission to move the pier."
+    },
+    {
+      "id": "glimpse",
+      "title": "“One glimpse of the other side.”",
+      "body": "A second proposed chassis has a smooth, eyeless prow. Its optic sits inside an armored palm and sees when the fingers spread. Touching a hostile machine briefly lets the pilot aim a carried weapon from that machine’s point of view.\n\nThis patron asks the pilot to spare one repair machine and fasten the optic to it before it climbs home. The pilot knows exactly what was promised. What the patron expects to recognize up there can remain a mystery."
+    },
+    {
+      "id": "review",
+      "title": "What to carry into the next discussion",
+      "body": "The reversal of prayer and the opening’s familiar, strange world drew the strongest response. The owner likes the possibility of brief poetic speech and lore that survives as an exaggerated fairy tale. Tell the loss through public traces such as a timetable, a dry river or a crushed junction. Keep the pilot’s private life out of the opening.\n\nThe owner wants each patron’s contract to explain the chassis it lends and wants enemies with distinctive shapes and behavior. Earlier proposals gave the entity a recognizably human fear of losing control and leaned heavily on civic machines. The siege and the two prayers above are a later attempt to answer those concerns. They await feedback.\n\nWho makes the bodies the patrons can lend? How much of the Hand can a pilot actually see? Which encounter would still be fun with a different chassis and the same rifle? A single anchor foot lifting, threatening a shot and accepting a hit could test the last question before a full enemy is modeled.\n\n[Other worlds](#/mech-world-concepts/1) · [Mech Prototype decision log](#/mech-prototype/3)"
+    }
+  ]
+}

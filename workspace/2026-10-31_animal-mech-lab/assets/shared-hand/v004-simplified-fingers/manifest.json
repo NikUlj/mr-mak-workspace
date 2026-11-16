@@ -1,0 +1,39 @@
+{
+  "id": "shared-hand-tripo-reference-v004",
+  "date": "2026-11-07",
+  "status": "ready-for-owner-review",
+  "tool": "built-in image_gen",
+  "model": null,
+  "seed": null,
+  "request_id": null,
+  "output": "shared-hand-tripo-reference-v004.png",
+  "width": 1774,
+  "height": 887,
+  "bytes": 1225759,
+  "sha256": "fb01353596a7797952fba32af42e712a5c3b53400f178e9ccf627370ec0f113f",
+  "prompt": "prompt.txt",
+  "source_references": [
+    {
+      "role": "edit-target",
+      "relative_to": "Mech Lab card folder",
+      "path": "assets/shared-hand/v003-thumb-side-reference/shared-hand-tripo-reference-v003.png",
+      "sha256": "d4428c6e94a6bb9b98ee32116e8548c61890a3d751b4c0883fb3db592dbeb633",
+      "bytes": 1204173,
+      "width": 1774,
+      "height": 887
+    },
+    {
+      "role": "owner-removal-markup",
+      "relative_to": "Mech Lab card folder",
+      "path": "assets/shared-hand/v004-simplified-fingers/owner-removal-markup.png",
+      "sha256": "cfcd1abf591fb9762960d144e255a00bc6f2b2ca5c29b9b82bac38e99e70dcab",
+      "bytes": 1211972,
+      "width": 1738,
+      "height": 872
+    }
+  ],
+  "owner_accepted": false,
+  "mesh_created": false,
+  "tripo_job_submitted": false,
+  "review": "review.md"
+}

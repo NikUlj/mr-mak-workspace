@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-07",
+  "gallery_schema": "passed",
+  "registry": "Version 3 · Horror frames registered; default tab 3",
+  "environment": "Repository browser preview, headless Microsoft Edge; running desktop service reports 0.6.0 and supports editable cards. Active application was not restarted.",
+  "visual_art_review": "Five 1024 x 1536 images inspected; four current concepts and one preserved earlier Brood take.",
+  "checks": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "theme": "dark",
+      "sidebar": "expanded",
+      "image_loads": 5,
+      "lightboxes": 5,
+      "downloads": 5,
+      "prompt_rendered": true,
+      "links": 7,
+      "no_horizontal_overflow": true,
+      "controls_reachable": true
+    },
+    {
+      "width": 768,
+      "height": 1000,
+      "theme": "dark",
+      "sidebar": "collapsed using Hide menu",
+      "image_loads": 5,
+      "lightboxes": 5,
+      "downloads": 1,
+      "prompt_rendered": true,
+      "links": 7,
+      "no_horizontal_overflow": true,
+      "controls_reachable": true
+    },
+    {
+      "width": 390,
+      "height": 1000,
+      "theme": "dark",
+      "sidebar": "collapsed using Hide menu",
+      "image_loads": 5,
+      "lightboxes": 5,
+      "downloads": 1,
+      "prompt_rendered": true,
+      "links": 7,
+      "no_horizontal_overflow": true,
+      "controls_reachable": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "theme": "light",
+      "sidebar": "expanded",
+      "image_loads": 5,
+      "lightboxes": 5,
+      "downloads": 5,
+      "prompt_rendered": true,
+      "links": 7,
+      "no_horizontal_overflow": true,
+      "controls_reachable": true
+    },
+    {
+      "width": 768,
+      "height": 1000,
+      "theme": "light",
+      "sidebar": "collapsed using Hide menu",
+      "image_loads": 5,
+      "lightboxes": 5,
+      "downloads": 1,
+      "prompt_rendered": true,
+      "links": 7,
+      "no_horizontal_overflow": true,
+      "controls_reachable": true
+    },
+    {
+      "width": 390,
+      "height": 1000,
+      "theme": "light",
+      "sidebar": "collapsed using Hide menu",
+      "image_loads": 5,
+      "lightboxes": 5,
+      "downloads": 1,
+      "prompt_rendered": true,
+      "links": 7,
+      "no_horizontal_overflow": true,
+      "controls_reachable": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Physical interchangeability, rigging and game integration are not verified by concept illustrations.",
+    "Browser preview verification is not a native desktop or Mobile Access session test.",
+    "At phone width the existing browser preview sidebar must be collapsed with Hide menu to leave a readable content area."
+  ],
+  "screenshots_location": ".mrmak/horror-round-03-qa (local, ignored)"
+}
