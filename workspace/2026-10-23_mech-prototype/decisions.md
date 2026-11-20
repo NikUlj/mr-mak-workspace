@@ -87,6 +87,14 @@ Open [Prototype Player Mech](#/prototype-player-mech/0). Its Workspace card ID i
 
 **Agreed 11 November 2026.** Keep a record of what informed each new mech so a future revision can return to the same source. On its design tab, link the specific references, name the features they informed and identify any earlier image supplied for an edit or new view. The occult branch uses its own card for the shared movement and four-weapon layout, original lore, artwork and reference records. [Occult Ritual Mechs](#/occult-ritual-mechs/0)
 
+## Prototype engineering decisions
+
+### D-009 · Enemy attack timing and behavior selection
+
+**Agreed 21 November 2026.** The first ranged opponent uses a C# state machine for wind-up, firing and recovery. The playtest asks whether the player can read the cue and dodge one shot. Keeping the timing in one component makes that test easy to repeat. The enemy can request an attack, observe its completion and cancel it on death. A separate encounter controller owns win, loss and retry.
+
+When playtests call for a choice between attacks or tactics such as waiting and repositioning, use Unity Behavior as the first graph tool to evaluate. Its graph can drive the same attack component. A third-party tree remains an option if a specific requirement warrants it. [Code plan and playtest criteria](#/mech-prototype/5)
+
 ## Future entries
 
 For each new agreement, add a stable decision ID, date, choice, reason, and
