@@ -27,15 +27,15 @@
     <aside class="build-stage" aria-label="Playable build status">
       <span class="stage-symbol" aria-hidden="true">＋</span>
       <h2>AC_Game</h2>
-      <p>Unity project and Windows executable found. Current runtime behavior has not been verified.</p>
-      <span class="tab-hint">Source inspected · 23 October 2026</span>
+      <p>The player controller now follows the rise of shallow ramps each frame. The review notes include the frame measurements.</p>
+      <span class="tab-hint">Slope investigation · 20 November 2026</span>
     </aside>
   </header>
 
   <dl class="status-strip" aria-label="Prototype status">
     <div><dt>Unity Editor</dt><dd>6000.5.2f1</dd></div>
     <div><dt>Starting scene</dt><dd>Prototype Map</dd></div>
-    <div><dt>Runtime review</dt><dd>Pending</dd></div>
+    <div><dt>Movement review</dt><dd>Uphill clearance corrected</dd></div>
   </dl>
 
   <section class="content-section" id="source" aria-labelledby="source-title">
@@ -56,9 +56,9 @@
       <dl class="readiness">
         <div><dt>Engine &amp; renderer</dt><dd>Unity 6000.5.2f1 · Universal Render Pipeline 17.5.0</dd></div>
         <div><dt>Enabled build scene</dt><dd><code>Assets/Scenes/Prototype Map.unity</code></dd></div>
-        <div><dt>Version control</dt><dd>Git HEAD <code>442c185</code> · Movement fixes</dd></div>
-        <div><dt>Local working changes</dt><dd>Player prefab, Prototype Map scene, and PlayerController.cs are modified. This inventory includes those edits.</dd></div>
-        <div><dt>Editor availability</dt><dd>The matching 6000.5.2f1 Editor is installed. No connected Editor was found during this inspection.</dd></div>
+        <div><dt>Version control</dt><dd>Branch <code>side</code> at <code>e45cd41</code>, checked 20 November 2026. The Unity working tree was clean.</dd></div>
+        <div><dt>Recent changes</dt><dd>Ramp clearance, live crosshair coordinates and the projectile layer change are committed.</dd></div>
+        <div><dt>Compilation</dt><dd>The six authored gameplay scripts compiled against cached project references with the 6000.5.2f1 Editor’s C# compiler on 20 November.</dd></div>
       </dl>
     </div>
     <details class="record-guide">
@@ -69,7 +69,7 @@
         <li>Open <code>Assets/Scenes/Prototype Map.unity</code>, then enter Play mode and focus the Game view.</li>
         <li>Use the bindings below. The player script locks the mouse cursor on startup. Exit Play mode through the Editor when finished.</li>
       </ol>
-      <p class="detail-note">These steps are based on project configuration. Compilation, Play mode, and the executable were not tested in this inspection.</p>
+      <p class="detail-note">The test records below describe the movement and targeting checks. The revision of the existing Windows executable is unknown.</p>
     </details>
   </section>
 
@@ -81,7 +81,7 @@
       <article class="direction-card"><div class="card-topline"><span>Weapons</span><span>Source present</span></div><h3>Held fire &amp; pooled bullets</h3><p>Attack fires while held, using a 0.25-second cooldown and either a selected target or the camera crosshair ray. Bullet pools start at 30 per type and expand as needed.</p><code class="source-reference">ShootingController.cs · BulletManager.cs</code></article>
       <article class="direction-card"><div class="card-topline"><span>Projectile data</span><span>Configured</span></div><h3>One default bullet type</h3><p>The default asset sets damage to 10, speed to 20 units/second, and lifetime to 30 seconds. Gravity and piercing are disabled; impact effects and audio are unassigned.</p><code class="source-reference">Assets/Scriptable Objects/DefaultBulletType.asset</code></article>
     </div>
-    <div class="scope-note"><b>Scene connections</b><p>The scene instantiates Player, ThirdPerson Camera, and PrototypeMap prefabs, with a HUD crosshair and a Target object. It supplies both camera/crosshair pairs, the movement controller's aim reference, the shooting controller's bullet manager, and the camera tracking target. These seven references resolve in the scene file; their behavior still needs a runtime check.</p></div>
+    <div class="scope-note"><b>Scene connections</b><p>The scene instantiates Player, ThirdPerson Camera, and PrototypeMap prefabs, with a HUD crosshair and a Target object. The scene supplies the aim and shooting components with their camera and HUD references, connects the shooting controller to the bullet manager and assigns the Cinemachine tracking target. The targeting test below exercised locked and free aim in a temporary scene copy.</p></div>
     <div class="scope-note"><b>Still missing from authored code</b><p>The six scripts in <code>Assets/Scripts/</code> do not implement enemy AI, a health/death receiver, mech assembly, or a run/progression loop. <code>IDamageable</code> defines a damage interface, but no implementation was found there. The player prefab has no Animator or skinned-mesh component.</p></div>
   </section>
 
@@ -113,7 +113,21 @@
 
   <section class="content-section" id="playtests" aria-labelledby="playtests-title">
     <div class="section-heading"><div><span class="eyebrow">05 / Review notes</span><h2 id="playtests-title">What has been verified?</h2></div><p>Keep file inspection distinct from tested game behavior.</p></div>
-    <div class="empty-record"><span class="record-symbol" aria-hidden="true">↳</span><div><h3>Source inspection complete. Runtime review pending.</h3><p>On 23 October 2026, the scripts, input bindings, project settings, scene references, and asset inventory were inspected read-only. Unity CLI found no connected Editor; the project manifest does not include Pipeline. No Editor was opened, no executable was launched, and no gameplay or compile result was established.</p></div></div>
+    <div class="revision-note" id="uphill-stutter">
+      <h3>20 November 2026 · Uphill stutter</h3>
+      <p>The player gained height in bursts on a 5.7° ramp. At a steady 20 m/s and 60 movement updates per second, it advanced 33.3 cm every update, stayed grounded, and repeatedly rose <strong>0, 0, then 10 cm</strong>. The ramp rises 3.3 cm over each of those horizontal increments.</p>
+      <p>Before the fix, <code>PlayerController.GroundMove</code> chose the direct movement path whenever it traveled as far horizontally as the raised path. As the ground rose into the capsule’s 7.5 cm clearance, <code>hitDown.distance &gt; skinWidth</code> skipped the small upward correction. When the direct path finally hit the slope and lost distance, the raised path restored all the missing height in one update.</p>
+      <p>An isolated Unity 6000.5.2f1 physics run used the map’s collision mesh, the working controller’s movement methods (source blob <code>a68a86c</code>), the player prefab settings, and fixed forward input. Accepting a positive ground-hit distance on either side of the desired clearance gave steady rises of 6.7, 3.3 and 1.7 cm at 30, 60 and 120 updates per second respectively. Changing only the slide normal left the 60 Hz pattern intact.</p>
+      <p>The early Dead Space controller at <code>12861c0</code> has the same two-way clearance correction. A later revision, <code>2cbd04c</code>, switched to Unity’s built-in controller.</p>
+      <p>The fix is in <code>AC_Game/Assets/Scripts/PlayerController.cs</code>. After a positive ground hit, the controller restores clearance in either direction and limits upward corrections to the space beneath a ceiling.</p>
+      <p><strong>Play Mode verification.</strong> Four automated checks passed in a temporary copy of the Prototype Map scene with the edited controller and player prefab. The player climbed and descended the 5.7° ramp evenly at 30, 60 and 120 updates per second. At 60, each uphill update gained 3.33 cm. The player also crossed a 25 cm step in both height directions, respected a low ceiling on the ramp, and jumped and landed on flat ground.</p>
+    </div>
+    <div class="revision-note">
+      <h3>20 November 2026 · Targeting and cover</h3>
+      <p>A saved Play Mode test from a temporary project copy passed with the current aiming scripts and bullet prefab. Three pooled projectiles between camera and target preserved the lock. A wall broke the lock, free aim pointed at the wall, and removing the wall restored the lock. Moving a projectile back to the Default layer reproduced the obstruction.</p>
+      <p>The check inspected the initial direction of locked and free shots. Projectile travel, damage and reticle alignment after resizing still need runtime checks. The Code plan tab describes how to test them with a damageable target.</p>
+    </div>
+    <div class="empty-record"><span class="record-symbol" aria-hidden="true">↳</span><div><h3>23 October 2026 · Source inspection</h3><p>On 23 October 2026, the scripts, input bindings, project settings, scene references, and asset inventory were inspected read-only. Unity CLI found no connected Editor; the project manifest does not include Pipeline. No Editor was opened, no executable was launched, and no gameplay or compile result was established.</p></div></div>
     <details class="record-guide">
       <summary>Source observations and existing TODOs</summary>
       <ul class="launch-steps">
@@ -133,7 +147,7 @@
         <div><dt>Next step</dt><dd>A proposed change or an agreed decision. Add accepted choices to the Decisions tab.</dd></div>
       </dl>
     </details>
-    <div class="scope-note"><b>Next validation questions</b><p>Check movement, slopes, steps and collision at different frame rates; jump/dash behavior; camera following; target acquisition, loss and occlusion; firing, pooling and impacts; window resizing; and configured gamepad inputs. A complete damage/death check still needs a receiver. The exact next prototype milestone remains undecided.</p></div>
+    <div class="scope-note"><b>Next validation questions</b><p>Check airborne ceiling and corner contacts, reticle alignment after resizing, and analog input. With a damage receiver, test whether cover stops a shot and whether crossing projectiles interfere with each other. The Code plan tab proposes a damageable target followed by one opponent and a quick retry.</p></div>
   </section>
 
   <section class="content-section" id="revisions" aria-labelledby="revisions-title">
@@ -154,7 +168,7 @@
     </details>
   </section>
 
-  <footer class="page-footer"><span>Mech Prototype / Source inventory checked 23 October 2026</span><a href="#top">Back to top ↑</a></footer>
+  <footer class="page-footer"><span>Mech Prototype / Source and test records checked 20 November 2026</span><a href="#top">Back to top ↑</a></footer>
 </main>
 </body>
 </html>

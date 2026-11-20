@@ -101,9 +101,10 @@ ideas introduced in its written pitch. Carry the record forward with revisions.
 
 ## Locations
 
-- [World Concepts · The Hand](../../workspace/2026-11-17_mech-world-concepts/the-hand.card.json) and [other possible settings](../../workspace/2026-11-17_mech-world-concepts/other-worlds.card.json) collect the opening tales, patron bargains and encounter proposals under discussion.
+- The World Concepts card opens on [Story attributes](../../workspace/2026-11-17_mech-world-concepts/story-attributes.md) and contains [The Hand](../../workspace/2026-11-17_mech-world-concepts/the-hand.card.json). Discuss new pitches in chat and add one to the card once the owner considers it worth keeping.
 - [Wiki overview](../../workspace/2026-10-23_mech-prototype/overview.html)
 - [Prototype status and observations](../../workspace/2026-10-23_mech-prototype/prototype.html)
+- [Code plan for the first combat playtest (20 November 2026)](../../workspace/2026-10-23_mech-prototype/code-plan.md)
 - [Code review and development stopping point (24 October 2026)](../../workspace/2026-10-23_mech-prototype/code-review.md)
 - [Asset catalogue](../../workspace/2026-10-23_mech-prototype/assets.card.json)
 - [Prototype Player Mech development card](../../workspace/2026-10-23_prototype-player-mech/overview.card.json)

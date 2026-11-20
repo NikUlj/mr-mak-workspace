@@ -3,7 +3,7 @@
     {
       "id": "mech-world-concepts",
       "title": "Mech Prototype · World Concepts",
-      "description": "Possible worlds for the mech roguelite, with their opening tales, patron contracts and first encounters.",
+      "description": "Story preferences and possible worlds for the mech roguelite, including patron contracts and first encounters.",
       "type": "group",
       "category": "game",
       "created": "2026-11-17",
@@ -16,14 +16,13 @@
           "viewer": "card"
         },
         {
-          "name": "Other worlds",
-          "path": "other-worlds.card.json",
-          "viewer": "card"
+          "name": "Story attributes",
+          "path": "story-attributes.md"
         }
       ],
       "status": "active",
       "pinned": false,
-      "defaultStep": 0
+      "defaultStep": 1
     },
     {
       "id": "occult-ritual-mechs",
@@ -200,7 +199,7 @@
       "type": "group",
       "category": "game",
       "created": "2026-10-23",
-      "updated": "2026-11-11",
+      "updated": "2026-11-20",
       "folder": "2026-10-23_mech-prototype",
       "steps": [
         {
@@ -223,6 +222,10 @@
         {
           "name": "Code review",
           "path": "code-review.md"
+        },
+        {
+          "name": "Code plan",
+          "path": "code-plan.md"
         }
       ],
       "status": "active",
