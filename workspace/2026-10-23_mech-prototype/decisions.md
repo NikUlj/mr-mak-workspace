@@ -95,6 +95,10 @@ Open [Prototype Player Mech](#/prototype-player-mech/0). Its Workspace card ID i
 
 When playtests call for a choice between attacks or tactics such as waiting and repositioning, use Unity Behavior as the first graph tool to evaluate. Its graph can drive the same attack component. A third-party tree remains an option if a specific requirement warrants it. [Code plan and playtest criteria](#/mech-prototype/5)
 
+### D-010 · Keyboard and mouse for the first duel
+
+**Agreed 22 November 2026.** Develop and test the first repeatable duel with keyboard and mouse so the team has one control scheme on which to judge movement and aim. Gamepad play is a likely later target. Keep the existing bindings and use shared gameplay actions such as Move, Look, Jump, Dash and Attack. Tune analog movement and stick look once the keyboard-and-mouse duel is playable. [Code plan and playtest criteria](#/mech-prototype/5)
+
 ## Future entries
 
 For each new agreement, add a stable decision ID, date, choice, reason, and
