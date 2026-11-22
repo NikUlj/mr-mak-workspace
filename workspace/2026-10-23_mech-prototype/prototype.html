@@ -21,14 +21,14 @@
     <div>
       <span class="eyebrow">An existing foundation to build on</span>
       <h1>The<br>prototype<span class="accent">.</span></h1>
-      <p class="lead">The movement and aim route passed its first hands-on check. Next, use a damageable target to test whether shots land where the reticle leads the player to expect.</p>
+      <p class="lead">The target now takes damage in Prototype Map. Try keeping it in the ring as you strafe, then shoot past cover and watch whether the impact matches the health change.</p>
       <div class="actions"><a class="action primary" href="#source">Project details <span aria-hidden="true">↓</span></a><a class="action" href="#playtests">Test records <span aria-hidden="true">↓</span></a></div>
     </div>
     <aside class="build-stage" aria-label="Playable build status">
       <span class="stage-symbol" aria-hidden="true">＋</span>
       <h2>AC_Game</h2>
-      <p>The owner tested ground speed 15 and dash impulse 50. These are the starting values for the first duel.</p>
-      <span class="tab-hint">Movement playtest · 22 November 2026</span>
+      <p>The target starts at 30 HP. Three unobstructed rounds reduce it to zero. Restart Play Mode to try again.</p>
+      <span class="tab-hint">Damageable target · 23 November 2026</span>
     </aside>
   </header>
 
@@ -81,8 +81,8 @@
       <article class="direction-card"><div class="card-topline"><span>Weapons</span><span>Source present</span></div><h3>Held fire &amp; pooled bullets</h3><p>Attack fires while held, using a 0.25-second cooldown and either a selected target or the camera crosshair ray. Bullet pools start at 30 per type and expand as needed.</p><code class="source-reference">ShootingController.cs · BulletManager.cs</code></article>
       <article class="direction-card"><div class="card-topline"><span>Projectile data</span><span>Configured</span></div><h3>One default bullet type</h3><p>The default asset sets damage to 10, speed to 20 units/second, and lifetime to 30 seconds. Gravity and piercing are disabled; impact effects and audio are unassigned.</p><code class="source-reference">Assets/Scriptable Objects/DefaultBulletType.asset</code></article>
     </div>
-    <div class="scope-note"><b>Scene connections</b><p>The scene instantiates Player, ThirdPerson Camera, and PrototypeMap prefabs, with a HUD crosshair and a Target object. The scene supplies the aim and shooting components with their camera and HUD references, connects the shooting controller to the bullet manager and assigns the Cinemachine tracking target. The targeting test below exercised locked and free aim in a temporary scene copy.</p></div>
-    <div class="scope-note"><b>Still missing from authored code</b><p>The six scripts in <code>Assets/Scripts/</code> do not implement enemy AI, a health/death receiver, mech assembly, or a run/progression loop. <code>IDamageable</code> defines a damage interface, but no implementation was found there. The player prefab has no Animator or skinned-mesh component.</p></div>
+    <div class="scope-note"><b>Scene connections</b><p>The player uses the scene camera for aiming and the shared pool for firing. The target owns its health. The HUD listens to the target and lock selector, prints HP in the upper left and colors the reticle when an eligible target is in sight.</p></div>
+    <div class="scope-note"><b>Next duel milestones</b><p>The target can receive damage and die. Step 3 gives one opponent a wind-up and a return shot. Step 4 adds win, loss and retry.</p></div>
   </section>
 
   <section class="content-section" id="controls" aria-labelledby="controls-title">
@@ -96,7 +96,7 @@
       <tr><th scope="row">Fire (Attack)</th><td>Hold left mouse button or Enter</td><td>Hold west face button</td></tr>
       <tr><th scope="row">Target selection</th><td>Automatic around crosshair</td><td>Automatic around crosshair</td></tr>
     </tbody></table></div>
-    <p class="detail-note">Source: <code>Assets/Input/InputSystem_Actions.inputactions</code> and the player/shooting scripts. Touch, joystick, and XR bindings also exist in the action asset; this does not establish support for those devices. Interact, Crouch, Previous, and Next are declared actions but are not used by the six authored runtime scripts.</p>
+    <p class="detail-note">The bindings are defined in <code>Assets/Input/InputSystem_Actions.inputactions</code>. The first duel uses keyboard and mouse. Dedicated gamepad testing follows that milestone.</p>
   </section>
 
   <section class="content-section" id="packages" aria-labelledby="packages-title">
@@ -113,6 +113,11 @@
 
   <section class="content-section" id="playtests" aria-labelledby="playtests-title">
     <div class="section-heading"><div><span class="eyebrow">05 / Review notes</span><h2 id="playtests-title">What has been verified?</h2></div><p>Keep file inspection distinct from tested game behavior.</p></div>
+    <div class="revision-note">
+      <h3>23 November 2026 · Damageable target</h3>
+      <p>In Unity 6000.5.2f1, one Edit Mode test verified overkill, ignored nonpositive damage and a single death notification. Six Play Mode tests used an isolated copy of Prototype Map. Held mouse fire took the offset child hitbox through 30, 20, 10 and 0 HP, and the ring returned to its unlocked color. Free aim hit beyond lock range. A wall in the camera’s sightline broke lock, while a wall that blocked only the muzzle stopped the round and preserved all 30 HP.</p>
+      <p>The other checks covered the four ring edges at 1280 × 720 and 800 × 600, fire crossing another pooled shot and the shooter’s own collider, and a reused round hitting its previous owner for the new damage amount. The human playtest question is how tracking feels while moving and dashing.</p>
+    </div>
     <div class="revision-note">
       <h3>22 November 2026 · Movement baseline and lock radius</h3>
       <p>The owner reported that the movement, camera and firing tests worked with ground speed 15 and dash impulse 50. The player prefab records both values in <code>ab5d1fa</code>. The owner also raised three playtest questions. Does the ring accurately predict lock? Would a cooldown improve dash timing? Would holding Space to climb give the player another useful way to dodge?</p>
@@ -137,11 +142,11 @@
     <details class="record-guide">
       <summary>Source observations and existing TODOs</summary>
       <ul class="launch-steps">
-        <li><strong>Shooting audio:</strong> the <code>shootSound</code> branch in <code>ShootingController.cs</code> calls <code>muzzleFlash.Play()</code>. Both references are currently unassigned in the player prefab.</li>
-        <li><strong>Piercing state:</strong> <code>HandleBulletImpact</code> receives a <code>BulletData</code> struct by value, so its penetration decrement is not written back to the active bullet. Piercing is disabled in the default type.</li>
+        <li><strong>Shooting audio.</strong> The firing component plays the assigned audio source. The prototype gun currently has no firing clip assigned.</li>
+        <li><strong>Optional projectile modes.</strong> The default round uses straight, single-hit travel. Gravity and piercing still need their own tests if a later weapon uses them.</li>
         <li><strong>Existing project TODOs:</strong> investigate slope/step behavior across frame rates, improve lock-on and camera references, review movement mathematics, clean up code, and compare ground-check/skin-width approaches.</li>
       </ul>
-      <p class="detail-note">These are file-level observations, not reproduced runtime defects. No fixes were applied. Existing TODOs were translated from <code>Assets/AAA/TODO.txt</code>.</p>
+      <p class="detail-note">The original controller TODOs came from <code>Assets/AAA/TODO.txt</code>. The Code plan records which changes are scheduled.</p>
     </details>
     <details class="record-guide">
       <summary>What to include in a test record</summary>
@@ -153,7 +158,7 @@
         <div><dt>Next step</dt><dd>A proposed change or an agreed decision. Add accepted choices to the Decisions tab.</dd></div>
       </dl>
     </details>
-    <div class="scope-note"><b>Next validation questions</b><p>Check whether an offset hitbox can be selected and hit at the point shown by the ring. With a damage receiver, test whether muzzle cover stops a shot and whether crossing projectiles interfere. Once one opponent and retry work, compare a dash cooldown and airborne thrust separately in the existing map, with HUD feedback for each.</p></div>
+    <div class="scope-note"><b>Next validation question</b><p>Can a tester keep the target in view through a strafe or dash and explain each hit or miss? Record the input and position if an impact or HP change disagrees with the reticle.</p></div>
   </section>
 
   <section class="content-section" id="revisions" aria-labelledby="revisions-title">
@@ -174,7 +179,7 @@
     </details>
   </section>
 
-  <footer class="page-footer"><span>Mech Prototype / Test records updated 22 November 2026</span><a href="#top">Back to top ↑</a></footer>
+  <footer class="page-footer"><span>Mech Prototype / Test records updated 23 November 2026</span><a href="#top">Back to top ↑</a></footer>
 </main>
 </body>
 </html>
