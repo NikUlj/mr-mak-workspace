@@ -21,21 +21,21 @@
     <div>
       <span class="eyebrow">An existing foundation to build on</span>
       <h1>The<br>prototype<span class="accent">.</span></h1>
-      <p class="lead">AC_Game brings movement, targeting, and projectile systems into a test scene. The next step is to evaluate that foundation.</p>
+      <p class="lead">The movement and aim route passed its first hands-on check. Next, use a damageable target to test whether shots land where the reticle leads the player to expect.</p>
       <div class="actions"><a class="action primary" href="#source">Project details <span aria-hidden="true">↓</span></a><a class="action" href="#playtests">Test records <span aria-hidden="true">↓</span></a></div>
     </div>
     <aside class="build-stage" aria-label="Playable build status">
       <span class="stage-symbol" aria-hidden="true">＋</span>
       <h2>AC_Game</h2>
-      <p>The player controller now follows the rise of shallow ramps each frame. The review notes include the frame measurements.</p>
-      <span class="tab-hint">Slope investigation · 20 November 2026</span>
+      <p>The owner tested ground speed 15 and dash impulse 50. These are the starting values for the first duel.</p>
+      <span class="tab-hint">Movement playtest · 22 November 2026</span>
     </aside>
   </header>
 
   <dl class="status-strip" aria-label="Prototype status">
     <div><dt>Unity Editor</dt><dd>6000.5.2f1</dd></div>
     <div><dt>Starting scene</dt><dd>Prototype Map</dd></div>
-    <div><dt>Movement review</dt><dd>Uphill clearance corrected</dd></div>
+    <div><dt>Movement review</dt><dd>Baseline route passed</dd></div>
   </dl>
 
   <section class="content-section" id="source" aria-labelledby="source-title">
@@ -56,7 +56,7 @@
       <dl class="readiness">
         <div><dt>Engine &amp; renderer</dt><dd>Unity 6000.5.2f1 · Universal Render Pipeline 17.5.0</dd></div>
         <div><dt>Enabled build scene</dt><dd><code>Assets/Scenes/Prototype Map.unity</code></dd></div>
-        <div><dt>Version control</dt><dd>Branch <code>side</code> at <code>e45cd41</code>, checked 20 November 2026. The Unity working tree was clean.</dd></div>
+        <div><dt>Version control</dt><dd>Player prefab tuning checked at <code>ab5d1fa</code> on branch <code>side</code>, 22 November 2026.</dd></div>
         <div><dt>Recent changes</dt><dd>Ramp clearance, live crosshair coordinates and the projectile layer change are committed.</dd></div>
         <div><dt>Compilation</dt><dd>The six authored gameplay scripts compiled against cached project references with the 6000.5.2f1 Editor’s C# compiler on 20 November.</dd></div>
       </dl>
@@ -86,7 +86,7 @@
   </section>
 
   <section class="content-section" id="controls" aria-labelledby="controls-title">
-    <div class="section-heading"><div><span class="eyebrow">03 / Controls</span><h2 id="controls-title">The configured bindings.</h2></div><p>Bindings and action usage are verified in files. Responsiveness and device behavior are untested.</p></div>
+    <div class="section-heading"><div><span class="eyebrow">03 / Controls</span><h2 id="controls-title">The configured bindings.</h2></div><p>The owner completed the movement and aim route. Gamepad response still needs a dedicated check.</p></div>
     <p class="table-scroll-note">Scroll the table sideways to see all bindings.</p>
     <div class="table-frame" tabindex="0" role="region" aria-label="Configured controls table"><table><thead><tr><th scope="col">Action</th><th scope="col">Keyboard &amp; mouse</th><th scope="col">Gamepad</th></tr></thead><tbody>
       <tr><th scope="row">Move</th><td>WASD or arrow keys</td><td>Left stick</td></tr>
@@ -113,6 +113,12 @@
 
   <section class="content-section" id="playtests" aria-labelledby="playtests-title">
     <div class="section-heading"><div><span class="eyebrow">05 / Review notes</span><h2 id="playtests-title">What has been verified?</h2></div><p>Keep file inspection distinct from tested game behavior.</p></div>
+    <div class="revision-note">
+      <h3>22 November 2026 · Movement baseline and lock radius</h3>
+      <p>The owner reported that the movement, camera and firing tests worked with ground speed 15 and dash impulse 50. The player prefab records both values in <code>ab5d1fa</code>. The owner also raised three playtest questions. Does the ring accurately predict lock? Would a cooldown improve dash timing? Would holding Space to climb give the player another useful way to dodge?</p>
+      <p>The lock query uses 6.5% of screen height. The HUD scales its 100-unit square ring with screen height against a 720-pixel reference. At that height the threshold is 46.8 pixels from center. Measuring the assigned sprite along both axes puts the visible stroke at roughly 44–47 pixels. A saved player check also acquired the centered-pivot target at 6% and released it at 7.5% of screen height at 640 × 360, 1920 × 1080 and 800 × 600.</p>
+      <p>A focused Play Mode check in a temporary copy of <code>ab5d1fa</code> confirmed lock one pixel inside the cutoff and loss of lock one pixel outside on all four sides at 1280 × 720 and 800 × 600. The cutoffs were 46.8 and 39 pixels. Moving the target’s pivot sideways while leaving its unobstructed collider centered under the reticle broke lock. The selector checks the collider’s bounds center on screen, then checks visibility toward the pivot. The first step 2 fix is to use the same target point for both checks and for locked shots.</p>
+    </div>
     <div class="revision-note" id="uphill-stutter">
       <h3>20 November 2026 · Uphill stutter</h3>
       <p>The player gained height in bursts on a 5.7° ramp. At a steady 20 m/s and 60 movement updates per second, it advanced 33.3 cm every update, stayed grounded, and repeatedly rose <strong>0, 0, then 10 cm</strong>. The ramp rises 3.3 cm over each of those horizontal increments.</p>
@@ -125,7 +131,7 @@
     <div class="revision-note">
       <h3>20 November 2026 · Targeting and cover</h3>
       <p>A saved Play Mode test from a temporary project copy passed with the current aiming scripts and bullet prefab. Three pooled projectiles between camera and target preserved the lock. A wall broke the lock, free aim pointed at the wall, and removing the wall restored the lock. Moving a projectile back to the Default layer reproduced the obstruction.</p>
-      <p>The check inspected the initial direction of locked and free shots. Projectile travel, damage and reticle alignment after resizing still need runtime checks. The Code plan tab describes how to test them with a damageable target.</p>
+      <p>This check inspected the initial direction of locked and free shots. The later resize check is recorded above. The damageable target in the Code plan provides the next test of projectile travel and impact.</p>
     </div>
     <div class="empty-record"><span class="record-symbol" aria-hidden="true">↳</span><div><h3>23 October 2026 · Source inspection</h3><p>On 23 October 2026, the scripts, input bindings, project settings, scene references, and asset inventory were inspected read-only. Unity CLI found no connected Editor; the project manifest does not include Pipeline. No Editor was opened, no executable was launched, and no gameplay or compile result was established.</p></div></div>
     <details class="record-guide">
@@ -147,7 +153,7 @@
         <div><dt>Next step</dt><dd>A proposed change or an agreed decision. Add accepted choices to the Decisions tab.</dd></div>
       </dl>
     </details>
-    <div class="scope-note"><b>Next validation questions</b><p>Check airborne ceiling and corner contacts, reticle alignment after resizing, and analog input. With a damage receiver, test whether cover stops a shot and whether crossing projectiles interfere with each other. The Code plan tab proposes a damageable target followed by one opponent and a quick retry.</p></div>
+    <div class="scope-note"><b>Next validation questions</b><p>Check whether an offset hitbox can be selected and hit at the point shown by the ring. With a damage receiver, test whether muzzle cover stops a shot and whether crossing projectiles interfere. Once one opponent and retry work, compare a dash cooldown and airborne thrust separately in the existing map, with HUD feedback for each.</p></div>
   </section>
 
   <section class="content-section" id="revisions" aria-labelledby="revisions-title">
@@ -168,7 +174,7 @@
     </details>
   </section>
 
-  <footer class="page-footer"><span>Mech Prototype / Source and test records checked 20 November 2026</span><a href="#top">Back to top ↑</a></footer>
+  <footer class="page-footer"><span>Mech Prototype / Test records updated 22 November 2026</span><a href="#top">Back to top ↑</a></footer>
 </main>
 </body>
 </html>
