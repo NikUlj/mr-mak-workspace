@@ -21,14 +21,14 @@
     <div>
       <span class="eyebrow">An existing foundation to build on</span>
       <h1>The<br>prototype<span class="accent">.</span></h1>
-      <p class="lead">The damageable target passed its first hands-on playtest. The next milestone gives that target a visible wind-up and a shot the player can dodge.</p>
+      <p class="lead">The stationary opponent signals each shot with an amber muzzle cue. Compare direct and predictive aim against the same strafe, then try changing direction after the cue.</p>
       <div class="actions"><a class="action primary" href="#source">Project details <span aria-hidden="true">↓</span></a><a class="action" href="#playtests">Test records <span aria-hidden="true">↓</span></a></div>
     </div>
     <aside class="build-stage" aria-label="Playable build status">
       <span class="stage-symbol" aria-hidden="true">＋</span>
       <h2>AC_Game</h2>
-      <p>The target starts at 30 HP. Three unobstructed rounds reduce it to zero. Restart Play Mode to try again.</p>
-      <span class="tab-hint">Damageable target · 23 November 2026</span>
+      <p>Both actors start at 30 HP. Each hit costs 10 HP. Restart Play Mode for a fresh attempt.</p>
+      <span class="tab-hint">Stationary opponent · 25 November 2026</span>
     </aside>
   </header>
 
@@ -81,8 +81,8 @@
       <article class="direction-card"><div class="card-topline"><span>Weapons</span><span>Source present</span></div><h3>Held fire &amp; pooled bullets</h3><p>Attack fires while held, using a 0.25-second cooldown and either a selected target or the camera crosshair ray. Bullet pools start at 30 per type and expand as needed.</p><code class="source-reference">ShootingController.cs · BulletManager.cs</code></article>
       <article class="direction-card"><div class="card-topline"><span>Projectile data</span><span>Configured</span></div><h3>One default bullet type</h3><p>The default asset sets damage to 10, speed to 20 units/second, and lifetime to 30 seconds. Gravity and piercing are disabled; impact effects and audio are unassigned.</p><code class="source-reference">Assets/Scriptable Objects/DefaultBulletType.asset</code></article>
     </div>
-    <div class="scope-note"><b>Scene connections</b><p>On Main Camera, the Cinemachine Brain Updated event calls <code>PlayerAimAndFire.OnCameraUpdated</code> on the player. It refreshes lock and supplies the aim point to the weapon when a shot is due. The target owns its health. The HUD listens to the target and lock selector, prints HP in the upper left and colors the reticle when an eligible target is in sight.</p></div>
-    <div class="scope-note"><b>Next duel milestones</b><p>The target can receive damage and die. Step 3 gives one opponent a wind-up and a return shot. Step 4 adds win, loss and retry.</p></div>
+    <div class="scope-note"><b>Scene connections</b><p>On Main Camera, the Cinemachine Brain Updated event calls <code>PlayerAimAndFire.OnCameraUpdated</code>. Locked shots lead the selected hitbox. Free aim follows the reticle. Both weapons use the scene projectile pool and each actor owns its health. The HUD shows both HP values and colors the reticle when locked.</p></div>
+    <div class="scope-note"><b>Stationary opponent</b><p>The target starts 14.2 units from the player. Its amber cue lasts 0.75 seconds, followed by one shot and 1 second of recovery. The target starts on Direct. Switch its Shooting Controller’s Aim Mode to Predictive to compare the same attack. Step 4 adds win, loss and retry.</p></div>
   </section>
 
   <section class="content-section" id="controls" aria-labelledby="controls-title">
@@ -106,13 +106,20 @@
       <div><dt>Cinemachine</dt><dd>3.1.7</dd></div><div><dt>AI Navigation</dt><dd>2.0.13</dd></div>
       <div><dt>Timeline</dt><dd>1.8.12</dd></div><div><dt>Unity UI (uGUI)</dt><dd>2.5.0</dd></div>
       <div><dt>Test Framework</dt><dd>1.7.0</dd></div><div><dt>Visual Scripting</dt><dd>1.9.11</dd></div>
+      <div><dt>Unity Pipeline</dt><dd>1.0.1 · live Editor CLI</dd></div>
     </dl>
     <div class="scope-note"><b>Renderer &amp; input</b><p>Graphics settings reference <code>Assets/Settings/PC_RPAsset.asset</code>. Input settings point to the project action asset; the player settings permit both input backends. Mobile render settings are also present, without establishing a mobile release plan.</p></div>
+    <div class="scope-note"><b>Live Editor connection</b><p>On 6000.5.2f1, Pipeline can warn that it failed to publish its descriptor during script reload. The project retries registration after reload. <code>unity status</code> reported ready and <code>unity command scene list_open</code> returned Prototype Map. The owner chose to keep the official package and accept the warning for now.</p></div>
     <div class="scope-note"><b>Asset catalogue</b><p>The Assets tab now records the player/camera setup, prototype map, bullets/crosshair, and imported Cinemachine samples. They remain in AC_Game. Their provenance and final-game suitability have not been assessed; no newly generated work was added during this inspection. Imported samples are under version 3.1.3, while the current Cinemachine dependency is 3.1.7.</p></div>
   </section>
 
   <section class="content-section" id="playtests" aria-labelledby="playtests-title">
     <div class="section-heading"><div><span class="eyebrow">05 / Review notes</span><h2 id="playtests-title">What has been verified?</h2></div><p>Keep file inspection distinct from tested game behavior.</p></div>
+    <div class="revision-note">
+      <h3>25 November 2026 · Step 3 automated checks</h3>
+      <p>Unity 6000.5.2f1 passed 11 Edit Mode and 17 Play Mode cases on a temporary copy of the saved project. A locked player shot hit a crossing target. Against the enemy, a steady strafe avoided direct aim and took damage from predictive aim. Reversing after the predictive cue avoided the shot. At the scene spawn, standing still cost 10 HP and a keyboard dash preserved all 30 HP.</p>
+      <p>Cover blocked acquisition and stopped a previously committed shot. Both guns fired on the same frame and a recycled player round passed the enemy’s own hitbox and damaged the player. Killing the enemy during the next wind-up immediately cleared the cue and canceled its shot. A hands-on comparison of cue visibility and dodge timing is still open.</p>
+    </div>
     <div class="revision-note">
       <h3>25 November 2026 · Step 2 hands-on playtest</h3>
       <p>The owner completed the playtest and reported that everything seemed to work fine. This closes the damageable-target checkpoint. Step 3 can use the current movement and targeting settings to test a stationary opponent’s return shot.</p>
@@ -167,7 +174,7 @@
         <div><dt>Next step</dt><dd>A proposed change or an agreed decision. Add accepted choices to the Decisions tab.</dd></div>
       </dl>
     </details>
-    <div class="scope-note"><b>Next validation question</b><p>Once the opponent can return fire, can the player recognize the wind-up, take damage by standing still, and avoid the same shot with a timed dash or nearby cover?</p></div>
+    <div class="scope-note"><b>Next validation question</b><p>Can a tester see the muzzle cue while tracking the opponent, dodge on purpose and explain why a steady strafe worked against one aim mode while a change of direction worked against both?</p></div>
   </section>
 
   <section class="content-section" id="revisions" aria-labelledby="revisions-title">

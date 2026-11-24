@@ -103,6 +103,10 @@ When playtests call for a choice between attacks or tactics such as waiting and 
 
 **Agreed 24 November 2026.** A shot fired as a target crosses the ring must use the camera pose the player sees that frame. Sample Attack during `Update`. Wire the player camera’s Cinemachine Brain Updated event to a single player callback. That callback refreshes target selection, then passes the resulting aim point to the weapon when a shot is due. Movement and projectile travel keep their own updates. HUD listeners react to changes in health and lock. [Code plan and playtest criteria](#/mech-prototype/5)
 
+### D-012 · Choose direct or predictive aim per shooter
+
+**Agreed 25 November 2026.** The player and enemy types share the same aim calculation. A shooter can aim at the current hitbox center or lead its measured movement. The player starts with predictive locked fire. The stationary opponent starts with direct aim and exposes both modes in the Inspector. It commits when the cue begins, so the player can change course before impact. Compare both modes against the same strafe before tuning the attack. [Coding plan](#/mech-prototype/5)
+
 ## Future entries
 
 For each new agreement, add a stable decision ID, date, choice, reason, and
