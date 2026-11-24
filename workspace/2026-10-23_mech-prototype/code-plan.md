@@ -1,12 +1,12 @@
 # Code plan for the first combat playtest
 
-**Plan updated 23 November 2026 · Movement baseline at `ab5d1fa`**
+**Plan updated 25 November 2026 · Movement baseline at `ab5d1fa`**
 
 Build one repeatable fight in **Prototype Map**. The player can already move, jump, dash, aim and fire. Give the existing target health, then let one opponent signal and return fire. Show who took damage, end the fight when either combatant dies, and restart it with one input. The first question is whether maneuvering, tracking and dodging one opponent feels good enough to want another attempt.
 
 **Scope for this implementation.** Complete steps 1–4 in order. Step 2 delivers the first hands-on checkpoint with a damageable target. Step 4 delivers the playable duel with a stationary opponent and retry. Use the existing placeholders, the current straight projectile and a few lines of on-screen text. Aiming remains automatic near the reticle, with free aim when there is no eligible target. Build and playtest all four steps with keyboard and mouse. Keep the existing gamepad bindings and read gameplay input through named Input System actions so the same mechanics can later be played on a controller. [Input priority decision D-010](#/mech-prototype/3)
 
-**Implementation handoff · 23 November 2026.** Step 2 is implemented in Prototype Map. The target starts at 30 HP and dies on the third 10-damage hit. Edit Mode and Play Mode checks passed for health, lock and free aim, cover, owner filtering and projectile reuse. Next, try strafing and dashing while firing on keyboard and mouse. Record any moment where the ring, the impact and the HP change disagree. Restart Play Mode for a fresh target. The next coding milestone is step 3, one opponent with a visible wind-up and return fire. Keep ground speed 15 and dash impulse 50 for comparison. [Prototype test records](#/mech-prototype/1)
+**Implementation handoff · 25 November 2026.** Step 2 is complete. The owner finished the hands-on playtest and reported that everything seemed to work fine. Earlier automated checks covered target damage, cover and shots fired on the frame lock changes. Start step 3 by giving the player health and the stationary opponent a weapon. Test whether the player can read the wind-up and dash clear of the committed shot. Keep ground speed 15 and dash impulse 50 for comparison. [Prototype test records](#/mech-prototype/1)
 
 ## What the project already establishes
 
@@ -35,7 +35,7 @@ The target uses `Health : IDamageable`. Damage clamps HP at zero, publishes each
 
 ### 3. Add one opponent that can be dodged
 
-Reuse `Health` on the player. Extract weapon cooldown and projectile launch from `ShootingController` behind a small `TryFire` method. Player input supplies an aim point from the reticle or lock. The first enemy stays in place and requests an attack against the player.
+Reuse `Health` on the player. `ShootingController` already owns the weapon cooldown and launches a shot toward a supplied world point. Reuse this operation for the stationary enemy’s committed shot. The player supplies an aim point from the current camera and lock. The enemy supplies the point captured at wind-up.
 
 Give the attack component a C# state machine. During **Wind-up** it signals the shot and commits its aim. During **Fire** it calls the shared weapon once. After **Recovery** it reports completion and can accept another request. The caller can request the attack, observe completion and cancel it. Death or the end of the encounter cancels a pending attack and clears its cue. The weapon owns its firing cooldown. Set wind-up and recovery durations in serialized fields on the attack component. [Decision D-009](#/mech-prototype/3)
 
@@ -58,11 +58,13 @@ Give a scene-local encounter controller three states called **Fighting**, **Won*
 | **Movement and look** | Keep the custom motor and its ground-clearance correction. The airborne slide path flattens every contact normal and returns a position without reconciling stored velocity. If a ceiling or corner regression appears, repair that case and rerun the route. When control handling changes, separate reading input and applying camera look from motor simulation. Move the frame cap to project startup when revisiting frame timing. |
 | **Aim and reticle** | Step 2 fixed the offset-pivot failure. The selector and shooter share the aim point. `CombatHud` listens for lock changes and colors the existing ring. The ring-edge test protects the current calibration across aspect ratios. |
 | **Hit detection** | Step 2 configured projectile travel for Default, Target and Player. `CombatRaycast` skips the shooter’s hierarchy and ordinary triggers. Damageable trigger hitboxes can receive hits through their parent actor. Pooled projectile colliders use Ignore Raycast. |
-| **Weapon and projectile code** | The pool resets the shooter and shot data on reuse. A muzzle impact can block a camera-selected point. The shooting component now plays its assigned audio source. Extract the shared firing operation in step 3. Gravity and piercing are disabled on the tested round. Verify them only when a planned weapon needs either behavior. |
+| **Weapon and projectile code** | The pool resets the shooter and shot data on reuse. A muzzle impact can block a camera-selected point. In step 3 give the enemy its own weapon instance and reuse the existing firing operation. Gravity and piercing are disabled on the tested round. Verify them only when a planned weapon needs either behavior. |
 
 **Controller readability and Inspector layout.** On the next movement edit, do a small cleanup before changing behavior. Group the existing serialized fields under Inspector headers for References, Ground movement, Air movement, Jump and dash, Collision, and Camera look. Give `skinWidth` a tooltip explaining the clearance between the capsule and a surface. Keep serialized field names, values and assigned references for settings still in use. Remove the unused aim reference, frame counter and commented-out experiments. In the collision methods, name the per-frame travel vector `displacement` so it is easy to distinguish from velocity. Verify the player prefab still shows ground speed 15 and dash impulse 50, then repeat the step 1 route before tuning anything.
 
 ## Architecture for this prototype
+
+- **Player aim and firing order.** `PlayerAimAndFire` samples the Attack action during `Update`. The scene connects the player camera’s Brain Updated event to `OnCameraUpdated`. Once Cinemachine has applied its pose, that callback refreshes lock and passes the current world aim point to the weapon if a shot is due. The HUD reacts to lock changes. Projectile travel stays in `BulletManager.Update`. [Decision D-011](#/mech-prototype/3)
 
 - **Component composition.** Give the player and enemy their own health and weapon components. Player input and enemy attack logic can then drive the same weapon code. Only the player needs a camera and reticle.
 - **Composition Root and manual dependency injection.** Use the Prototype Map scene setup as the place that connects the duel. Assign each weapon its projectile pool and the HUD the actors it observes through Inspector references. If enemies later spawn at runtime, wire their spawner here and let it pass the target and pool to each new enemy. Keep win, loss and retry in the encounter controller. If setup is repeated across encounters, evaluate Reflex at this wiring point so gameplay components can keep receiving their dependencies directly. [Composition Root by Mark Seemann](https://blog.ploeh.dk/2011/07/28/CompositionRoot/)

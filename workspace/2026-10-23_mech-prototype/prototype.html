@@ -21,7 +21,7 @@
     <div>
       <span class="eyebrow">An existing foundation to build on</span>
       <h1>The<br>prototype<span class="accent">.</span></h1>
-      <p class="lead">The target now takes damage in Prototype Map. Try keeping it in the ring as you strafe, then shoot past cover and watch whether the impact matches the health change.</p>
+      <p class="lead">The damageable target passed its first hands-on playtest. The next milestone gives that target a visible wind-up and a shot the player can dodge.</p>
       <div class="actions"><a class="action primary" href="#source">Project details <span aria-hidden="true">↓</span></a><a class="action" href="#playtests">Test records <span aria-hidden="true">↓</span></a></div>
     </div>
     <aside class="build-stage" aria-label="Playable build status">
@@ -81,7 +81,7 @@
       <article class="direction-card"><div class="card-topline"><span>Weapons</span><span>Source present</span></div><h3>Held fire &amp; pooled bullets</h3><p>Attack fires while held, using a 0.25-second cooldown and either a selected target or the camera crosshair ray. Bullet pools start at 30 per type and expand as needed.</p><code class="source-reference">ShootingController.cs · BulletManager.cs</code></article>
       <article class="direction-card"><div class="card-topline"><span>Projectile data</span><span>Configured</span></div><h3>One default bullet type</h3><p>The default asset sets damage to 10, speed to 20 units/second, and lifetime to 30 seconds. Gravity and piercing are disabled; impact effects and audio are unassigned.</p><code class="source-reference">Assets/Scriptable Objects/DefaultBulletType.asset</code></article>
     </div>
-    <div class="scope-note"><b>Scene connections</b><p>The player uses the scene camera for aiming and the shared pool for firing. The target owns its health. The HUD listens to the target and lock selector, prints HP in the upper left and colors the reticle when an eligible target is in sight.</p></div>
+    <div class="scope-note"><b>Scene connections</b><p>On Main Camera, the Cinemachine Brain Updated event calls <code>PlayerAimAndFire.OnCameraUpdated</code> on the player. It refreshes lock and supplies the aim point to the weapon when a shot is due. The target owns its health. The HUD listens to the target and lock selector, prints HP in the upper left and colors the reticle when an eligible target is in sight.</p></div>
     <div class="scope-note"><b>Next duel milestones</b><p>The target can receive damage and die. Step 3 gives one opponent a wind-up and a return shot. Step 4 adds win, loss and retry.</p></div>
   </section>
 
@@ -113,6 +113,15 @@
 
   <section class="content-section" id="playtests" aria-labelledby="playtests-title">
     <div class="section-heading"><div><span class="eyebrow">05 / Review notes</span><h2 id="playtests-title">What has been verified?</h2></div><p>Keep file inspection distinct from tested game behavior.</p></div>
+    <div class="revision-note">
+      <h3>25 November 2026 · Step 2 hands-on playtest</h3>
+      <p>The owner completed the playtest and reported that everything seemed to work fine. This closes the damageable-target checkpoint. Step 3 can use the current movement and targeting settings to test a stationary opponent’s return shot.</p>
+    </div>
+    <div class="revision-note">
+      <h3>24 November 2026 · Turning and firing on the same frame</h3>
+      <p>Two Play Mode cases turn the virtual camera on the frame Attack is pressed. The scene’s Cinemachine Brain applies the pose. With the target inside the ring and off the center dot, the projectile leaves the muzzle aimed at the target. Turning away releases lock and sends the round toward the new center ray. Both cases checked the actual projectile direction on the press frame. The six earlier shooting cases also passed with the Brain active.</p>
+      <p>Reversing the refresh and fire calls in the isolated test copy made both direction checks fail. Restoring the intended order made both pass. The hands-on question is whether the ring and shot feel aligned during a fast strafe or dash.</p>
+    </div>
     <div class="revision-note">
       <h3>23 November 2026 · Damageable target</h3>
       <p>In Unity 6000.5.2f1, one Edit Mode test verified overkill, ignored nonpositive damage and a single death notification. Six Play Mode tests used an isolated copy of Prototype Map. Held mouse fire took the offset child hitbox through 30, 20, 10 and 0 HP, and the ring returned to its unlocked color. Free aim hit beyond lock range. A wall in the camera’s sightline broke lock, while a wall that blocked only the muzzle stopped the round and preserved all 30 HP.</p>
@@ -158,7 +167,7 @@
         <div><dt>Next step</dt><dd>A proposed change or an agreed decision. Add accepted choices to the Decisions tab.</dd></div>
       </dl>
     </details>
-    <div class="scope-note"><b>Next validation question</b><p>Can a tester keep the target in view through a strafe or dash and explain each hit or miss? Record the input and position if an impact or HP change disagrees with the reticle.</p></div>
+    <div class="scope-note"><b>Next validation question</b><p>Once the opponent can return fire, can the player recognize the wind-up, take damage by standing still, and avoid the same shot with a timed dash or nearby cover?</p></div>
   </section>
 
   <section class="content-section" id="revisions" aria-labelledby="revisions-title">
@@ -179,7 +188,7 @@
     </details>
   </section>
 
-  <footer class="page-footer"><span>Mech Prototype / Test records updated 23 November 2026</span><a href="#top">Back to top ↑</a></footer>
+  <footer class="page-footer"><span>Mech Prototype / Test records updated 25 November 2026</span><a href="#top">Back to top ↑</a></footer>
 </main>
 </body>
 </html>

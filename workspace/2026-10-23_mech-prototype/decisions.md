@@ -99,6 +99,10 @@ When playtests call for a choice between attacks or tactics such as waiting and 
 
 **Agreed 22 November 2026.** Develop and test the first repeatable duel with keyboard and mouse so the team has one control scheme on which to judge movement and aim. Gamepad play is a likely later target. Keep the existing bindings and use shared gameplay actions such as Move, Look, Jump, Dash and Attack. Tune analog movement and stick look once the keyboard-and-mouse duel is playable. [Code plan and playtest criteria](#/mech-prototype/5)
 
+### D-011 · Resolve player aim after the camera moves
+
+**Agreed 24 November 2026.** A shot fired as a target crosses the ring must use the camera pose the player sees that frame. Sample Attack during `Update`. Wire the player camera’s Cinemachine Brain Updated event to a single player callback. That callback refreshes target selection, then passes the resulting aim point to the weapon when a shot is due. Movement and projectile travel keep their own updates. HUD listeners react to changes in health and lock. [Code plan and playtest criteria](#/mech-prototype/5)
+
 ## Future entries
 
 For each new agreement, add a stable decision ID, date, choice, reason, and
