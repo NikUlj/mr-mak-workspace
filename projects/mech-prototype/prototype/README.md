@@ -14,12 +14,18 @@ The main project uses Unity **6000.5.2f1** and `Assets/Scenes/Prototype Map.unit
 ## Unity 7 combat rebuild
 
 Open `F:\Unity Projects\AC_Game-Unity7` with Unity **7000.0.0a22**.
-The current branch is `unity-7-alpha-rebuild`. Its starting revision
-(`90f2113`) has movement, automatic lock and pooled shooting. The target's
-first health component and the combat tests are planned work. The
-[ECS combat plan](../../../workspace/2026-10-23_mech-prototype/ecs-combat-plan.md)
-records the inspected baseline, code and tests available on other branches,
-and the first playtest.
+The first combat milestone is implemented in the working tree on `unity-7-alpha-rebuild`, based on `90f2113`. Hold Attack to fire from the mech's muzzle. The reticle turns red when it locks. Free aim and locked fire both use the existing PhysX map colliders. Each round is a pure entity. GameObjects provide the camera and input, actor hitboxes, tracer meshes and HUD. The target's GameObject-backed entity holds its 30 HP.
+
+**Verified on 28 November 2026 with Entities 7.0.0 and Pipeline 1.0.1.** All 5 Edit Mode and 13 Play Mode tests passed. The XML reports are in the Unity checkout under `Logs/ecs-combat-edit.xml` and `Logs/ecs-combat-play.xml`.
+
+- Three locked hits reduced the target from 30 to 20 to 10 to 0 HP. Lock released at zero. A free-aim shot hit beyond the 20-unit lock range. With a clear camera and cover at the muzzle, the target stayed at 30 HP.
+- Pausing stopped fire and travel. The dash regression checked the projectile origin and muzzle in the same camera callback. Reloading cleared the projectiles and tracers, restored health, and allowed three more hits.
+- A fixed-input comparison matched the original motor at the measured precision. The step rose 0.200 units, the jump rose 1.917 units in six frames, the map ramp rose 0.923 units, and the dash traveled 4.225 units in five frames.
+- The Windows x64 build at `Build/AC_Game.exe` launched with Direct3D 11, showed 30/30 HP, and rendered a fired projectile in Prototype Map. In the live Editor, Pipeline captured the black free-aim ring, the red locked ring with a round in flight, and the black ring at 0/30 HP.
+
+**Open playtest question.** During a full-speed dash, is it easy to follow the purple round all the way to the small gray target?
+
+[ECS combat implementation plan](../../../workspace/2026-10-23_mech-prototype/ecs-combat-plan.md)
 
 ## Previous Unity 7 alpha experiment
 
