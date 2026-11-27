@@ -199,7 +199,7 @@
       "type": "group",
       "category": "game",
       "created": "2026-10-23",
-      "updated": "2026-11-25",
+      "updated": "2026-11-28",
       "folder": "2026-10-23_mech-prototype",
       "steps": [
         {
@@ -226,6 +226,10 @@
         {
           "name": "Code plan",
           "path": "code-plan.md"
+        },
+        {
+          "name": "ECS combat plan",
+          "path": "ecs-combat-plan.md"
         }
       ],
       "status": "active",

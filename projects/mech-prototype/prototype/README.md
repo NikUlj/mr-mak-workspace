@@ -11,10 +11,20 @@ points to those locations.
 
 The main project uses Unity **6000.5.2f1** and `Assets/Scenes/Prototype Map.unity`.
 
-## Unity 7 alpha experiment
+## Unity 7 combat rebuild
 
-Open `F:\Unity Projects\AC_Game-Unity7` with Unity **7000.0.0a22** for the ECS
-experiment on branch `experiment/unity-7-alpha`. On 27 November 2026, the
+Open `F:\Unity Projects\AC_Game-Unity7` with Unity **7000.0.0a22**.
+The current branch is `unity-7-alpha-rebuild`. Its starting revision
+(`90f2113`) has movement, automatic lock and pooled shooting. The target's
+first health component and the combat tests are planned work. The
+[ECS combat plan](../../../workspace/2026-10-23_mech-prototype/ecs-combat-plan.md)
+records the inspected baseline, code and tests available on other branches,
+and the first playtest.
+
+## Previous Unity 7 alpha experiment
+
+The previous experiment is available at `unity-7-alpha` (`f58e51e`) and
+`origin/experiment/unity-7-alpha`. On 27 November 2026, the
 13 gameplay scripts were grouped under `Assets/Scripts/` in `Player`, `Enemies`,
 `Targeting`, `Weapons`, `Combat`, and `UI`. All 13 retained their original
 script GUIDs and still belong to the `Mech.Gameplay` assembly.
@@ -25,7 +35,7 @@ for the enemy to reuse the specific round the player had fired.
 
 ### ECS projectiles and health, 27 November 2026
 
-In the Unity 7 worktree, player and enemy weapons still launch pooled
+In that revision, player and enemy weapons launch pooled
 GameObjects with their existing meshes and trails. `ProjectileFlightSystem`
 advances active rounds on the game frame clock and batches their travel
 raycasts against the existing PhysX colliders. The nearest eligible hit
